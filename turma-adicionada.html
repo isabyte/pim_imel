@@ -17,7 +17,7 @@
 
     <body>
         <!-- header -->
-        <div class="container cabecalho backgroud-blur">
+        <div class="container cabecalho">
             <header
                 class="cabecalho d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                 <div class="col-md-3 mb-2 mb-md-0">
@@ -69,7 +69,7 @@
 
         <!-- turmas -->
 
-        <section class="row col-md-12 backgroud-blur">
+        <section class="row col-md-12">
             <div class="col-md-4">
                 <div class="box-info">
                     <div class="box-info-single blue">
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section class="row col-md-12 backgroud-blur">
+        <section class="row col-md-12">
             <div class="col-md-4">
                 <div class="box-info">
                     <div class="box-info-single orange" style=" margin-top: 40px;
@@ -149,35 +149,15 @@
 
         <!-- fim turmas -->
 
-        <!-- adicionar turma -->
-        <div class="modal" id="myModal" data-backdrop="static" style="margin-top: 10%">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center align-items-center">
-                    <h4 class="modal-title">Adicionar Turma</h4>
-                </div>
-                <form>
-                    <div class="form-group">
 
-                        <label for="nome" class="form-label" style="margin-left: 40%;">Nome da turma</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Turma A" required>
-
-                        <label for="sobrenome" class="form-label" style="margin-left: 42%;">Responsável</label>
-                        <input type="text" class="form-control" id="sobrenome" placeholder="Fulano de Tal" required>
-
-                    </div>
-
-                    <div class="form-group d-flex justify-content-center align-items-center">
-                        <a href="turma-adicionada.html" class="btn btn-secondary botao-modal cadastrar" role="button">
-                            Adicionar</a>
-                        <a href="turmas.html" class="btn btn-secondary botao-modal cancelar" role="button">
-                            Cancelar</a>
-                    </div>
-
-                </form>
-            </div>
+        <!-- mensagem conclusão -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="width: 40%;
+         padding: 50px; margin-left: 30%; background-color: rgba(255, 127, 80, 0.272); color: black;">
+            <strong>A turma foi cadastrada com sucesso!</strong>
+            <p> Feche para voltar ao menu principal.</p>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <!-- fim adicionar turma -->
-
+        <!-- fim mensagem conclusão -->
 
         <!--JavaScript Bootstrap-->
         <script type="text/javascript" src="js/bootstrap.js"></script>
