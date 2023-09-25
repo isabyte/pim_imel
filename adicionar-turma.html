@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEL | Dashboard</title>
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--CSS grupo-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <body>
+        <!-- header -->
+        <div class="container cabecalho backgroud-blur">
+            <header
+                class="cabecalho d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                        <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+                    </a>
+                </div>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="dashboard.html" class="nav-link px-2 link-secondary">Dashboard</a></li>
+                    <li><a href="#" class="nav-link px-2">Turmas</a></li>
+                    <li><a href="#" class="nav-link px-2">Alunos</a></li>
+                    <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cadastros
+                        </a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cadastrar aluno</a></li>
+                                <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="cadastro-colaborador.html">Cadastrar colaborador</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Portal</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Agenda</a></li>
+                                <li><a class="dropdown-item" href="#">Notícias</a></li>
+                                <li><a class="dropdown-item" href="#">Imagens</a></li>
+                                <li><a class="dropdown-item" href="#">Sobre</a></li>
+                                <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-laranja">Sair</button>
+                </div>
+            </header>
+        </div>
+        <!-- fim header -->
+
+        <!-- turmas -->
+
+        <section class="row col-md-12 backgroud-blur">
+            <div class="col-md-4">
+                <div class="box-info">
+                    <div class="box-info-single blue">
+                        <div class="info-text">
+                            <h1 class="h5">Turma "A"</h1>
+                            <p>Responsável: Fulano de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box-info">
+                    <div class="box-info-single green">
+                        <div class="info-text">
+                            <h1 class="h5">Turma "B"</h1>
+                            <p>Responsável: Beltrano de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box-info">
+                    <div class="box-info-single orange">
+                        <div class="info-text">
+                            <h1 class="h5">Turma "C"</h5>
+                                <p>Responsável: Sicrano de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row col-md-12 backgroud-blur">
+            <div class="col-md-4">
+                <div class="box-info">
+                    <div class="box-info-single orange" style=" margin-top: 40px;
+                margin-left: 110px;
+                margin-right: 70px;">
+                        <div class="info-text">
+                            <h1 class="h5">Turma "D"</h1>
+                            <p>Responsável: Fulano de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box-info">
+                    <div class="box-info-single blue" style="margin-top: 40px;
+                margin-left: 80px;
+                margin-right: 80px;">
+                        <div class="info-text">
+                            <h1 class="h5">Turma "E"</h1>
+                            <p>Responsável: Beltrano de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="box-info">
+                    <div class="box-info-single green text" style=" margin-top: 40px;
+                margin-left: 70px;
+                margin-right: 110px;
+                padding: 15px;">
+                        <a href="adicionar-turma.html" class="btn btn-secondary botao-modal cancelar"
+                            style="padding: 38px; margin-left: 25%; background-color:  #a7be77; border-color:  #a7be77;"
+                            role="button">
+                            <strong>Adicionar Turma</strong></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fim turmas -->
+
+        <!-- adicionar turma -->
+        <div class="modal" id="myModal" data-backdrop="static" style="margin-top: 10%">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center align-items-center">
+                    <h4 class="modal-title">Adicionar Turma</h4>
+                </div>
+                <form>
+                    <div class="form-group">
+
+                        <label for="nome" class="form-label" style="margin-left: 40%;">Nome da turma</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Turma A" required>
+
+                        <label for="sobrenome" class="form-label" style="margin-left: 42%;">Responsável</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Fulano de Tal" required>
+
+                    </div>
+
+                    <div class="form-group d-flex justify-content-center align-items-center">
+                        <a href="turma-adicionada.html" class="btn btn-secondary botao-modal cadastrar" role="button">
+                            Adicionar</a>
+                        <a href="turmas.html" class="btn btn-secondary botao-modal cancelar" role="button">
+                            Cancelar</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!-- fim adicionar turma -->
+
+        <!--JavaScript Bootstrap-->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#myModal').modal('show');
+            });
+        </script>
+    </body>
+
+</html>
