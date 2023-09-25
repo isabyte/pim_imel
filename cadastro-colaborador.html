@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meninos do Lago/Admin</title>
+  <title>IMEL | Admin</title>
 
   <!-- Bootstrap css externo -->
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -22,34 +19,126 @@
 </head>
 
 <body>
+  <!-- header -->
+  <div class="container cabecalho backgroud-blur">
+    <header
+      class="cabecalho d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+        </a>
+      </div>
 
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="dashboard.html" class="nav-link px-2 link-secondary">Dashboard</a></li>
+        <li><a href="#" class="nav-link px-2">Turmas</a></li>
+        <li><a href="#" class="nav-link px-2">Alunos</a></li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="cadastro-colaborador.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Cadastros
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cadastrar aluno</a></li>
+              <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cadastrar colaborador</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Portal</a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Agenda</a></li>
+              <li><a class="dropdown-item" href="#">Notícias</a></li>
+              <li><a class="dropdown-item" href="#">Imagens</a></li>
+              <li><a class="dropdown-item" href="#">Sobre</a></li>
+              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-laranja">Sair</button>
+      </div>
+    </header>
+  </div>
+  <!-- fim header -->
+
+  <!-- informações -->
+
+  <section class="row col-md-12 backgroud-blur">
+    <div class="col-md-4">
+      <div class="box-info">
+        <div class="box-info-single blue">
+          <div class="info-text">
+            <h1 class="h5">Alunos ativos</h1>
+            <p>143</p>
+          </div>
+        </div>
+      </div>S
+    </div>
+
+    <div class="col-md-4">
+      <div class="box-info">
+        <div class="box-info-single green">
+          <div class="info-text">
+            <h1 class="h5">Alunos inativos</h1>
+            <p>3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="box-info">
+        <div class="box-info-single orange">
+          <div class="info-text">
+            <h1 class="h5">Cadastros pendentes</h1>
+            <p>8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fim informações -->
+
+  <!-- cadastrar colaborador -->
 
   <div class="modal" id="myModal" data-backdrop="static">
-      <div class="modal-content">
-        <div class="modal-header justify-content-center align-items-center">
-          <h4 class="modal-title">Cadastro</h4>
-        </div>
-          <form >
-            <div class="form-group">
-              <label for="nome">Nome:</label>
-              <input type="text" class="form-control" id="nome" placeholder="Nome">
-            </div>
-            <div class="form-group">
-              <label for="sobrenome">Sobrenome:</label>
-              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
-            </div>
+    <div class="modal-content">
+      <div class="modal-header justify-content-center align-items-center">
+        <h4 class="modal-title">Cadastrar Colaborador</h4>
+      </div>
+      <form>
+        <div class="form-group">
 
-        <div class="form-group">
-          <div class="form-group">
-            <label for="cpf">CPF:</label>
-            <input type="text" class="form-control" id="cpf" placeholder="CPF">
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">Sobrenome:</label>
+              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="dataNascimento">Data de Nascimento:</label>
-            <input type="date" class="form-control" id="dataNascimento">
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cpf" class="form-label">CPF:</label>
+              <input type="number" class="form-control" id="cpf" placeholder="CPF" required>
+            </div>
+            <div class="col">
+              <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
+              <input type="date" class="form-control" id="dataNascimento" required>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
+
           <label>Gênero:</label>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
@@ -63,52 +152,60 @@
             <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
             <label class="form-check-label" for="outro">Outro</label>
           </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cep" class="form-label">CEP:</label>
+              <input type="number" class="form-control" id="cep" placeholder="CEP">
+            </div>
+            <div class="col">
+              <label for="rua" class="form-label">Rua / N°:</label>
+              <input type="text" class="form-control" id="rua" placeholder="Rua / N°">
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+            </div>
+            <div class="col">
+              <label for="estado" class="form-label">Estado:</label>
+              <input type="text" class="form-control" id="estado" placeholder="Estado">
+            </div>
+          </div>
+
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="senha" class="form-label">Criar Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+            </div>
+            <div class="col">
+              <label for="senha" class="form-label">Confirme sua Senha:</label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+            </div>
+          </div>
+
         </div>
-        <div class="form-group">
-          <div class="form-group">
-            <label for="cep">CEP:</label>
-            <input type="text" class="form-control" id="cep" placeholder="CEP">
-          </div>
-          <div class="form-group">
-            <label for="rua">Rua / N°:</label>
-            <input type="text" class="form-control" id="rua" placeholder="Rua / N°">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-group">
-            <label for="cidade">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
-          </div>
-          <div class="form-group">
-            <label for="estado">Estado:</label>
-            <input type="text" class="form-control" id="estado" placeholder="Estado">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail">
-          </div>
-          <div class="form-group">
-            <label for="senha">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Senha">
-          </div>
-        </div>
+
         <div class="form-group d-flex justify-content-center align-items-center">
-          <button type="button" class="btn btn-secondary botao" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Cadastrar Colaborador
-          </button>
-          <button type="button" class="btn btn-secondary botao" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Cancelar
-        </button>
-          </div>
-      </div>
-        </form>
+          <a href="cadastro-concluido.html" class="btn btn-secondary botao-modal cadastrar" role="button">
+            Cadastrar</a>
+          <a href="dashboard.html" class="btn btn-secondary botao-modal cancelar" role="button">
+            Cancelar</a>
+        </div>
+
+      </form>
     </div>
   </div>
-  </div>
+  <!-- fim cadastrar colaborador -->
 
-  <!-- Scripts Bootstrap -->
+  <!--JavaScript Bootstrap-->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

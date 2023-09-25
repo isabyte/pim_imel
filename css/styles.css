@@ -1,9 +1,11 @@
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: #F8F9FA;
+    background: #ebebeb;
 }
 
+.dropdown-item:hover{
+    background-color:#e4e3e3bb;
+}
 
 .titulo-cadastro {
 margin-top: 2px;
@@ -20,16 +22,25 @@ main{
     height: 100%;
 }
 
+.backgroud-blur{
+    filter: blur(5px);
+}
 
-
-.botao{
-    background-color: #44aa9e;
-    border-color: #44aa9e;
+.botao-modal{
+    background-color: #64c09b;
+    border-color: #64c09b;
     margin-left: 60px;
     margin-right: 60px;
 }
-
-.botao:hover{
+.cadastrar{
+    margin-left: 95px;
+    margin-right: 20px;
+}
+.cancelar{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.botao-modal:hover{
     background-color: #2f726b;
 }
 
@@ -38,16 +49,23 @@ main{
 .modal-title {
     font-size: 24px;
     text-align: center;
-    background-color: #44aa9e;
+    background-color: #64c09b;
     color: #fff;
     padding: 10px;
     border-radius: 5px 5px 0 0;
 }
 
+.modal-header {
+    background-color: #64c09b;
+    color: #fff;
+}
+
 .modal-content {
-    max-width: 600px; 
+    max-width: 800px; 
     margin: 0 auto; 
+    margin-top: 30px;
      padding: 20px;
+     border-radius: 10px;
 
 }
 
@@ -56,38 +74,101 @@ main{
 }
 
 .form-control {
-    margin-bottom: 10px;
-}
-
-.modal-footer .btn-secondary {
-    background-color: #ccc;
-    color: #000;
-}
-
-.form-control {
-    border-radius: 0;
+    border-radius: 10px;
     border-color: #ccc;
-}
-
-.form-group label {
-    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .form-check-label {
     margin-left: 10px;
 }
 
-.modal-header {
-    background-color: #44aa9e;
-    color: #fff;
-}
-
 .modal-body {
     background-color: #fff;
 }
 
-.botao-modal{
-    background-color: #ced4da;;
-    border-color: #ced4da; ;
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-link {
+    color:#F58008
+}
+
+.nav-link:hover {
+    color: #FFAC49;
+}
+
+.nav-link:focus {
+    color: #FFAC49;
+}
+
+.btn-laranja {
+    background-color: #F58008;
+    color: white;
+    border: #F58008;
+}
+
+.btn-laranja:hover {
+    background-color:#FFAC49;
+    color: white;
+}
+
+/* dashboard */
+
+.box-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-info-single {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #fefefe;
+    width: 100%;
+    padding: 40px;
+}
+
+.blue{
+    background: linear-gradient(#B2E5D6, #64c09b);
+    margin-top: 40px;
+    margin-left: 110px;
+    margin-right: 70px;
+}
+
+.green{
+    background: linear-gradient(#D8E6A8, #a7be77);
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.orange{
+    background: linear-gradient(#FFAC49, #F58008);
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 110px;
+}
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
 }
 
