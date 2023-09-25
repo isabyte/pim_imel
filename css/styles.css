@@ -149,7 +149,7 @@ main{
 }
 
 .orange{
-    background: linear-gradient(#FFAC49, #F58008);
+    background: linear-gradient(#fcb257ce, #F58008);
     margin-top: 40px;
     margin-left: 70px;
     margin-right: 110px;
@@ -174,4 +174,33 @@ main{
 
 .alunos{
     padding: 40px;
+}
+
+.select{
+    border-color: #F58008;
+    background-color: #F58008;
+    color: white;
+}
+
+
+.table {
+    max-width: 80%;
+
+  }
+
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  
+ .barra-pesquisa{
+    display: flex;
+    margin-right: 40px;
+    margin-top: 40px;
+ }
+
+.check{
+    margin-left: 40%;
 }
