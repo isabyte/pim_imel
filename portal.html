@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Instituto Meninos do Lago</title>
+
+</head>
+
+<body>
+    <!-- Início Parte de cima-->
+<header> 
+    <section class="topo">
+        <nav class="navbar">
+            <div class="container-fluid" style="margin:0px ;">
+                <a class="navbar-brand" href="portal.html">
+                    <img src="imgs/logo-imel.png" class="logo-imel" alt="Logo"> Instituto Meninos do Lago
+                </a>
+                <div class="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-opc">
+                            <a class="nav-text" href="#">Home</a>
+                        </li>
+                        <li class="nav-opc">
+                            <a class="nav-text" href="dashboard.html">Login</a>
+                        </li>
+                        <li class="nav-opc menuModal">
+                            <a data-bs-toggle="modal" data-bs-target="#cadastro">Faça Parte do Nosso Time</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+    <!-- Fim Parte de cima-->
+
+    <!-- Início Sub Menu-->
+    <section class="sub-menu">
+        <div class="container-fluid">
+            <div class="dropdown-portal">
+                <li class="nav-item dropdown-portal">
+                    <a class="nav-link-portal dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Agenda</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mensal</a></li>
+                        <li><a class="dropdown-item" href="#">Anual</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Linha do Tempo</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="dropdown">
+                <li class="nav-item dropdown-portal">
+                    <a class="nav-link-portal dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Increva-se</a></li>
+                        <li><a class="dropdown-item" href="#">Localização</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Saiba Mais</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="dropdown">
+                <li class="nav-item dropdown-portal">
+                    <a class="nav-link-portal dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Eventos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Participar</a></li>
+                        <li><a class="dropdown-item" href="#">Regras</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Saiba Mais</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="dropdown">
+                <li class="nav-item dropdown-portal">
+                    <a class="nav-link-portal dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">História do Instituto</a></li>
+                        <li><a class="dropdown-item" href="#">Aonde Surgiu</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Saiba Mais</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Sub Menu-->
+
+    <!-- Início do Banner-->
+    <section class="bloco">
+        <div class="container-fluid">
+            <div class="banner">
+                <img src="imgs/imel-banner.jpg" alt="thumb">
+            </div>
+        </div>
+    </section>
+    <!-- Fim do Banner-->
+
+    <section class="container-fluid">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Início do Carrossel-->
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imgs/imel-foto1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/imel-foto2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imgs/imel-foto3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Fim do Carrossel-->
+                </div>
+                <div class="col-md-8 teste">
+                    <div class="row">
+                            <!-- inicio card 01-->
+                            <div class="col-md-4">
+                                <d iv class="card">
+                                    <img src="imgs/imel-foto2.png" class="card-img-top imgBanner" alt="Imagem do Banner 01">
+                                    <div class="card-body">
+                                        <h5 class="card-title">01/11/2023</h5>
+                                        <p class="card-text">Mais uma vitória pra conta! Classificados para o nacional</p>
+                                        <a href="#" class="btn btn-primary">Saiba mais...</a>
+                                    </div>
+                            </div>
+                        <!--fim card 01-->
+                        <!-- inicio card 01-->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="imgs/imel-foto3.png" class="card-img-top imgBanner" alt="Imagem do Banner 01">
+                                <div class="card-body">
+                                    <h5 class="card-title">20/08/20023</h5>
+                                    <p class="card-text">Diretores comemoram 30 anos do projeto</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fim card 01-->
+                        <!-- inicio card 01-->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="imgs/imel-foto1.png" class="card-img-top imgBanner" alt="Imagem do Banner 01">
+                                <div class="card-body">
+                                    <h5 class="card-title">14/03/2023</h5>
+                                    <p class="card-text">Dupla dinâmica vence disputa acirrada</p>
+                                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fim card 01-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-tm">        
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Realize o seu Pré-cadastro</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="row col-md-12">
+                    <div class="col-md-6">
+                        <label class="text-primary">Nome Completo</label>
+                        <input type="text" class="form-control" placeholder="Ex: João Bezerra..."/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary">Data Nascimento</label>
+                        <input type="date" class="form-control"/>
+                    </div> 
+    
+                    <div class="espaco"></div>
+    
+                    <div class="col-md-6">
+                        <label class="text-primary">Endereço</label>
+                        <input type="text" class="form-control" placeholder="Ex:Rua Jabuti..."/>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="text-primary">N*</label>
+                        <input
+                         type="text" class="form-control" placeholder="Ex:666..."/>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-primary">Bairro</label>
+                        <input type="text" class="form-control" placeholder="Ex:Bairro Taroba..."/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary">Cidade</label>
+                        <input type="text" class="form-control" placeholder="Ex:Foz do Iguaçu..."/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary">Estado</label>
+                        <input type="text" class="form-control" placeholder="Ex:Paraná..."/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary">CEP</label>
+                        <input type="text" class="form-control" placeholder="Ex:00000-000..."/>
+                    </div>
+    
+                    <div class="espaco"></div>
+    
+                    <div class="col-md-6">
+                        <label class="text-primary">Nome do Pai</label>
+                        <input type="text" class="form-control" placeholder="Ex:Alfredo Bitencurt..."/>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="text-primary">RG</label>
+                        <input type="text" class="form-control" placeholder="Ex:000000000-0..."/>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="text-primary">CPF</label>
+                        <input type="text" class="form-control" placeholder="Ex:000.000.000-00..."/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-primary">Nome da Mãe</label>
+                        <input type="text" class="form-control" placeholder="Ex:Maria Betania..."/>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="text-primary">RG</label>
+                        <input type="text" class="form-control" placeholder="Ex:000000000-0..."/>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="text-primary">CPF</label>
+                        <input type="text" class="form-control" placeholder="Ex:000.000.000-00..."/>
+                    </div>
+
+                    <div class="espaco"></div>
+    
+                </div>
+                <br>
+    
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Concluir Cadastro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- final do modal de cadastro de clientes-->
+
+    <script type="text/JavaScript" src="js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+    <!--script type="text/JavaScript" src="js/script.js"></script-->
+</body>
+
+</html>

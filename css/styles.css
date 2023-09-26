@@ -95,9 +95,9 @@ main {
     height: 100px;
 }
 
-.nav-link {
-    color: #F58008
-}
+ .nav-link {
+     color: #F58008
+ } 
 
 .nav-link:hover {
     color: #FFAC49;
@@ -187,7 +187,7 @@ main {
 
 
 .table {
-    max-width: 50%;
+    max-width: 70%;
 
 }
 
@@ -225,3 +225,105 @@ th,td {
     padding-top: 40px;
     margin-left: 54%;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-imel{
+    width: 8%;
+}
+
+.navbar{
+    background-color: #3fc2c2;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.navbar ul{
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.nav-opc{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.nav-opc:hover{
+    opacity: 0.5;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav-link-portal{
+    color:black ;
+}
+
+.dropdown-portal{
+    background-color: rgb(28, 164, 15);
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+.dropdown-portal:hover{
+    background-color: rgb(59, 247, 42);
+}
+
+.container-fluid{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+/*Início do Banner*/
+.banner{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px black;
+}
+
+.banner img{
+    width: 1500px;
+    height: 200px;
+}
+/*Fim do Banner*/
+
+/*Início Card*/
+.imgBanner{
+    width: 100%;
+    height: 127px;
+}
+/*Fim do Card*/
+
+/*Início Cadastro Interessados*/
+.menuModal{
+    background-color: rgb(156, 253, 0);
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+/*Fim Cadastro Interessados*/
