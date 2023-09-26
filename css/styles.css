@@ -208,3 +208,20 @@ th,td {
     margin-left: 40%;
 }
 
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
