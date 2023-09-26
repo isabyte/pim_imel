@@ -26,12 +26,16 @@
     margin-top: 15px;
 }
 
-.nav-item{
+.nav-opc{
     text-decoration: none;
     list-style: none;
     cursor: pointer;
     padding: 5px;
     margin-right: 15px;
+}
+
+.nav-opc:hover{
+    opacity: 0.5;
 }
 
 .nav-link{
@@ -49,11 +53,12 @@
     margin-bottom: 10px;
     width: 200px;
     height: 50px;
+    list-style: none;
     text-align: center;
 }
 
 .dropdown:hover{
-    background-color: rgb(12, 137, 0);
+    background-color: rgb(59, 247, 42);
 }
 
 .container-fluid{
@@ -73,154 +78,15 @@
     height: 200px;
 }
 /*Fim do Banner*/
-/*Início do carrossel*/
-.carousel-inner{
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 500px;
-    height: 300px;
+
+/*Início Card*/
+.imgBanner{
+    width: 100%;
+    height: 127px;
 }
+/*Fim do Card*/
 
-.carousel-item{
-    display: flex;
-}
+/*Início Cadastro Interessados*/
 
-.carousel-item img{
-    width: 800px;
-}
-
-.carrossel{
-    display: flex;
-}
-/*Fim do Carrossel*/
-
-.container{
-    display: flex;
-    width: 980px;
-    height: 300px;
-    background-color: #999;
-    border: 2px solid black;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-}
-
-.fundo{
-    display: flex;
-    color: #010101;
-}
-
-/*Início do Carrossel
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides div{    
-    display: flex;
-    align-items: center;
-}
-
-.slides input{
-    display:;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img{
-    width: 800px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40%;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
-}
-
-
-
-Fim do Carrossel*/
-
-
+/*Fim Cadastro Interessados*/
 
