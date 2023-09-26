@@ -1,46 +1,48 @@
-
 body {
     background: #ebebeb;
 }
 
-.dropdown-item:hover{
-    background-color:#e4e3e3bb;
+.dropdown-item:hover {
+    background-color: #e4e3e3bb;
 }
 
 .titulo-cadastro {
-margin-top: 2px;
-margin-bottom: 3rem;
-font-weight: 500;
-line-height: 1.2;
-color: var(--bs-heading-color);
+    margin-top: 2px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
 }
 
 
-main{
+main {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
 }
 
-.backgroud-blur{
+.backgroud-blur {
     filter: blur(5px);
 }
 
-.botao-modal{
+.botao-modal {
     background-color: #64c09b;
     border-color: #64c09b;
     margin-left: 60px;
     margin-right: 60px;
 }
-.cadastrar{
+
+.cadastrar {
     margin-left: 95px;
     margin-right: 20px;
 }
-.cancelar{
+
+.cancelar {
     margin-left: 20px;
     margin-right: 100px;
 }
-.botao-modal:hover{
+
+.botao-modal:hover {
     background-color: #2f726b;
 }
 
@@ -61,11 +63,11 @@ main{
 }
 
 .modal-content {
-    max-width: 800px; 
-    margin: 0 auto; 
+    max-width: 800px;
+    margin: 0 auto;
     margin-top: 30px;
-     padding: 20px;
-     border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
 
 }
 
@@ -94,7 +96,7 @@ main{
 }
 
 .nav-link {
-    color:#F58008
+    color: #F58008
 }
 
 .nav-link:hover {
@@ -112,7 +114,7 @@ main{
 }
 
 .btn-laranja:hover {
-    background-color:#FFAC49;
+    background-color: #FFAC49;
     color: white;
 }
 
@@ -134,26 +136,27 @@ main{
     padding: 40px;
 }
 
-.blue{
+.blue {
     background: linear-gradient(#B2E5D6, #64c09b);
     margin-top: 40px;
     margin-left: 110px;
     margin-right: 70px;
 }
 
-.green{
+.green {
     background: linear-gradient(#D8E6A8, #a7be77);
     margin-top: 40px;
     margin-left: 80px;
     margin-right: 80px;
 }
 
-.orange{
+.orange {
     background: linear-gradient(#fcb257ce, #F58008);
     margin-top: 40px;
     margin-left: 70px;
     margin-right: 110px;
 }
+
 /* contato dashboard */
 
 .titulo-dash {
@@ -172,11 +175,11 @@ main{
     margin-left: 54%;
 }
 
-.alunos{
+.alunos {
     padding: 40px;
 }
 
-.select{
+.select {
     border-color: #F58008;
     background-color: #F58008;
     color: white;
@@ -184,23 +187,24 @@ main{
 
 
 .table {
-    max-width: 80%;
+    max-width: 50%;
 
-  }
+}
 
 
-  th, td {
-    padding: 8px;
-    text-align: left;
-  }
+th,td {
+    padding: 10px;
+    text-align: center;
+}
 
-  
- .barra-pesquisa{
+
+.barra-pesquisa {
     display: flex;
     margin-right: 40px;
     margin-top: 40px;
- }
+}
 
-.check{
+.check {
     margin-left: 40%;
 }
+
