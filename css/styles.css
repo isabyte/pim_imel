@@ -38,7 +38,7 @@
     opacity: 0.5;
 }
 
-.nav-link{
+.nav-text{
     text-decoration: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -95,4 +95,75 @@
     height: 40px;
 }
 /*Fim Cadastro Interessados*/
+
+/*Parte da Isa*/
+body {
+    background: #fefefe;
+}
+
+.img-logo {
+    width: 80px;
+    height: 70px;
+}
+
+/*.nav-link {
+    color:#F58008
+}*/
+
+.nav-link:hover {
+    color: #FFAC49;
+}
+
+.nav-link:focus {
+    color: #FFAC49;
+}
+
+.btn-laranja {
+    background-color: #F58008;
+    color: white;
+    border: #F58008;
+}
+
+.btn-laranja:hover {
+    background-color:#FFAC49;
+    color: white;
+}
+
+/* dashboard */
+
+.box-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-info-single {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #fefefe;
+    width: 100%;
+    margin: 0 140px;
+    padding: 30px;
+}
+
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
+/*Parte da Isa*/
 
