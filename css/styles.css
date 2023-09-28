@@ -7,15 +7,15 @@ body {
     height: 70px;
 }
 
-.nav-link {
+.cabecalho-dash .nav-link {
     color:#F58008
 }
 
-.nav-link:hover {
+.cabecalho-dash .nav-link:hover {
     color: #FFAC49;
 }
 
-.nav-link:focus {
+.cabecalho-dash .nav-link:focus {
     color: #FFAC49;
 }
 
