@@ -62,6 +62,12 @@ body {
     margin-bottom: 2%;
 }
 
+.botao-editar-contato {
+    margin-left: 37%;
+    margin-bottom: 1%;
+    margin-top: -3%;
+}
+
 .contato-salvar {
     padding-top: 40px;
     margin-left: 54%;
