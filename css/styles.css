@@ -70,6 +70,12 @@ body {
 /* sobre dashboard*/
 
 .textarea-sobre {
-    width: 700px;
+    width: 900px;
     height: 400px;
+}
+
+.botao-editar-sobre {
+    margin-left: 58%;
+    margin-bottom: 1%;
+    margin-top: -3%;
 }
