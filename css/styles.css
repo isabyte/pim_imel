@@ -19,6 +19,10 @@ body {
     color: #FFAC49;
 }
 
+.cabecalho-dash .dropdown-item:active {
+    background-color: #F58008;
+}
+
 .btn-laranja {
     background-color: #F58008;
     color: white;
