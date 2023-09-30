@@ -1,3 +1,231 @@
+body {
+    background: #ebebeb;
+}
+
+.dropdown-item:hover {
+    background-color: #e4e3e3bb;
+}
+
+.titulo-cadastro {
+    margin-top: 2px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.backgroud-blur {
+    filter: blur(5px);
+}
+
+.botao-modal {
+    background-color: #64c09b;
+    border-color: #64c09b;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.cadastrar {
+    margin-left: 95px;
+    margin-right: 20px;
+}
+
+.cancelar {
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.botao-modal:hover {
+    background-color: #2f726b;
+}
+
+
+/* modal cadastrar colaborador */
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    background-color: #64c09b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-header {
+    background-color: #64c09b;
+    color: #fff;
+}
+
+.modal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.modal-body {
+    background-color: #fff;
+}
+
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+}
+
+ .nav-link {
+     color: #F58008
+ } 
+
+.nav-link:hover {
+    color: #FFAC49;
+}
+
+.nav-link:focus {
+    color: #FFAC49;
+}
+
+.btn-laranja {
+    background-color: #F58008;
+    color: white;
+    border: #F58008;
+}
+
+.btn-laranja:hover {
+    background-color: #FFAC49;
+    color: white;
+}
+
+/* dashboard */
+
+.box-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-info-single {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #fefefe;
+    width: 100%;
+    padding: 40px;
+}
+
+.blue {
+    background: linear-gradient(#B2E5D6, #64c09b);
+    margin-top: 40px;
+    margin-left: 110px;
+    margin-right: 70px;
+}
+
+.green {
+    background: linear-gradient(#D8E6A8, #a7be77);
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.orange {
+    background: linear-gradient(#fcb257ce, #F58008);
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 110px;
+}
+
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
+
+.alunos {
+    padding: 40px;
+}
+
+.select {
+    border-color: #F58008;
+    background-color: #F58008;
+    color: white;
+}
+
+
+.table {
+    max-width: 70%;
+
+}
+
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.barra-pesquisa {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.check {
+    margin-left: 40%;
+}
+
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -46,7 +274,11 @@
     border-radius: 15px;
 }
 
-.dropdown{
+.nav-link-portal{
+    color:black ;
+}
+
+.dropdown-portal{
     background-color: rgb(28, 164, 15);
     border-radius: 15px;
     margin-top: 10px;
@@ -57,7 +289,7 @@
     text-align: center;
 }
 
-.dropdown:hover{
+.dropdown-portal:hover{
     background-color: rgb(59, 247, 42);
 }
 
@@ -95,75 +327,3 @@
     height: 40px;
 }
 /*Fim Cadastro Interessados*/
-
-/*Parte da Isa*/
-body {
-    background: #fefefe;
-}
-
-.img-logo {
-    width: 80px;
-    height: 70px;
-}
-
-/*.nav-link {
-    color:#F58008
-}*/
-
-.nav-link:hover {
-    color: #FFAC49;
-}
-
-.nav-link:focus {
-    color: #FFAC49;
-}
-
-.btn-laranja {
-    background-color: #F58008;
-    color: white;
-    border: #F58008;
-}
-
-.btn-laranja:hover {
-    background-color:#FFAC49;
-    color: white;
-}
-
-/* dashboard */
-
-.box-info {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.box-info-single {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    color: #fefefe;
-    width: 100%;
-    margin: 0 140px;
-    padding: 30px;
-}
-
-/* contato dashboard */
-
-.titulo-dash {
-    margin-top: 20px;
-    margin-left: 9%;
-    margin-bottom: 3%;
-}
-
-.form-contato {
-    margin-left: 9%;
-    margin-bottom: 2%;
-}
-
-.contato-footer {
-    padding-top: 40px;
-    margin-left: 54%;
-}
-/*Parte da Isa*/
-
