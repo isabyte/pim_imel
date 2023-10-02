@@ -1,6 +1,13 @@
 body {
     background: #fefefe;
+    margin-left: 6%;
+    margin-right: 5%;
 }
+
+.dropdown-item:hover {
+    background-color: #e4e3e3bb;
+}
+
 
 .img-logo {
     width: 80px;
@@ -44,13 +51,34 @@ body {
 }
 
 .box-info-single {
-    display: flex;
     justify-content: space-between;
-    border-radius: 10px;
-    color: #fefefe;
+    display: flex;
     width: 100%;
-    margin: 0 140px;
-    padding: 30px;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    border: double;
+    color: #fefefe;
+}
+
+/*.box-info-single*/ .orange{
+    background: linear-gradient(#fcb257ce, #F58008);
+}
+
+/*.box-info-single*/ .green {
+    background: linear-gradient(#D8E6A8, #a7be77);
+}
+
+
+/*.box-info-single*/ .blue {
+    background: linear-gradient(#B2E5D6, #64c09b);
+}
+
+@media screen and (max-width: 768px) {
+    .box-info-single {
+        margin: 20px; 
+        padding: 20px; 
+    }
 }
 
 /* contato dashboard */
@@ -95,3 +123,9 @@ body {
     margin-left: 50%;
     }
 
+/* turmas dashboard */
+
+.btn-add-turma{
+    background-color: #99a8787e; 
+    border-color: #84858493;
+}
