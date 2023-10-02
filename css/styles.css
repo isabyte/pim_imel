@@ -4,10 +4,13 @@ body {
     margin-right: 5%;
 }
 
+.background-blur {
+    filter: blur(5px);
+}
+
 .dropdown-item:hover {
     background-color: #e4e3e3bb;
 }
-
 
 .img-logo {
     width: 80px;
@@ -128,4 +131,73 @@ body {
 .btn-add-turma{
     background-color: #99a8787e; 
     border-color: #84858493;
+}
+
+.msg-conclusao{
+    width: 40%;
+    padding: 50px; 
+    margin-left: 30%;
+    margin-top: 5%; 
+    background-color: rgba(255, 127, 80, 0.272); 
+    color: black;
+}
+
+/* modal cadastrar colaborador */
+
+.botao-modal {
+    background-color: #64c09b;
+    border-color: #64c09b;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*.botao-modal*/.cadastrar {
+    margin-left: 95px;
+    margin-right: 20px;
+}
+
+/*.botao-modal*/.cancelar {
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    background-color: #64c09b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-header {
+    background-color: #64c09b;
+    color: #fff;
+}
+
+.modal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.modal-body {
+    background-color: #fff;
 }

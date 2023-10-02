@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,10 @@
     <!--CSS grupo-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <!-- header -->
+     <!-- header -->
     <div class="container">
         <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
           <div class="col-md-3 mb-2 mb-md-0">
@@ -23,9 +25,9 @@
           </div>
     
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="dashboard.html" class="nav-link px-2 link-secondary">Dashboard</a></li>
+            <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
             <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-            <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+            <li><a href="dash-alunos" class="nav-link px-2">Alunos</a></li>
             <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Cadastros
             </a>
@@ -35,7 +37,7 @@
                   <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
-                  <li><a class="dropdown-item" href="visualizar-colaboradores.html">Visulizar Colaboradores</a></li>
+                  <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visulizar Colaboradores</a></li>
                 </ul>
               </div></li>
               <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,46 +60,82 @@
         </header>
       </div>
     <!-- fim header -->
-
-    <!-- informações -->
-    <section class="row col-md-12">
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single blue">
-                    <div class="info-text">
-                        <h1 class="h5">Alunos ativos</h1>
-                        <p>143</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5">Alunos inativos</h1>
-                        <p>3</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5">Cadastros pendentes</h1>
-                        <p>8</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- fim informações -->
     
+ <!--barra de pesquisa-->
+
+ <section class="barra-pesquisa">
+  <div class="row col-md-12">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+      <input class="form-control" type="search" placeholder="Digite o nome do colaborador">
+    </div>
+    <div class="col-md-4">
+      <a href="#" class="btn btn-secondary btn-laranja" role="button" >Pesquisar</a>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</section>
+<!-- fim da barra de pesquisa -->
+
+<!-- tabela alunos -->
+<section class="d-flex justify-content-center align-items-start mt-4;">
+  <table class="table caption-top">
+    <caption>Lista de Colaboradores</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Responsável / Turma</th>
+        <th scope="col" style="width: 20%;">Contato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Turma A, Turma B</td>
+       <td>45 98888-7777</td>
+
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>Turma C</td>
+       <td>45 98888-7777</td>
+
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Mark</td>
+        <td>Turma B</td>
+       <td>45 98888-7777</td>
+
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Jacob</td>
+        <td>Turma B, Turma C</td>
+       <td>45 98888-7777</td>
+
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Larry</td>
+        <td>Turma C</td>
+       <td>45 98888-7777</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+<!-- fim tabela alunos -->
+
     <!--JavaScript Bootstrap-->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
