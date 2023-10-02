@@ -44,6 +44,17 @@ body {
     color: white;
 }
 
+.btn-azul {
+    background-color: #64c09b;
+    color: white;
+    border: #64c09b;
+}
+
+.btn-azul:hover {
+    background-color: #B2E5D6;
+    color:white;
+}
+
 /* dashboard */
 
 .border-text-info{
