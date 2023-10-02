@@ -136,6 +136,12 @@ body {
 .btn-turma{
     background-color: #8485843a; 
     border-color: #84858493;
+    transition: transform 0.3s ease;
+}
+.btn-turma:hover{
+    background-color: #8485843a; 
+    border-color: #84858493;
+    transform: scale(1.2); 
 }
 
 .msg-conclusao{
