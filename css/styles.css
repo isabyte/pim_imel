@@ -46,6 +46,11 @@ body {
 
 /* dashboard */
 
+.border-text-info{
+    color: white;
+    text-shadow: 0.8px 0.8px 0.8px #7b7b7b, 0.8px -0.8px 0.8px #7b7b7b;
+}
+
 .box-info {
     width: 100%;
     margin-top: 20px;
@@ -128,8 +133,8 @@ body {
 
 /* turmas dashboard */
 
-.btn-add-turma{
-    background-color: #99a8787e; 
+.btn-turma{
+    background-color: #8485843a; 
     border-color: #84858493;
 }
 
