@@ -223,3 +223,17 @@ body {
 .modal-body {
     background-color: #fff;
 }
+
+/* agenda */
+
+.subtitulo-agenda .form-select {
+    display: flex;
+    width: 30%;
+}
+
+.subtitulo-agenda {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
