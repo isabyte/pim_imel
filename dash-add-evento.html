@@ -61,7 +61,7 @@
         <!-- agenda -->
         <section>
             <h1 class="titulo-dash h2">Agenda</h1>
-            <div class="row col-md-12 margem-form subtitulo-agenda">
+            <div class="row col-md-12 subtitulo-agenda margem-form">
                 <div class="col-md-2">
                     <label class="form-label">Evento</label>
                     <input type="text" class="form-control" placeholder="Nome do evento">
@@ -74,46 +74,50 @@
                     <label class="form-label">Data</label>
                     <input type="date" class="form-control">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 btn-adicionar-evento">
                     <button type="button" class="btn btn-azul">Adicionar
                 </div>
             </div>
       
-            <table class="agenda-dash table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Evento</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Data</th>
-                  <th scope="col">Editar</th>
-                  <th scope="col">Excluir</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Aqui o nome do evento</th>
-                  <td>Aqui uma breve descrição sobre o evento</td>
-                  <td>Aqui o dia do evento</td>
-                  <td>Editar</td>
-                  <td>Excluir</td>
-                </tr>
-                <tr>
-                  <th scope="row">Campeonato de canoagem</th>
-                  <td>Disputa entre alunos no lago X</td>
-                  <td>12/01/2023</td>
-                  <td>@</td>
-                  <td>@</td>
-                </tr>
-                <tr>
-                  <th scope="row">Lorem ipsum</th>
-                  <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, unde modi.</td>
-                  <td>17/01/2023</td>
-                  <td>@</td>
-                  <td>@</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+            <!-- tabela -->
+            <div class="tabela-eventos margem-form">
+                <table class="agenda-dash table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Evento</th>
+                      <th scope="col">Descrição</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Editar</th>
+                      <th scope="col">Excluir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Aqui o nome do evento</th>
+                      <td>Aqui uma breve descrição sobre o evento</td>
+                      <td>Aqui o dia do evento</td>
+                      <td>Editar</td>
+                      <td>Excluir</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Campeonato de canoagem</th>
+                      <td>Disputa entre alunos no lago X</td>
+                      <td>12/01/2023</td>
+                      <td>@</td>
+                      <td>@</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lorem ipsum</th>
+                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio nobis iure excepturi ratione impedit sed possimus?</td>
+                      <td>17/01/2023</td>
+                      <td>@</td>
+                      <td>@</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <!-- fim tabela -->
+        </section>
           <!-- fim agenda -->
 
     <!--JavaScript Bootstrap-->
