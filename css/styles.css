@@ -227,11 +227,6 @@ body {
 
 /* agenda */
 
-.subtitulo-agenda .form-select {
-    display: flex;
-    width: 30%;
-}
-
 .subtitulo-agenda {
     display: flex;
     flex: 1;
