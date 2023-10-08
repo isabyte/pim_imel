@@ -1,10 +1,11 @@
 /*body {
     background: #ebebeb;
 }*/
-
+/*
 .dropdown-item:hover {
     background-color: #e4e3e3bb;
 }
+*/
 
 .titulo-cadastro {
     margin-top: 2px;
@@ -232,19 +233,18 @@ th,td {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*Início NavBar parte de cima*/
 .logo-imel{
     width: 8%;
 }
 
 .navbar{
-    background-color: #3fc2c2;
-    border-radius: 15px;
-    margin: 10px;
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    margin-bottom: 10px;
 }
 
 .navbar ul{
-    flex-direction: row;
+    flex-direction: row;    
     list-style: none;
     display: flex;
     font-size: 21px;
@@ -276,52 +276,104 @@ th,td {
 
 .nav-link-portal{
     color:black ;
-}
-
-.dropdown-portal{
-    background-color: rgb(28, 164, 15);
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    height: 50px;
-    list-style: none;
-    text-align: center;
-}
-
-.dropdown-portal:hover{
-    background-color: rgb(59, 247, 42);
-}
-
-.container-fluid{
-    justify-content: space-evenly;
-    display: flex;
-}
-
-/*Início do Banner*/
-.banner{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid 3px black;
-}
-
-.banner img{
-    width: 1500px;
-    height: 200px;
-}
-/*Fim do Banner*/
-
-/*Início Card*/
-.imgBanner{
+    text-decoration: none;
     width: 100%;
-    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*Fim do Card*/
+/*Fim NavBar parte de cima*/
+/*Início NavBar SubMenu*/
+.sub{
+    margin-left: 18px;
+}
+.dropdown-portal{
+    background-color: rgba(27, 164, 15, 0.201);
+    border: 2px solid rgb(27, 164, 15);
+    border-radius: 15px;
+    margin-left: 8px;
+
+}
+
+.dropdown-portal a{
+    height: 35px;
+    margin: 3px;
+    width: 100%;
+}
+
+.drops{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Fim NavBar SubMenu*/
+
+/*Início Carrossel*/
+
+.carrossel{
+    margin-top: 10px;
+    height: 20em;
+
+}
+
+.img1{
+    height: 100%;
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2{
+    height: 100%;
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3{
+    height: 100%;
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img4{
+    height: 100%;
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.teste{
+    background: #e7e7e7;
+}
+
+.teste2{
+    width: 750px;
+   
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    background: #000;
+}
+
+.seta i{
+    font-size: 30px;
+}
+/*Fim Carrossel*/
 
 /*Início Cadastro Interessados*/
 .menuModal{
-    background-color: rgb(156, 253, 0);
-    border-radius: 15px;
     text-align: center;
     width: 100%;
     height: 40px;
