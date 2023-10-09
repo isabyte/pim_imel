@@ -60,88 +60,89 @@
     <!-- fim header -->
 
     <!-- notícias -->
-    <h1 class="titulo-dash h2">Notícias</h1>
-    <div class="row col-md-12 subtitulo-table margem-form">
-      <div class="col-md-4">
-        <label class="form-label">Selecione o mês:</label>
-        <select class="form-select" aria-label="Selecione o mês">
-          <option selected>-</option>
-          <option>Janeiro</option>
-          <option>Fevereiro</option>
-          <option>Março</option>
-          <option>Abril</option>
-          <option>Maio</option>
-          <option>Junho</option>
-          <option>Julho</option>
-          <option>Agosto</option>
-          <option>Setembro</option>
-          <option>Outubro</option>
-          <option>Novembro</option>
-          <option>Dezembro</option>
-        </select>
+    <section>
+      <h1 class="titulo-dash h2">Notícias</h1>
+      <div class="row col-md-12 subtitulo-table margem-form">
+        <div class="col-md-4">
+          <label class="form-label">Selecione o mês:</label>
+          <select class="form-select" aria-label="Selecione o mês">
+            <option selected>-</option>
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Selecione o dia:</label>
+          <select class="form-select" aria-label="Selecione o dia">
+            <option selected>-</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-4 btn-adicionar">
+          <a href="dash-add-noticia.html" type="button" role="button" class="btn btn-azul"> + Nova notícia</a>
+          <!--button type="button" class="btn btn-azul">+ Nova notícia</div-->
+        </div>
       </div>
-      <div class="col-md-4">
-        <label class="form-label">Selecione o dia:</label>
-        <select class="form-select" aria-label="Selecione o dia">
-          <option selected>-</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-4 btn-adicionar">
-        <a href="dash-add-noticia.html" type="button" role="button" class="btn btn-azul"> + Nova notícia</a>
-        <!--button type="button" class="btn btn-azul">+ Nova notícia</div-->
-      </div>
+  
+      <div class="margem-form">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Chamada</th>
+              <th scope="col">Subtítulo</th>
+              <th scope="col">Data</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Aqui a última notícia adicionada</th>
+              <td>Aqui o subtítulo da notícia</td>
+              <td>Aqui a data de publicação</td>
+              <td><i class="bi bi-pencil-square"></i></td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">Equipe IMEL se destaca no Brasileiro de Canoagem</th>
+              <td>Alunos conquistaram o terceiro lugar</td>
+              <td>12/01/2023</td>
+              <td><i class="bi bi-pencil-square"></i></td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">Lorem ipsum</th>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio nobis iure excepturi ratione impedit sed possimus?</td>
+              <td>17/01/2023</td>
+              <td><i class="bi bi-pencil-square"></i></td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+          </tbody>
+        </table>
     </div>
-
-    <div class="margem-form">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">Chamada</th>
-            <th scope="col">Subtítulo</th>
-            <th scope="col">Data</th>
-            <th scope="col">Editar</th>
-            <th scope="col">Excluir</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Aqui a última notícia adicionada</th>
-            <td>Aqui o subtítulo da notícia</td>
-            <td>Aqui a data de publicação</td>
-            <td><i class="bi bi-pencil-square"></i></td>
-            <td><i class="bi bi-trash"></i></td>
-          </tr>
-          <tr>
-            <th scope="row">Equipe IMEL se destaca no Brasileiro de Canoagem</th>
-            <td>Alunos conquistaram o terceiro lugar</td>
-            <td>12/01/2023</td>
-            <td><i class="bi bi-pencil-square"></i></td>
-            <td><i class="bi bi-trash"></i></td>
-          </tr>
-          <tr>
-            <th scope="row">Lorem ipsum</th>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio nobis iure excepturi ratione impedit sed possimus?</td>
-            <td>17/01/2023</td>
-            <td><i class="bi bi-pencil-square"></i></td>
-            <td><i class="bi bi-trash"></i></td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-
+    </section>
     <!-- fim notícias -->
 
     <!--JavaScript Bootstrap-->
