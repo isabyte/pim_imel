@@ -227,7 +227,7 @@ body {
 
 /* agenda */
 
-.subtitulo-agenda {
+.subtitulo-table {
     display: flex;
     flex: 1;
     justify-content: center;
