@@ -239,7 +239,13 @@ body {
 }
 
 /* add noticia */
+
 .margem-form-segunda-coluna {
     margin-right: 9%;
     margin-bottom: 2%;
+}
+
+.botao-preview-noticia {
+    padding-top: 40px;
+    margin-left: 63%;
 }
