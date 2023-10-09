@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEL | Dashboard</title>
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--CSS grupo-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+                </a>
+            </div>
+        
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+            <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+            <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+            <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Cadastrar aluno</a></li>
+                    <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
+                </ul>
+                </div></li>
+                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portal
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+                    <li><a class="dropdown-item link-secondary" href="dash-noticias.html">Notícias</a></li>
+                    <li><a class="dropdown-item" href="dash-imagens.html">Imagens</a></li>
+                    <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+                    <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                </ul>
+                </div></li>
+            </ul>
+    
+            <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-laranja">Sair</button>
+            </div>
+        </header>
+    </div>
+    <!-- fim header -->
+
+    <!-- adicionar notícia -->
+    <h1 class="titulo-dash h2">Nova notícia</h1>
+
+    <!-- form-->
+    <div class="row col-md-12">
+        <div class="col-md-4 margem-form">
+            <label class="h4">Título da matéria</label>
+            <input type="text" class="form-control" placeholder="Título">
+            <br/>
+        
+            <label class="h4">Subtítulo</label>
+            <input type="text" class="form-control" placeholder="Subtítulo">
+            <br/>
+        
+            <label class="h4">Autor</label>
+            <input type="text" class="form-control" placeholder="Nome do coordenador">
+            <br/>
+        </div>
+        <div class="col-md-4 margem-form-segunda-coluna">
+            <label class="h4">Imagem principal</label>
+            <input class="form-control" type="file" id="formFile">
+            <br/>
+
+            <label class="h4">Data</label>
+            <input type="date" class="form-control" placeholder="Data">
+        </div>
+    </div>
+    <div class="row col-md-12">
+        <div class="col-md-10 margem-form">
+            <label class="h4">Matéria</label>
+            <textarea class="form-control" style="height: 400px;"></textarea>
+        </div>
+    </div>
+    <!-- fim form -->
+    
+
+    <!--JavaScript Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

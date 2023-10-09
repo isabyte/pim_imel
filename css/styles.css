@@ -237,3 +237,9 @@ body {
 .btn-adicionar {
     margin-top: 1%;
 }
+
+/* add noticia */
+.margem-form-segunda-coluna {
+    margin-right: 9%;
+    margin-bottom: 2%;
+}
