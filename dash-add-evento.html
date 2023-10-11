@@ -62,23 +62,25 @@
         <!-- agenda -->
         <section>
             <h1 class="titulo-dash h2">Agenda</h1>
-            <div class="row col-md-12 subtitulo-agenda margem-form">
-                <div class="col-md-2">
+            <form>
+              <div class="row col-md-12 subtitulo-agenda margem-form">
+                  <div class="col-md-2">
                     <label class="form-label">Evento</label>
-                    <input type="text" class="form-control" placeholder="Nome do evento">
-                </div>
-                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nome do evento" required>
+                  </div>
+                  <div class="col-md-4">
                     <label class="form-label">Descrição</label>
-                    <input type="text" class="form-control" placeholder="O que aconteceu ou acontecerá no evento">
-                </div>
-                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="O que aconteceu ou acontecerá no evento" required>
+                  </div>
+                  <div class="col-md-2">
                     <label class="form-label">Data</label>
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" required>
+                  </div>
+                  <div class="col-md-4 btn-adicionar">
+                    <button type="submit" class="btn btn-azul">Adicionar
+                    </div>
                 </div>
-                <div class="col-md-4 btn-adicionar">
-                    <button type="button" class="btn btn-azul">Adicionar
-                </div>
-            </div>
+              </form>
       
             <!-- tabela -->
             <div class="tabela-eventos margem-form">
