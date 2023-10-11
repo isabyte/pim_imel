@@ -62,22 +62,22 @@
         <!-- agenda -->
         <section>
             <h1 class="titulo-dash h2">Agenda</h1>
-            <form>
+            <form class="formulario_add_evento">
               <div class="row col-md-12 subtitulo-agenda margem-form">
                   <div class="col-md-2">
-                    <label class="form-label">Evento</label>
-                    <input type="text" class="form-control" placeholder="Nome do evento" minlength="10" maxlength="50" required>
+                    <label class="form-label" for="evento">Evento</label>
+                    <input name="nome-evento" id="nome-evento" type="text" class="form-control" placeholder="Nome do evento" minlength="10" maxlength="50" required>
                   </div>
                   <div class="col-md-4">
-                    <label class="form-label">Descrição</label>
-                    <input type="text" class="form-control" placeholder="O que aconteceu ou acontecerá no evento" minlength="15" maxlength="200" required>
+                    <label class="form-label" for="descricao-evento">Descrição</label>
+                    <input name="descricao-evento" id="descricao-evento" type="text" class="form-control" placeholder="O que aconteceu ou acontecerá no evento" minlength="15" maxlength="200" required>
                   </div>
                   <div class="col-md-2">
-                    <label class="form-label">Data</label>
-                    <input type="date" class="form-control" required>
+                    <label class="form-label" for="data-evento">Data</label>
+                    <input name="data-evento" id="data-evento" type="date" class="form-control" required>
                   </div>
                   <div class="col-md-4 btn-adicionar">
-                    <button type="submit" class="btn btn-azul">Adicionar
+                    <button name="adicionar-evento" id="adicionar-evento" type="submit" class="btn btn-azul" onclick="verificaFormulario()">Adicionar
                     </div>
                 </div>
               </form>
@@ -122,6 +122,24 @@
             <!-- fim tabela -->
         </section>
           <!-- fim agenda -->
+
+    <!--JavaScript próprio-->
+    <script>
+      function verificaFormulario() {
+        var inputNome = document.getElementById('nome-evento');
+        var inputDescricao = document.getElementById('descricao-evento');
+        var inputData = document.getElementById('data-evento');
+
+        var nome = inputNome.value;
+        var descricao = inputDescricao.value;
+        var data = inputData.value;
+
+        if(nome.length > 10 && descricao.length > 15 && data != '' ) {
+          alert('Evento adicionado à agenda');
+        }
+
+      }
+    </script>
 
     <!--JavaScript Bootstrap-->
     <script type="text/javascript" src="js/bootstrap.js"></script>
