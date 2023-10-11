@@ -127,20 +127,24 @@ body {
 
 /* sobre dashboard*/
 
+.sobre-dash p {
+    text-align: justify;
+}
+
 .textarea-sobre {
-    width: 900px;
+    width: 840px;
     height: 400px;
 }
 
 .botao-editar-sobre {
-    margin-left: 64%;
+    margin-left: 60%;
     margin-bottom: 1%;
     margin-top: -3%;
 }
 
 .botao-salvar-sobre {
     padding-top: 40px;
-    margin-left: 54%;
+    margin-left: 70%;
     }
 
 /* turmas dashboard */

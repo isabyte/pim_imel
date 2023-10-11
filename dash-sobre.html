@@ -14,83 +14,107 @@
 <body>
 
   <!-- header -->
-<div class="container">
-  <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <div class="col-md-3 mb-2 mb-md-0">
-      <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-        <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-      </a>
-    </div>
+  <div class="container">
+    <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+        </a>
+      </div>
 
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
-      <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-      <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-      <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Cadastros
-      </a>
-      <div class="dropdown">
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="dash-cad-aluno">Cadastrar aluno</a></li>
-            <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
-            <li><a class="dropdown-item" href="visualizar-colaboradores.html">Visulizar Colaboradores</a></li>
-          </ul>
-        </div></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
         <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Portal
-      </a>
-      <div class="dropdown">
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
-            <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-            <li><a class="dropdown-item" href="dash-imagens.html">Imagens</a></li>
-            <li><a class="dropdown-item link-secondary" href="dash-sobre.html">Sobre</a></li>
-            <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-          </ul>
-        </div></li>
-    </ul>
+            Cadastros
+        </a>
+        <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dash-cad-aluno">Cadastrar aluno</a></li>
+              <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
+              <li><a class="dropdown-item" href="visualizar-colaboradores.html">Visulizar Colaboradores</a></li>
+            </ul>
+          </div></li>
+          <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portal
+        </a>
+        <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+              <li><a class="dropdown-item" href="dash-imagens.html">Imagens</a></li>
+              <li><a class="dropdown-item link-secondary" href="dash-sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+            </ul>
+          </div></li>
+      </ul>
 
-    <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-laranja">Sair</button>
-    </div>
-  </header>
-</div>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-laranja">Sair</button>
+      </div>
+    </header>
+  </div>
 <!-- fim header -->
 
     <!-- página -->
     <section>
         <!-- título -->
         <h1 class="titulo-dash h2">Sobre</h1>
-        <div class="row col-md-12">
-            <!-- botão de editar -->
-            <div class="col-md-4 botao-editar-sobre">
-                <button class="btn btn-azul">Editar</button>
-            </div>
-            <!-- sobre -->
-            <div class="row">
-                <div class="col-md-4 margem-form">
-                    <textarea class="form-control textarea-sobre" disabled>
-Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal principal. Nesta tela, o colaborador pode escolher editar este texto.
+          <div class="row col-md-12">
+              <!-- botão de editar -->
+              <div class="col-md-4 botao-editar-sobre">
+                  <button class="btn btn-azul" onclick="editar()">Editar</button>
+              </div>
+              <!-- sobre -->
+              <div class="row">
+                  <div class="col-md-7 margem-form sobre-dash" id="sobre-dash">
+                    <p>Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal principal. Nesta tela, o colaborador pode escolher editar este texto.</p>
+  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et, iaculis mollis magna. Suspendisse non sagittis mauris. Suspendisse tellus diam, placerat non risus ut, malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam, varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.</p>
+                                              
+                    <p>Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta. Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris pellentesque sagittis nisl eu facilisis. Mauris sed tempus magna. Maecenas ut ipsum sed neque ullamcorper ornare. Nunc pulvinar erat ipsum.</p>
+                  </div>
+              </div>
+              <!-- fim sobre -->
+              <!--div class="row">
+                  <div class="col-md-12">
+                      <div class="botao-salvar-sobre">
+                          <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+                          <button type="submit" class="btn btn-azul">Salvar alterações</button>
+                      </div>
+                  </div>
+              </div-->
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et, iaculis mollis magna. Suspendisse non sagittis mauris. Suspendisse tellus diam, placerat non risus ut, malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam, varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.
-                        
-Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta. Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris pellentesque sagittis nisl eu facilisis. Mauris sed tempus magna. Maecenas ut ipsum sed neque ullamcorper ornare. Nunc pulvinar erat ipsum.
-                    </textarea>
-                </div>
-            </div>
-            <!-- fim sobre -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="botao-salvar-sobre">
-                        <button type="button" class="btn btn-secondary">Cancelar</button>
-                        <button type="button" class="btn btn-azul">Salvar alterações</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
+
+    <!-- JavaScript próprio -->
+    <script>
+      function editar() {
+        var sobre = document.getElementById('sobre-dash');
+        sobre.innerHTML = `<form>
+          <textarea name="sobre-dash" id="sobre-dash" class="form-control textarea-sobre" required></textarea>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="botao-salvar-sobre">
+                <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+                <button type="submit" class="btn btn-azul">Salvar alterações</button>
+              </div>
+            </div>
+          </div>
+        </form>`
+      }
+
+      function cancelar() {
+        if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
+          window.location.reload();
+        }
+      }
+    </script>
 
     <!--JavaScript Bootstrap-->
     <script type="text/javascript" src="js/bootstrap.js"></script>
