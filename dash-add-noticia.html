@@ -59,46 +59,46 @@
 
     <!-- adicionar notícia -->
     <h1 class="titulo-dash h2">Nova notícia</h1>
-
-    <!-- form-->
-    <div class="row col-md-12">
-        <div class="col-md-4 margem-form">
-            <label class="h4">Título da matéria</label>
-            <input type="text" class="form-control" placeholder="Título">
-            <br/>
-        
-            <label class="h4">Subtítulo</label>
-            <input type="text" class="form-control" placeholder="Subtítulo">
-            <br/>
-        
-            <label class="h4">Autor</label>
-            <input type="text" class="form-control" placeholder="Nome do coordenador">
-            <br/>
-        </div>
-        <div class="col-md-4 margem-form-segunda-coluna">
-            <label class="h4">Imagem principal</label>
-            <input class="form-control" type="file" id="formFile">
-            <br/>
-
-            <label class="h4">Imagens da notícia</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple>
-            <br/>
-
-            <label class="h4">Data</label>
-            <input type="date" class="form-control" placeholder="Data">
-        </div>
-    </div>
-    <div class="row col-md-12">
-        <div class="col-md-12 margem-form">
-            <label class="h4">Matéria</label>
-            <textarea class="form-control" style="width: 78%; height: 400px;"></textarea>
-            <div class="botao-preview-noticia">
-                <button type="button" class="btn btn-secondary">Cancelar</button>
-                <button type="button" class="btn btn-azul">Pré-visualizar</button>
+    <form>
+        <div class="row col-md-12">
+            <div class="col-md-4 margem-form">
+                <label for="titulo-noticia" class="h4">Título da matéria</label>
+                <input name="titulo-noticia" id="titulo-noticia" type="text" class="form-control" placeholder="Título" required>
+                <br/>
+            
+                <label for="subtitulo-noticia" class="h4">Subtítulo</label>
+                <input name="subtitulo-noticia" id="subtitulo-noticia" type="text" class="form-control" placeholder="Subtítulo" required>
+                <br/>
+            
+                <label for="autor-noticia" class="h4">Autor</label>
+                <input name="autor-noticia" id="autor-noticia" type="text" class="form-control" placeholder="Nome do coordenador" required>
+                <br/>
+            </div>
+            <div class="col-md-4 margem-form-segunda-coluna">
+                <label for="imagem-principal-noticia" class="h4">Imagem principal</label>
+                <input name="imagem-principal-noticia" id="imagem-principal-noticia" class="form-control" type="file" id="formFile">
+                <br/>
+    
+                <label for="imagens-noticia" class="h4">Imagens da notícia</label>
+                <input name="imagens-noticia" id="imagens-noticia" class="form-control" type="file" id="formFileMultiple" multiple>
+                <br/>
+    
+                <label for="data-noticia" class="h4">Data</label>
+                <input name="data-noticia" id="data-noticia" type="date" class="form-control" placeholder="Data" required>
             </div>
         </div>
-    </div>
-    <!-- fim form -->
+        <div class="row col-md-12">
+            <div class="col-md-12 margem-form">
+                <label for="materia-noticia" class="h4">Matéria</label>
+                <textarea name="materia-noticia" id="materia-noticia" class="form-control" style="width: 78%; height: 400px;" required></textarea>
+                <div class="botao-preview-noticia">
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn btn-azul">Pré-visualizar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- fim adicionar noticia -->
     
 
     <!--JavaScript Bootstrap-->
