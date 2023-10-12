@@ -55,6 +55,10 @@ body {
     color:white;
 }
 
+.btn-azul:disabled {
+    background-color: #b9bfc4;
+}
+
 /* dashboard */
 
 .border-text-info{
