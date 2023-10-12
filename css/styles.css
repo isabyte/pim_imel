@@ -4,12 +4,6 @@ body {
     margin-right: 5%;
 }
 
-.title-dash-imel{
-    font-size: 20px;
-    color:#5e5e5e;
-    margin-top: 25px;
-}
-
 .background-blur {
     filter: blur(5px);
 }
@@ -57,7 +51,7 @@ body {
 }
 
 .btn-azul:hover {
-    background-color: #55a585;
+    background-color: #B2E5D6;
     color:white;
 }
 
@@ -66,6 +60,11 @@ body {
 }
 
 /* dashboard */
+
+.border-text-info{
+    color: white;
+    text-shadow: 0.8px 0.8px 0.8px #7b7b7b, 0.8px -0.8px 0.8px #7b7b7b;
+}
 
 .box-info {
     width: 100%;
@@ -158,30 +157,11 @@ body {
     background-color: #8485843a; 
     border-color: #84858493;
     transition: transform 0.3s ease;
-    padding: 8%;
-    display: block;
-    margin-left: 20px;
 }
 .btn-turma:hover{
     background-color: #8485843a; 
     border-color: #84858493;
     transform: scale(1.2); 
-}
-
-/*chamada dash*/
-
-.btn-presenca{
-    background-color: green; 
-    margin-left: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.btn-falta{
-    background-color: red; 
-    margin-left: 8px;
-    padding-left: 22px;
-    padding-right: 22px;
 }
 
 .msg-conclusao{
@@ -253,7 +233,7 @@ body {
     background-color: #fff;
 }
 
-/* agenda dash */
+/* agenda */
 
 .subtitulo-table {
     display: flex;
@@ -266,7 +246,7 @@ body {
     margin-top: 2%;
 }
 
-/* add noticia dash */
+/* add noticia */
 
 .margem-form-segunda-coluna {
     margin-right: 9%;
@@ -278,7 +258,7 @@ body {
     margin-left: 63%;
 }
 
-/* galeria dash */
+/* galeria */
 
 .bloco-imagem {
     margin-bottom: 40px;
@@ -303,7 +283,22 @@ body {
 
 /* perfil do aluno */
 
-.img-perfil {
+.img-perfil  {
     width: 200px;
     height: 200px;
+}
+
+.img-nome-aluno {
+    display: flex;
+    align-items: center;
+}
+
+.informacoes-aluno {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contato-aluno {
+    display: flex;
+    justify-content: space-between;
 }
