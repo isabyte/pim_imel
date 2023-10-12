@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMEL | Admin - Turmas</title>
+    <title>IMEL | Dashboard</title>
 
     <!--CSS Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -66,108 +66,74 @@
 
     <section class="barra-pesquisa">
         <div class="row col-md-12">
-            <div class="col-md-4"></div>
-            <div class="col-md-3">
-                <form>
-                    <div class="form-group">
-                        <input type="data" class="form-control" placeholder="dd / mm / aaaa">
-                    </div>
-                </form>
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+                <input class="form-control" type="search">
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-secondary btn-azul" role="button">Pesquisar</a>
             </div>
             <div class="col-md-2">
-                <a href="acessar-turma.html" class="btn btn-secondary btn-azul" style="margin-left: 10px;">
-                    Relatório
-                </a>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </section>
-
     <!-- fim da barra de pesquisa -->
 
     <!-- tabela alunos -->
     <section class="d-flex justify-content-center align-items-start mt-4;">
         <table class="table caption-top">
-            <caption>Lista de Chamada</caption>
-            <thead>
+
+        </Table>
+    </section>
+    <section class="d-flex justify-content-center align-items-start mt-4;">
+        <table class="table caption-top">
+            <caption>Outubro de 2023</caption>
+            <tbody>
                 <tr class="col-md-12">
-                    <th scope="col" class="col-md-2">#</th>
-                    <th scope="col" class="col-md-4">Nome</th>
-                    <th scope="col" class="col-md-6">Presença</th>
+                    <th scope="row" class="col-md-3">1</th>
+                    <td class="col-md-3">Larry</td>
+                    <td class="col-md-3">00/00/0000</td>
+                    <td class="col-md-3">
+                        <button class="btn btn-secondary" style="background-color: green;">Aceitar</button>
+                        <button class="btn btn-secondary" style="background-color: red;">recusar</button>
+                    </td>
+
                 </tr>
+                <tr class="col-md-12">
+                    <th scope="row" class="col-md-3">2</th>
+                    <td class="col-md-3">Mark</td>
+                    <td class="col-md-3">00/00/0000</td>
+                    <td class="col-md-3">
+                        <button class="btn btn-secondary" style="background-color: green;">Aceitar</button>
+                        <button class="btn btn-secondary" style="background-color: red;">recusar</button>
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-start mt-4;">
+        <table class="table caption-top">
+            <caption>Setembro de 2023</caption>
+            <thead>
+
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>
-                        <button class="btn btn-secondary btn-falta">F</button>
+                <tr class="col-md-12">
+                    <th scope="row" class="col-md-3">2</th>
+                    <td class="col-md-3">Jacob</td>
+                    <td class="col-md-3">00/00/0000</td>
+                    <td class="col-md-3">
+                        <button class="btn btn-secondary" style="background-color: green;">Aceitar</button>
+                        <button class="btn btn-secondary" style="background-color: red;">recusar</button>
                     </td>
 
                 </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
 
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Mark</td>
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Jacob</td>
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>Larry</td>
-                    <td>
-                        <button class="btn btn-secondary btn-falta">F</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Mark</td>                   
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <td>Jacob</td>                    
-                    <td>
-                        <button class="btn btn-secondary btn-falta">F</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">9</th>
-                    <td>Larry</td> 
-                    <td>
-                        <button class="btn btn-secondary btn-presenca">P</button>
-                    </td>
-
-                </tr>
 
             </tbody>
         </table>

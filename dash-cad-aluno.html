@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEL | Admin - Dashboard</title>
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--CSS grupo-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+       <!-- header -->
+       <div class="container">
+        <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+              <h1 class="title-dash-imel">IMEL | Admin</h1>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="dashboard.html" class="nav-link px-2 link-secondary">Dashboard</a></li>
+            <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+            <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+            <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-cad-aluno.html">Cadastrar aluno</a></li>
+                  <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
+                  <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a></li>
+                </ul>
+              </div></li>
+              <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portal
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+                  <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+                  <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+                  <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+                  <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                </ul>
+              </div></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-laranja">Sair</button>
+          </div>
+        </header>
+      </div>
+    <!-- fim header -->
+
+    <!-- informações -->
+    <section class="row col-md-12">
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single blue">
+                    <div class="info-text">
+                        <h1 class="h5">Alunos ativos</h1>
+                        <p>143</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single green">
+                    <div class="info-text">
+                        <h1 class="h5">Alunos inativos</h1>
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single orange">
+                    <div class="info-text">
+                        <h1 class="h5">Cadastros pendentes</h1>
+                        <p>8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim informações -->
+    
+
+    <!-- cadastrar colaborador -->
+
+    <div class="modal" id="myModal" data-backdrop="static">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center align-items-center">
+                <h4 class="modal-title">Cadastrar Aluno</h4>
+            </div>
+            <form>
+                <div class="form-group">
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Nome Completo:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">Nome do Responsável:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">CPF do responsável:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <label>Gênero:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+                        <label class="form-check-label" for="feminino">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+                        <label class="form-check-label" for="outro">Outro</label>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="number" class="form-control" id="cep" placeholder="CEP">
+                        </div>
+                        <div class="col">
+                            <label for="rua" class="form-label">Rua / N°:</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Rua / N°">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cpf" class="form-label">Endereço/N°:</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="dataNascimento" class="form-label">Bairro:</label>
+                            <input type="date" class="form-control" id="dataNascimento" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="col">
+                            <label for="estado" class="form-label">Estado:</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Estado">
+                        </div>
+                    </div>
+
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">Criar Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">Confirme sua Senha:</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group d-flex justify-content-center align-items-center">
+                    <a href="cadastro-concluido.html" class="btn btn-secondary cadastrar" role="button">
+                        Cancelar</a>
+                    <a href="dashboard.html" class="btn btn-secondary btn-azul cancelar" role="button">
+                        Cadastrar</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- fim cadastrar colaborador -->
+
+    <!--JavaScript Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myModal').modal('show');
+        });
+    </script>
+
+
+</body>
+
+</html>

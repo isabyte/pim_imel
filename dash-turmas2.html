@@ -14,138 +14,140 @@
 </head>
 
 <body>
-    <!-- header -->
-<div class="container">
-    <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-        </a>
+       <!-- header -->
+       <div class="container">
+        <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+              <h1 class="title-dash-imel">IMEL | Admin</h1>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="dashboard.html" class="nav-link px-2 link-secondary">Dashboard</a></li>
+            <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+            <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+            <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-cad-aluno.html">Cadastrar aluno</a></li>
+                  <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
+                  <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a></li>
+                </ul>
+              </div></li>
+              <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portal
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+                  <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+                  <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+                  <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+                  <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                </ul>
+              </div></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-laranja">Sair</button>
+          </div>
+        </header>
       </div>
+    <!-- fim header -->
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
-        <li><a href="dash-turmas.html" class="nav-link px-2 link-secondary">Turmas</a></li>
-        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cadastros
-        </a>
-        <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dash-cad-aluno">Cadastrar aluno</a></li>
-              <li><a class="dropdown-item" href="#">Cadastros pendentes</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
-              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visulizar Colaboradores</a></li>
-            </ul>
-          </div></li>
-          <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Portal
-        </a>
-        <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
-              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-              <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
-              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-            </ul>
-          </div></li>
-      </ul>
+    <!-- turmas -->
+    <section class="row col-md-12 background-blur">
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single blue">
+                    <div>
+                        <h1 class="h5">Turma "A"</h1>
+                        <p>Responsável: Fulano de Tal</p>
+                        <a href="acessar-turma.html" class="btn btn-secondary" role="button"
+                            style="background-color: #64c09b; border-color: #84858493;">
+                            Acessar Turma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-laranja">Sair</button>
-      </div>
-    </header>
-  </div>
-<!-- fim header -->
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single green">
+                    <div class="info-text">
+                        <h1 class="h5">Turma "B"</h1>
+                        <p>Responsável: Beltrano de Tal</p>
+                        <a href="acessar-turma.html" class="btn btn-secondary"
+                            style="background-color: #a7be77; border-color: #84858493;" role="button">
+                            Acessar Turma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- turmas -->
-<section class="row col-md-12 background-blur">
-    <div class="col-md-4">
-        <div class="box-info">
-            <div class="box-info-single blue">
-                <div>
-                    <h1 class="h5">Turma "A"</h1>
-                    <p>Responsável: Fulano de Tal</p>
-                    <a href="acessar-turma.html" class="btn btn-secondary" role="button"
-                    style="background-color: #64c09b; border-color: #84858493;" >
-                        Acessar Turma
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single orange">
+                    <div class="info-text">
+                        <h1 class="h5">Turma "C"</h5>
+                            <p>Responsável: Sicrano de Tal</p>
+                            <a href="acessar-turma.html" class="btn btn-secondary"
+                                style="background-color: #f57f08a2; border-color: #848584cd;" role="button">
+                                Acessar Turma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row col-md-12 background-blur">
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single orange">
+                    <div class="info-text">
+                        <h1 class="h5">Turma "D"</h1>
+                        <p>Responsável: Sicrano de Tal</p>
+                        <a href="acessar-turma.html" class="btn btn-secondary"
+                            style="background-color: #f57f08a2; border-color: #848584cd;" role="button">
+                            Acessar Turma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box-info">
+                <div class="box-info-single blue">
+                    <div class="info-text">
+                        <h1 class="h5">Turma "E"</h1>
+                        <p>Responsável: Fulano de Tal</p>
+                        <a href="acessar-turma.html" class="btn btn-secondary botao-modal cancelar"
+                            style="background-color: #64c09b; border-color: #84858493; margin-left: 0px;" role="button">
+                            Acessar Turma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="box-info">
+                <div class="box-info-single green" style="padding: 50px; margin-top: 70px;">
+                    <a href="dash-turmas3.html" class="btn btn-secondary btn-add-turma" role="button">
+                        <h2 class="h4">Adicionar Turma +</h1>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box-info">
-            <div class="box-info-single green">
-                <div class="info-text">
-                    <h1 class="h5">Turma "B"</h1>
-                    <p>Responsável: Beltrano de Tal</p>
-                    <a href="acessar-turma.html" class="btn btn-secondary" 
-                    style="background-color: #a7be77; border-color: #84858493;" role="button">
-                      Acessar Turma</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box-info">
-            <div class="box-info-single orange">
-                <div class="info-text">
-                    <h1 class="h5">Turma "C"</h5>
-                        <p>Responsável: Sicrano de Tal</p>
-                        <a href="acessar-turma.html" class="btn btn-secondary" 
-                        style="background-color: #f57f08a2; border-color: #848584cd;"role="button">
-                        Acessar Turma</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="row col-md-12 background-blur">
-    <div class="col-md-4">
-        <div class="box-info">
-            <div class="box-info-single orange">
-                <div class="info-text">
-                    <h1 class="h5">Turma "D"</h1>
-                    <p>Responsável: Sicrano de Tal</p>
-                    <a href="acessar-turma.html" class="btn btn-secondary" 
-                    style="background-color: #f57f08a2; border-color: #848584cd;" role="button">
-                    Acessar Turma</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box-info">
-            <div class="box-info-single blue">
-                <div class="info-text">
-                    <h1 class="h5">Turma "E"</h1>
-                    <p>Responsável: Fulano de Tal</p>
-                    <a href="acessar-turma.html" class="btn btn-secondary botao-modal cancelar" 
-                    style="background-color: #64c09b; border-color: #84858493; margin-left: 0px;" role="button">
-                    Acessar Turma</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        
-        <div class="box-info">
-            <div class="box-info-single green" style="padding: 50px; margin-top: 70px;" >
-               <a href="dash-turmas3.html" class="btn btn-secondary btn-add-turma" role="button">
-                <h2 class="h4">Adicionar Turma +</h1></a>
-            </div>
-        </div>
-    </div>
-  </section>
-<!-- fim turmas -->
+    </section>
+    <!-- fim turmas -->
 
     <!-- adicionar turma -->
     <div class="modal" id="myModal" data-backdrop="static" style="margin-top: 10%">
@@ -165,10 +167,9 @@
                 </div>
 
                 <div class="form-group d-flex justify-content-center align-items-center">
-                    <a href="dash-turmas3.html" class="btn btn-secondary botao-modal cadastrar" role="button">
-                        Adicionar</a>
-                    <a href="dash-turmas.html" class="btn btn-secondary botao-modal cancelar" role="button">
-                        Cancelar</a>
+                    <input type="button" class="btn btn-secondary" onclick="funcao1()" value="Cancelar" />
+                    </head>
+                    <input type="button" class="btn btn-azul" onclick="funcao2()" value="Adicionar" />
                 </div>
 
             </form>
@@ -178,6 +179,29 @@
 
 
     <!--JavaScript Bootstrap-->
+    <script>
+        function editar() {
+          var sobre = document.getElementById('sobre-dash');
+          sobre.innerHTML = `<form>
+            <textarea name="sobre-dash" id="sobre-dash" class="form-control textarea-sobre" required></textarea>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="botao-salvar-sobre">
+                  <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+                  <button type="submit" class="btn btn-azul">Salvar alterações</button>
+                </div>
+              </div>
+            </div>
+          </form>`
+        }
+  
+        function cancelar() {
+          if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
+            window.location.reload();
+          }
+        }
+      </script>
+
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
