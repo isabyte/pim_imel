@@ -292,10 +292,16 @@ body {
 
 /* perfil do aluno */
 
+.container-perfil-aluno {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .coluna-perfil {
     max-width: fit-content;
     margin:10px;
     border: 2px solid #5e5e5e83;
+    border-radius: 10px;
 }
 
 .img-perfil  {
@@ -317,4 +323,13 @@ body {
 .contato-aluno {
     display: flex;
     justify-content: space-between;
+}
+
+.visibilidade-informacoes {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.observacoes .informacoes-aluno {
+    text-align: justify;
 }
