@@ -60,28 +60,34 @@
 
     <!-- formulário de contato -->
     <section>
-        <h1 class="titulo-dash h2">Informações de contato</h1>
-        <div class="row col-md-12">
-          <div class="col-md-4 botao-editar-contato">
-            <button class="btn btn-azul">Editar</button>
+      <div class="row col-md-12">
+        <div class="col-md-3"></div>
+  
+        <div class="col-md-6">
+          <h1 class="h2">Informações de contato</h1>
+          <br/>
+  
+          <form>
+              <label for="telContatoDash" class="h4">Telefone</label>
+              <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000">
+              <br />
+              <label for="emailContatoDash" class="h4">E-mail</label>
+              <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com">
+              <br />
+              <label for="enderecoContatoDash" class="h4">Endereço</label>
+              <input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123">
+  
+              <div class="botao-canto-direito">
+                <button type="button" class="btn btn-secondary">Cancelar</button>
+                <button type="button" class="btn btn-azul">Salvar alterações</button>
+              </div>
+            </form>
+          
         </div>
-            <div class="col-md-4 margem-form">
-                <label for="telContatoDash" class="h4">Telefone</label>
-                <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000">
-                <br/>
-                <label for="emailContatoDash" class="h4">E-mail</label>
-                <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com">
-                <br/>
-                <label for="enderecoContatoDash" class="h4">Endereço</label>
-                <input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123">
-
-                <div class="botao-salvar-contato">
-                    <button type="button" class="btn btn-secondary">Cancelar</button>
-                    <button type="button" class="btn btn-azul">Salvar alterações</button>
-                </div>
-            </div>
-        </div>
-    </section>  
+  
+        <div class="col-md-3"></div>
+      </div>
+    </section>
 
     <!--JavaScript Font Awesome-->
     <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
