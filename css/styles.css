@@ -300,3 +300,10 @@ body {
 .adicionar-imagem input[type='file'] {
     display: none;
 }
+
+/* perfil do aluno */
+
+.img-perfil {
+    width: 200px;
+    height: 200px;
+}
