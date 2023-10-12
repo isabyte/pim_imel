@@ -257,3 +257,26 @@ body {
     padding-top: 40px;
     margin-left: 63%;
 }
+
+/* galeria */
+
+.bloco-imagem {
+    margin-bottom: 40px;
+}
+
+.bloco-imagem img {
+    margin-bottom: 10px;
+}
+
+.bloco-imagem p {
+    text-align: center;
+}
+
+.adicionar-imagem {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.adicionar-imagem input[type='file'] {
+    display: none;
+}

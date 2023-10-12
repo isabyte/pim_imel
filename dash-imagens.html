@@ -58,8 +58,47 @@
       </div>
     <!-- fim header -->
 
-    <!-- imagens -->
-    <h1 class="titulo-dash h2">Galeria</h1>
+    <!-- galeria -->
+    <section>
+      <div class="row col-md-12">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+          <h1 class="h2">Galeria</h1>
+          <br/>
+
+          <label for="data-galeria" class="form-label">Selecione uma data:</label>
+          <input name="data-galeria" id="data-galeria" type="date" class="form-control" placeholder="Data" value="2023-01-15">
+            <br/>
+
+            <div class="bloco-imagem">
+              <p>15/01/2023</p>
+              <img src="/imgs/exemplo1.jpeg" class="img-thumbnail">
+              <input class="form-control" type="file" id="formFile">
+            </div>
+
+            <div class="bloco-imagem">
+              <p>15/01/2023</p>
+              <img src="/imgs/exemplo2.jpeg" class="img-thumbnail">
+              <input class="form-control" type="file" id="formFile">
+            </div>
+
+            <div class="bloco-imagem">
+              <p>15/01/2023</p>
+              <img src="/imgs/exemplo3.jpeg" class="img-thumbnail">
+              <input class="form-control" type="file" id="formFile">
+            </div>
+
+            <div class="adicionar-imagem">
+              <!-- falso input file -->
+              <label for="file-escondido" class="btn btn-azul">Adicionar nova imagem</label>
+              <input type="file" name="file-escondido" id="file-escondido">
+            </div>
+
+        </div>
+
+      </div>
+    </section>
     
 
     <!--JavaScript Bootstrap-->
