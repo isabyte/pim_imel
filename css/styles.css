@@ -163,6 +163,9 @@ body {
     background-color: #8485843a; 
     border-color: #84858493;
     transition: transform 0.3s ease;
+    padding: 8%;
+    display: block;
+    margin-left: 20px;
 }
 .btn-turma:hover{
     background-color: #8485843a; 
