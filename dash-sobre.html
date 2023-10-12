@@ -61,14 +61,41 @@
 
     <!-- página -->
     <section>
-        <!-- título -->
+      <div class="row col-md-12">
+        <div class="col-md-3"></div>
+  
+        <div class="col-md-6">
+          <h1 class="h2">Sobre</h1>
+
+          <button name="botao-editar" id="botao-editar" class="btn btn-azul botao-canto-direito" onclick="editar()">Editar</button>
+          <br/>
+          <br/>
+
+          <div class="row">
+            <div class="sobre-dash" id="sobre-dash">
+              <p>Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal principal. Nesta tela, o colaborador pode escolher editar este texto.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et, iaculis mollis magna. Suspendisse non sagittis mauris. Suspendisse tellus diam, placerat non risus ut, malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam, varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.</p>
+                                        
+              <p>Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta. Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris pellentesque sagittis nisl eu facilisis. Mauris sed tempus magna. Maecenas ut ipsum sed neque ullamcorper ornare. Nunc pulvinar erat ipsum.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3"></div>
+      </div>
+    </section>
+
+
+    <!--section>
+        
         <h1 class="titulo-dash h2">Sobre</h1>
           <div class="row col-md-12">
-              <!-- botão de editar -->
+              
               <div class="col-md-4 botao-editar-sobre">
                   <button class="btn btn-azul" onclick="editar()">Editar</button>
               </div>
-              <!-- sobre -->
+              
               <div class="row">
                   <div class="col-md-7 margem-form sobre-dash" id="sobre-dash">
                     <p>Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal principal. Nesta tela, o colaborador pode escolher editar este texto.</p>
@@ -79,17 +106,21 @@
                   </div>
               </div>
         </div>
-    </section>
+    </section-->
 
     <!-- JavaScript próprio -->
     <script>
       function editar() {
+        // desabilita o botão de editar
+        document.getElementById('botao-editar').disabled = true;
+
+        // muda o texto da página para uma textarea
         var sobre = document.getElementById('sobre-dash');
         sobre.innerHTML = `<form>
           <textarea name="sobre-dash" id="sobre-dash" class="form-control textarea-sobre" required></textarea>
           <div class="row">
             <div class="col-md-12">
-              <div class="botao-salvar-sobre">
+              <div class="botao-canto-direito">
                 <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
                 <button type="submit" class="btn btn-azul">Salvar alterações</button>
               </div>
