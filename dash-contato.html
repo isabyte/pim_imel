@@ -65,30 +65,79 @@
   
         <div class="col-md-6">
           <h1 class="h2">Informações de contato</h1>
+          
+          <button name="botao-editar" id="botao-editar" class="btn btn-azul botao-canto-direito" onclick="editar()">Editar</button>
+          <br/>
           <br/>
   
-          <form>
+          <form class="contato-dash">
               <label for="telContatoDash" class="h4">Telefone</label>
-              <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000">
+              <p id="telContatoDash">(45) 9 9999-0000</p>
               <br/>
               <label for="emailContatoDash" class="h4">E-mail</label>
-              <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com">
+              <p id="emailContatoDash">exemplo@exemplo.com</p>
               <br/>
               <label for="enderecoContatoDash" class="h4">Endereço</label>
-              <input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123">
+              <p id="enderecoContatoDash">Rua Tal Tal Tal, 123</p>
               <br/>
-  
-              <div class="botao-canto-direito">
-                <button type="button" class="btn btn-secondary">Cancelar</button>
-                <button type="button" class="btn btn-azul">Salvar alterações</button>
-              </div>
             </form>
-          
         </div>
   
         <div class="col-md-3"></div>
       </div>
     </section>
+
+    <!--JavaScript próprio-->
+    <script>
+      function verificaInputs() {
+        var tel = document.getElementById('telContatoDash').value;
+        var email = document.getElementById('emailContatoDash').value;
+        var endereco = document.getElementById('enderecoContatoDash').value;
+
+        if(tel.length < 16 || email.length < 3 || endereco.length < 10) {
+          alert('Preencha todos os campos corretamente');
+          return false;
+        }
+        return true;
+      }
+
+      function editar() {
+        // desabilita o botão de editar
+        document.getElementById('botao-editar').disabled = true;
+
+        // muda os elementos de texto da página para inputs
+        var tel = document.getElementById('telContatoDash');
+        tel.innerHTML = `<input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16" required>`;
+
+        var email = document.getElementById('emailContatoDash');
+        email.innerHTML = `<input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3" required>`;
+
+        var endereco = document.getElementById('enderecoContatoDash');
+        endereco.innerHTML = `<input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123" minlength="10" required>
+        <br/>
+        <div class="botao-canto-direito">
+                <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+                <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
+              </div>
+              <br/>`
+      }
+
+      function cancelar() {
+        if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
+          window.location.reload();
+        }
+      }
+
+      function salvar() {
+        if(!verificaInputs()) {
+          return;
+        }
+
+        if(confirm('Deseja salvar as alterações?') == true) {
+          window.location.reload(); 
+        }
+      }
+    </script>
 
     <!--JavaScript Font Awesome-->
     <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
