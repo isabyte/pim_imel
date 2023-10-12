@@ -743,3 +743,107 @@ h2{
     font-size: 40px;
 }
 /*Fim Notícia Individual*/
+/*Início Todas as Noticias*/
+.painelNot{
+    background: #fffbfb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tituloPainel{
+    width: 100%;
+}
+
+.tituloPainel h1{
+    margin: 10px;
+}
+
+.noticiaImg1{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg2{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg3{
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg4{
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg5{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg6{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg7{
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg8{
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg9{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg10{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}   
+
+.linkNot a{
+    text-decoration: none;
+}
+
+/*Fim Todas as Noticias*/
