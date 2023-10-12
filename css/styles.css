@@ -292,6 +292,12 @@ body {
 
 /* perfil do aluno */
 
+.coluna-perfil {
+    max-width: fit-content;
+    margin:10px;
+    border: 2px solid #5e5e5e83;
+}
+
 .img-perfil  {
     width: 200px;
     height: 200px;
@@ -300,6 +306,7 @@ body {
 .img-nome-aluno {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .informacoes-aluno {
