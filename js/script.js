@@ -5,7 +5,6 @@
             var endereco = document.getElementById('enderecoContatoDash').value;
 
             if (tel.length < 16 || email.length < 3 || endereco.length < 10) {
-                alert('Preencha todos os campos corretamente');
                 return false;
             }
             return true;
@@ -16,13 +15,13 @@
             document.getElementById('botao-editar').disabled = true;
 
             // muda os elementos de texto da página para inputs
-            var tel = document.getElementById('telContatoDash');
+            var tel = document.getElementById('p-telContatoDash');
             tel.innerHTML = `<input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16" required>`;
 
-            var email = document.getElementById('emailContatoDash');
+            var email = document.getElementById('p-emailContatoDash');
             email.innerHTML = `<input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3" required>`;
 
-            var endereco = document.getElementById('enderecoContatoDash');
+            var endereco = document.getElementById('p-enderecoContatoDash');
             endereco.innerHTML = `<input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123" minlength="10" required>
             <br/>
             <div class="botao-canto-direito">
@@ -41,6 +40,7 @@
         function salvar() {
       if (confirm('Deseja salvar as alterações?') == true) {
         if (!verificaInputs()) {
+          alert('Preencha todos os campos corretamente');
           return;
         }
         window.location.reload();
