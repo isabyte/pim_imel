@@ -1,245 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IMEL | Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEL | Admin - Alunos</title>
 
-  <!-- Bootstrap css externo -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-  <!-- Meu css -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!--Meu js-->
-  <script src="js/script.js"></script>
-
-  <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!--CSS grupo-->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-
-  <!-- header -->
-  <div class="container">
-    <header
-      class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-          <h1 class="title-dash-imel">IMEL | Admin</h1>
-        </a>
+       <!-- header -->
+       <div class="container">
+        <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+              <h1 class="title-dash-imel">IMEL | Admin</h1>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+            <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+            <li><a href="dash-alunos.html" class="nav-link px-2 link-secondary">Alunos</a></li>
+            <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-cad-aluno.html">Cadastrar aluno</a></li>
+                  <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
+                  <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a></li>
+                </ul>
+              </div></li>
+              <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portal
+            </a>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+                  <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+                  <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+                  <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+                  <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                </ul>
+              </div></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-laranja">Sair</button>
+          </div>
+        </header>
       </div>
+    <!-- fim header -->
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
-        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Cadastros
-          </a>
-          <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAluno">
-                  Cadastrar Aluno
-                </button></li>
-              <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalColaborador">
-                  Cadastrar Colaborador
-                </button></li>
-              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
-              </li>
-            </ul>
+    <section>
+      <h1 class="h2 titulo-dash">Perfil do aluno</h1>
+      <div class="row col-md-12 container-perfil-aluno">
+
+        <div class="coluna-perfil informacoes-pessoais col-md-4">
+          <h2 class="h3">Informações pessoais</h2>
+          <br/>
+
+          <div class="img-nome-aluno">
+            <div class="container-img-perfil">
+              <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
+            </div>
+            <div class="container-nome-perfil">
+              <h3>Fulana de Tal</h3>
+            </div>
           </div>
-        </li>
-        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Portal
-          </a>
-          <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
-              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-              <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
-              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-laranja">Sair</button>
-      </div>
-    </header>
-  </div>
-  <!-- fim header -->
+          <button class="btn btn-azul botao-canto-direito">Editar</button>
+          <br/>
 
+          <div class="informacoes-aluno">
+            <label for="nome-aluno" class="h5">Nome:</label>
+            <span>Fulana</span>
+            <br/>
 
-  <section>
-    <h1 class="h2 titulo-dash">Perfil do aluno</h1>
-    <div class="row col-md-12 container-perfil-aluno">
+            <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
+            <span>De Tal</span>
+            <br/>
 
-      <div class="coluna-perfil informacoes-pessoais col-md-4">
-        <h2 class="h3">Informações pessoais</h2>
-        <br />
+            <label for="sexo-aluno" class="h5">Sexo:</label>
+            <span>Feminino</span>
+            <br/>
 
-        <div class="img-nome-aluno">
-          <div class="container-img-perfil">
-            <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
-          </div>
-          <div class="container-nome-perfil">
-            <h3>Fulana de Tal</h3>
-          </div>
-        </div>
+            <label for="turma-aluno" class="h5">Turma:</label>
+            <span>A</span>
+            <br/> 
 
-        <button class="btn btn-azul botao-canto-direito">Editar</button>
-        <br />
+            <label for="cadastro-aluno" class="h5">Cadastro:</label>
+            <span>Ativo</span>
+            <br/>
 
-        <div class="informacoes-aluno">
-          <label for="nome-aluno" class="h5">Nome:</label>
-          <span>Fulana</span>
-          <br />
+            <label for="email-aluno" class="h5">E-mail:</label>
+            <span>fulaninha@gmail.com</span>
+            <br/>
 
-          <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
-          <span>De Tal</span>
-          <br />
+            <div class="contato-aluno">
+              <div class="container-tel-aluno">
+                <label for="tel-aluno" class="h5">Telefone:</label>
+                <span>(xx) xxxxx-xxxx</span>
+              </div>
 
-          <label for="sexo-aluno" class="h5">Sexo:</label>
-          <span>Feminino</span>
-          <br />
-
-          <label for="turma-aluno" class="h5">Turma:</label>
-          <span>A</span>
-          <br />
-
-          <label for="cadastro-aluno" class="h5">Cadastro:</label>
-          <span>Ativo</span>
-          <br />
-
-          <label for="email-aluno" class="h5">E-mail:</label>
-          <span>fulaninha@gmail.com</span>
-          <br />
-
-          <div class="contato-aluno">
-            <div class="container-tel-aluno">
-              <label for="tel-aluno" class="h5">Telefone:</label>
-              <span>(xx) xxxxx-xxxx</span>
+              <div class="container-responsavel-aluno">
+                <label for="responsavel-aluno" class="h5">Tratar com:</label>
+                <span>Sicrana</span>
+              </div>
+            <br/>
             </div>
 
-            <div class="container-responsavel-aluno">
-              <label for="responsavel-aluno" class="h5">Tratar com:</label>
-              <span>Sicrana</span>
-            </div>
-            <br />
+            <label for="endereco-aluno" class="h5">Endereço:</label>
+            <span>Rua dos Bobos, 00</span>
+            <br/>
+
+            <label for="bairro-aluno" class="h5">Bairro:</label>
+            <span>Vila Sésamo</span>
+            <br/>
           </div>
 
-          <label for="endereco-aluno" class="h5">Endereço:</label>
-          <span>Rua dos Bobos, 00</span>
-          <br />
+          <button class="btn btn-azul">Documentos</button>
+          <br/>
 
-          <label for="bairro-aluno" class="h5">Bairro:</label>
-          <span>Vila Sésamo</span>
-          <br />
+          <div class="visibilidade-informacoes">
+            <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
+          </div>
+
+
         </div>
 
-        <button class="btn btn-azul">Documentos</button>
-        <br />
+        <div class="coluna-perfil ficha-medica col-md-4">
+          <h2 class="h3">Ficha médica</h2>
+          <br/>
 
-        <div class="visibilidade-informacoes">
-          <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
+          <div class="informacoes-aluno">
+            <label for="alergias-aluno" class="h5">Alergias:</label>
+            <br/>
+            <span>Nenhuma</span>
+            <br/>
+            <br/>
+  
+            <label for="sangue-aluno" class="h5">Tipo Sanguíneo:</label>
+            <br/>
+            <span>A+</span>
+            <br/>
+            <br/>
+  
+            <label for="doenca-aluno" class="h5">Possui doença congênita? Qual?</label>
+            <br/>
+            <span>Não</span>
+            <br/>
+            <br/>
+  
+            <label for="necessidade-aluno" class="h5">Possui alguma necessidade especial? Qual?</label>
+            <br/>
+            <span>Não</span>
+            <br/>
+            <br/>
+  
+            <label for="cadastro-aluno" class="h5">Em caso de emergência contactar</label>
+            <br/>
+            <span>Sicrana</span>
+            <br/>
+            <br/>
+          </div>
+
+          <button class="btn btn-azul">Laudos e atestados</button>
+
+          <div class="visibilidade-informacoes">
+            <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
+          </div>
         </div>
 
+        <div class="coluna-perfil observacoes col-md-4">
+  
+            <h2 class="h3">Observações</h2>
+            <br/>
+  
+            <div class="informacoes-aluno">
+              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos sequi nulla cumque, nisi similique rem modi pariatur eligendi et illum ducimus ratione explicabo obcaecati? Alias, amet? Dolor, repellat corrupt</p>
+              <br/>
+              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum temporibus exercitationem doloremque dolorum quo rerum expedita dolore fugit esse laudantium dignissimos quidem nostrum, est ad praesentium magni mollitia iure!</p>
+              <br/>
+              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam repellat maxime quas, aliquid ea quidem explicabo! Nobis quod aspernatur totam nostrum ipsam, labore voluptatum aliquam, optio consequatur, recusandae illum?</p>
+            </div>
 
-      </div>
+            <button class="btn btn-azul">Adicionar observação</button>
 
-      <div class="coluna-perfil ficha-medica col-md-4">
-        <h2 class="h3">Ficha médica</h2>
-        <br />
-
-        <div class="informacoes-aluno">
-          <label for="alergias-aluno" class="h5">Alergias:</label>
-          <br />
-          <span>Nenhuma</span>
-          <br />
-          <br />
-
-          <label for="sangue-aluno" class="h5">Tipo Sanguíneo:</label>
-          <br />
-          <span>A+</span>
-          <br />
-          <br />
-
-          <label for="doenca-aluno" class="h5">Possui doença congênita? Qual?</label>
-          <br />
-          <span>Não</span>
-          <br />
-          <br />
-
-          <label for="necessidade-aluno" class="h5">Possui alguma necessidade especial? Qual?</label>
-          <br />
-          <span>Não</span>
-          <br />
-          <br />
-
-          <label for="cadastro-aluno" class="h5">Em caso de emergência contactar</label>
-          <br />
-          <span>Sicrana</span>
-          <br />
-          <br />
-        </div>
-
-        <button class="btn btn-azul">Laudos e atestados</button>
-
-        <div class="visibilidade-informacoes">
-          <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
-        </div>
-      </div>
-
-      <div class="coluna-perfil observacoes col-md-4">
-
-        <h2 class="h3">Observações</h2>
-        <br />
-
-        <div class="informacoes-aluno">
-          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos sequi nulla cumque, nisi similique
-            rem modi pariatur eligendi et illum ducimus ratione explicabo obcaecati? Alias, amet? Dolor, repellat
-            corrupt</p>
-          <br />
-          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum temporibus exercitationem doloremque
-            dolorum quo rerum expedita dolore fugit esse laudantium dignissimos quidem nostrum, est ad praesentium magni
-            mollitia iure!</p>
-          <br />
-          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam repellat maxime quas, aliquid
-            ea quidem explicabo! Nobis quod aspernatur totam nostrum ipsam, labore voluptatum aliquam, optio
-            consequatur, recusandae illum?</p>
-        </div>
-
-        <button class="btn btn-azul">Adicionar observação</button>
-
-        <div class="visibilidade-informacoes">
-          <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
+            <div class="visibilidade-informacoes">
+              <p style="color: #6c757d;">* Essas informações não são visíveis ao participantee</p>
+            </div>
+  
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!--JavaScript Font Awesome-->
-  <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
-
-  <!--JavaScript Bootstrap-->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-
+    <!--JavaScript Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
