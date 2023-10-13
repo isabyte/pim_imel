@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   </head>
   
-  <body>
+<body>
   
     <!-- header -->
     <div class="container">
@@ -83,79 +83,92 @@
 
     <section>
       <h1 class="h2 titulo-dash">Perfil do aluno</h1>
-      <div class="row col-md-12 container-perfil-aluno">
+      <div class="row col-md-12 container-perfil-aluno" id="container-colunas">
 
         <div class="coluna-perfil informacoes-pessoais col-md-4">
           <h2 class="h3">Informações pessoais</h2>
           <br/>
 
-          <div class="img-nome-aluno">
-            <div class="container-img-perfil">
-              <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
-            </div>
-            <div class="container-nome-perfil">
-              <h3>Fulana de Tal</h3>
-            </div>
-          </div>
+          <form>
+            <div class="img-nome-aluno">
+              <div class="container-img-perfil">
+                <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
 
-          <button class="btn btn-azul botao-canto-direito">Editar</button>
-          <br/>
-
-          <div class="informacoes-aluno">
-            <label for="nome-aluno" class="h5">Nome:</label>
-            <span>Fulana</span>
-            <br/>
-
-            <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
-            <span>De Tal</span>
-            <br/>
-
-            <label for="sexo-aluno" class="h5">Sexo:</label>
-            <span>Feminino</span>
-            <br/>
-
-            <label for="turma-aluno" class="h5">Turma:</label>
-            <span>A</span>
-            <br/> 
-
-            <label for="cadastro-aluno" class="h5">Cadastro:</label>
-            <span>Ativo</span>
-            <br/>
-
-            <label for="email-aluno" class="h5">E-mail:</label>
-            <span>fulaninha@gmail.com</span>
-            <br/>
-
-            <div class="contato-aluno">
-              <div class="container-tel-aluno">
-                <label for="tel-aluno" class="h5">Telefone:</label>
-                <span>(xx) xxxxx-xxxx</span>
+                <!-- input file invisível -->
+                <input type="file" class="form-control" id="escolher-imagem" style="display: none;">
               </div>
-
-              <div class="container-responsavel-aluno">
-                <label for="responsavel-aluno" class="h5">Tratar com:</label>
-                <span>Sicrana</span>
+              <div class="container-nome-perfil">
+                <h3>Fulana de Tal</h3>
               </div>
-            <br/>
             </div>
-
-            <label for="endereco-aluno" class="h5">Endereço:</label>
-            <span>Rua dos Bobos, 00</span>
+  
+            <button class="btn btn-azul botao-canto-direito" id="botao-editar" onclick="editar()">Editar</button>
             <br/>
-
-            <label for="bairro-aluno" class="h5">Bairro:</label>
-            <span>Vila Sésamo</span>
+  
+            <div class="informacoes-aluno">
+              <label for="nome-aluno" class="h5">Nome:</label>
+              <span id="nome-aluno">Fulana</span>
+              <br/>
+  
+              <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
+              <span id="sobrenome-aluno">De Tal</span>
+              <br/>
+  
+              <label for="sexo-aluno" class="h5">Sexo:</label>
+              <span id="sexo-aluno">Feminino</span>
+              <br/>
+  
+              <label for="data-nasc-aluno" class="h5">Data de nascimento:</label>
+              <span id="data-nasc-aluno">25/03/2018</span>
+              <br/>
+  
+              <label for="turma-aluno" class="h5">Turma:</label>
+              <span id="turma-aluno">A</span>
+              <br/> 
+  
+              <label for="cadastro-aluno" class="h5">Cadastro:</label>
+              <span id="cadastro-aluno">Ativo</span>
+              <br/>
+  
+              <label for="email-aluno" class="h5">E-mail:</label>
+              <span id="email-aluno">fulaninha@gmail.com</span>
+              <br/>
+  
+              <div class="contato-aluno">
+                <div class="container-tel-aluno">
+                  <label for="tel-aluno" class="h5">Telefone:</label>
+                  <span id="tel-aluno">(xx) xxxxx-xxxx</span>
+                </div>
+  
+                <div class="container-responsavel-aluno">
+                  <label for="responsavel-aluno" class="h5">Tratar com:</label>
+                  <span id="responsavel-aluno">Sicrana</span>
+                </div>
+              <br/>
+              </div>
+  
+              <label for="endereco-aluno" class="h5">Endereço:</label>
+              <span id="endereco-aluno">Rua dos Bobos, 00</span>
+              <br/>
+  
+              <label for="bairro-aluno" class="h5">Bairro:</label>
+              <span id="bairro-aluno">Vila Sésamo</span>
+              <br/>
+            </div>
+  
+            <button type="button" class="btn btn-azul botao-documentos" id="botao-documentos">Documentos</button>
+  
+            <!-- botões de salvar-cancelar invisíveis -->
+            <div class="botao-canto-direito" id="botoes-salvar-cancelar" style="display: none;">
+              <button type="button" class="btn btn-secondary" id="botao-cancelar">Cancelar</button>
+              <button type="submit" class="btn btn-azul" id="botao-salvar">Salvar</button>
+            </div>
             <br/>
-          </div>
-
-          <button class="btn btn-azul">Documentos</button>
-          <br/>
-
-          <div class="visibilidade-informacoes">
-            <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
-          </div>
-
-
+  
+            <div class="visibilidade-informacoes">
+              <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
+            </div>
+          </form>
         </div>
 
         <div class="coluna-perfil ficha-medica col-md-4">
@@ -224,11 +237,73 @@
 
       </div>
     </section>
- <!--JavaScript Font Awesome-->
- <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
 
- <!--JavaScript Bootstrap-->
- <script type="text/javascript" src="js/bootstrap.js"></script>
- <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  <!--JavaScript próprio-->
+  <script>
+    function editar() {
+      // tira margens da página
+      var containerPerfil = document.getElementById('container-colunas').style;
+      containerPerfil.marginLeft = "0px";
+      containerPerfil.marginRight = "0px";
+
+      // desabilita o botão de editar
+      document.getElementById('botao-editar').disabled = true;
+
+      // torna visível input file
+      document.getElementById('escolher-imagem').style.display = "block";
+
+      // muda os spans para inputs
+      var nome = document.getElementById('nome-aluno');
+      nome.innerHTML = `<input type="text" class="form-control" id="nome-aluno" placeholder="Fulana" minlength="3" required>`;
+
+      var sobrenome = document.getElementById('sobrenome-aluno');
+      sobrenome.innerHTML = `<input type="text" class="form-control" id="sobrenome-aluno" placeholder="De Tal" minlength="3" required>`;
+
+      var sexo = document.getElementById('sexo-aluno');
+      sexo.innerHTML = `<select type="text" class="form-control" id="sexo-aluno" required>
+        <option selected>Feminino</option>
+        <option>Masculino</option>
+        <option>Outro</option>`;
+
+      var nascimento = document.getElementById('data-nasc-aluno');
+      nascimento.innerHTML = `<input type="date" class="form-control" id="data-nasc-aluno" value="2018-03-25" required>`;
+
+      var turma = document.getElementById('turma-aluno');
+      turma.innerHTML = `<input type="text" class="form-control" id="turma-aluno" placeholder="A" disabled>`;
+
+      var cadastro = document.getElementById('cadastro-aluno');
+      cadastro.innerHTML = `<select type="text" class="form-control" id="cadastro-aluno" required>
+        <option selected>Ativo</option>
+        <option>Inativo</option>`;
+      
+      var email = document.getElementById('email-aluno');
+      email.innerHTML = `<input type="email" class="form-control" id="email-aluno" placeholder="fulaninha@gmail.com" required>`;
+
+      var telefone = document.getElementById('tel-aluno');
+      telefone.innerHTML = `<input type="text" class="form-control" id="tel-aluno" placeholder="(xx) xxxxx-xxxx" required>`;
+
+      var responsavel = document.getElementById('responsavel-aluno');
+      responsavel.innerHTML = `<input type="text" class="form-control" id="responsavel-aluno" placeholder="Sicrana" required><br/>`;
+
+      var endereco = document.getElementById('endereco-aluno');
+      endereco.innerHTML = `<input type="text" class="form-control" id="endereco-aluno" placeholder="Rua dos Bobos, 00" required>`;
+
+      var bairro = document.getElementById('bairro-aluno');
+      bairro.innerHTML = `<input type="text" class="form-control" id="bairro-aluno" placeholder="Vila Sésamo" required>`;
+
+      // fim mudança de inputs
+
+      // deixa invisível o botão de documentos
+      document.getElementById('botao-documentos').style.display = "none";
+
+      // torna visíveis botões de salvar e cancelar
+      document.getElementById('botoes-salvar-cancelar').style.display = "block";
+
+    }
+  </script>
+
+  <!--JavaScript Bootstrap-->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
