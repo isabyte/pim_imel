@@ -85,6 +85,7 @@
       <h1 class="h2 titulo-dash">Perfil do aluno</h1>
       <div class="row col-md-12 container-perfil-aluno" id="container-colunas">
 
+        <!-- informações pessoais-->
         <div class="coluna-perfil informacoes-pessoais col-md-4">
           <h2 class="h3">Informações pessoais</h2>
           <br/>
@@ -170,7 +171,9 @@
             </div>
           </form>
         </div>
+        <!-- fim informações pessoais -->
 
+        <!-- ficha médica -->
         <div class="coluna-perfil ficha-medica col-md-4">
           <h2 class="h3">Ficha médica</h2>
           <br/>
@@ -213,7 +216,9 @@
             <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
           </div>
         </div>
+        <!-- fim ficha médica -->
 
+        <!-- observações -->
         <div class="coluna-perfil observacoes col-md-4">
   
             <h2 class="h3">Observações</h2>
@@ -226,14 +231,29 @@
               <br/>
               <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam repellat maxime quas, aliquid ea quidem explicabo! Nobis quod aspernatur totam nostrum ipsam, labore voluptatum aliquam, optio consequatur, recusandae illum?</p>
             </div>
+            
+            <div class="nova-observacao">
+              <form>
+                <span id="span-nova-observacao"></span>
 
-            <button class="btn btn-azul">Adicionar observação</button>
+                <!-- botões de adicionar-cancelar invisíveis -->
+                <div class="botao-canto-direito" id="botoes-adicionar-cancelar" style="display: none;">
+                  <button type="button" class="btn btn-secondary" id="botao-cancelar-obs" onclick="cancelar()">Cancelar</button>
+                  <button type="submit" class="btn btn-azul" id="botao-adicionar-obs" onclick="adicionar()">Adicionar</button>
+                </div>
+                <br/>
+
+              </form>
+            </div>
+
+            <button class="btn btn-azul" id="btn-nova-observacao" onclick="novaObs()">Adicionar nova observação</button>
 
             <div class="visibilidade-informacoes">
               <p style="color: #6c757d;">* Essas informações não são visíveis ao participantee</p>
             </div>
   
         </div>
+        <!-- fim observações -->
 
       </div>
     </section>
@@ -317,7 +337,6 @@
         return true;
       }
 
-
     function salvar() {
       if (confirm('Deseja salvar as alterações?') == true) {
         if(!verificaInputs()) {
@@ -333,6 +352,31 @@
         window.location.reload();
       }
     }
+
+    function novaObs() {
+      // deixa o botao de nova observação invisível
+      document.getElementById('btn-nova-observacao').style.display = "none";
+
+      // deixa visível os botões de adicionar ou cancelar
+      document.getElementById('botoes-adicionar-cancelar').style.display = "block";
+
+      // substitui span por input
+      document.getElementById('span-nova-observacao').innerHTML = `<input type="text" class="form-control" id="nova-observacao" placeholder="Nova observação" minlength="15" required><br/>`;
+    }
+
+    function adicionar() {
+      var tamObs = document.getElementById('nova-observacao').value.length;
+
+      if(tamObs < 15) {
+        alert('Observação inválida ou muito curta');
+        return;
+      }
+
+      if(confirm('Deseja salvar as alterações?') == true) {
+        window.location.reload();
+      }
+    }
+
   </script>
 
   <!--JavaScript Bootstrap-->
