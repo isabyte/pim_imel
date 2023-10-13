@@ -1,149 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMEL | Admin - Agenda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMEL | Admin</title>
 
-    <!--CSS Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Bootstrap css externo -->
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-    <!--CSS grupo-->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Meu css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Meu js-->
+  <script src="js/script.js"></script>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-        <!-- header -->
-        <div class="container">
-          <header class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-              <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-                <h1 class="title-dash-imel">IMEL | Admin</h1>
-              </a>
-            </div>
-      
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
-              <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-              <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-              <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cadastros
-              </a>
-              <div class="dropdown">
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="dash-cad-aluno.html">Cadastrar aluno</a></li>
-                    <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="dash-cad-colaborador.html">Cadastrar colaborador</a></li>
-                    <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a></li>
-                  </ul>
-                </div></li>
-                <li><a class="nav-link px-2 dropdown-toggle  link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Portal
-              </a>
-              <div class="dropdown">
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
-                    <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-                    <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-                    <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
-                    <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-                  </ul>
-                </div></li>
+  <!-- header -->
+  <div class="container">
+    <header
+      class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+          <h1 class="title-dash-imel">IMEL | Admin</h1>
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Cadastros
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAluno">
+                  Cadastrar Aluno
+                </button></li>
+              <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalColaborador">
+                  Cadastrar Colaborador
+                </button></li>
+              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
+              </li>
             </ul>
-      
-            <div class="col-md-3 text-end">
-              <button type="button" class="btn btn-laranja">Sair</button>
-            </div>
-          </header>
+          </div>
+        </li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Portal
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+              <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-laranja">Sair</button>
+      </div>
+    </header>
+  </div>
+  <!-- fim header -->
+
+  <!-- agenda -->
+  <section>
+    <h1 class="titulo-dash h2">Agenda</h1>
+    <form class="formulario_add_evento">
+      <div class="row col-md-12 subtitulo-agenda margem-form">
+        <div class="col-md-2">
+          <label class="form-label" for="nome-evento">Evento</label>
+          <input name="nome-evento" id="nome-evento" type="text" class="form-control" placeholder="Nome do evento"
+            minlength="10" maxlength="50" required>
         </div>
-      <!-- fim header -->
+        <div class="col-md-4">
+          <label class="form-label" for="descricao-evento">Descrição</label>
+          <input name="descricao-evento" id="descricao-evento" type="text" class="form-control"
+            placeholder="O que aconteceu ou acontecerá no evento" minlength="15" maxlength="200" required>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label" for="data-evento">Data</label>
+          <input name="data-evento" id="data-evento" type="date" class="form-control" required>
+        </div>
+        <div class="col-md-4 btn-adicionar">
+          <button name="adicionar-evento" id="adicionar-evento" type="submit" class="btn btn-azul"
+            onclick="verificaFormulario()">Adicionar
+        </div>
+      </div>
+    </form>
 
-        <!-- agenda -->
-        <section>
-            <h1 class="titulo-dash h2">Agenda</h1>
-            <form class="formulario_add_evento">
-              <div class="row col-md-12 subtitulo-agenda margem-form">
-                  <div class="col-md-2">
-                    <label class="form-label" for="nome-evento">Evento</label>
-                    <input name="nome-evento" id="nome-evento" type="text" class="form-control" placeholder="Nome do evento" minlength="10" maxlength="50" required>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-label" for="descricao-evento">Descrição</label>
-                    <input name="descricao-evento" id="descricao-evento" type="text" class="form-control" placeholder="O que aconteceu ou acontecerá no evento" minlength="15" maxlength="200" required>
-                  </div>
-                  <div class="col-md-2">
-                    <label class="form-label" for="data-evento">Data</label>
-                    <input name="data-evento" id="data-evento" type="date" class="form-control" required>
-                  </div>
-                  <div class="col-md-4 btn-adicionar">
-                    <button name="adicionar-evento" id="adicionar-evento" type="submit" class="btn btn-azul" onclick="verificaFormulario()">Adicionar
-                    </div>
-                </div>
-              </form>
-      
-            <!-- tabela -->
-            <div class="tabela-eventos margem-form">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th scope="col">Evento</th>
-                      <th scope="col">Descrição</th>
-                      <th scope="col">Data</th>
-                      <th scope="col">Editar</th>
-                      <th scope="col">Excluir</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Aqui o nome do evento</th>
-                      <td>Aqui uma breve descrição sobre o evento</td>
-                      <td>Aqui o dia do evento</td>
-                      <td><i class="bi bi-pencil-square"></i></td>
-                      <td><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Campeonato de canoagem</th>
-                      <td>Disputa entre alunos no lago X</td>
-                      <td>12/01/2023</td>
-                      <td><i class="bi bi-pencil-square"></i></td>
-                      <td><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Lorem ipsum</th>
-                      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio nobis iure excepturi ratione impedit sed possimus?</td>
-                      <td>17/01/2023</td>
-                      <td><i class="bi bi-pencil-square"></i></td>
-                      <td><i class="bi bi-trash"></i></td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-            <!-- fim tabela -->
-        </section>
-          <!-- fim agenda -->
+    <!-- tabela -->
+    <div class="tabela-eventos margem-form">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Evento</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Data</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Aqui o nome do evento</th>
+            <td>Aqui uma breve descrição sobre o evento</td>
+            <td>Aqui o dia do evento</td>
+            <td><i class="bi bi-pencil-square"></i></td>
+            <td><i class="bi bi-trash"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Campeonato de canoagem</th>
+            <td>Disputa entre alunos no lago X</td>
+            <td>12/01/2023</td>
+            <td><i class="bi bi-pencil-square"></i></td>
+            <td><i class="bi bi-trash"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Lorem ipsum</th>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio nobis iure excepturi
+              ratione impedit sed possimus?</td>
+            <td>17/01/2023</td>
+            <td><i class="bi bi-pencil-square"></i></td>
+            <td><i class="bi bi-trash"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- fim tabela -->
+  </section>
+  <!-- fim agenda -->
 
-    <!--JavaScript próprio-->
-    <script>
-      function verificaFormulario() {
-        var inputNome = document.getElementById('nome-evento');
-        var inputDescricao = document.getElementById('descricao-evento');
-        var inputData = document.getElementById('data-evento');
+  <!--JavaScript próprio-->
+  <script>
+    function verificaFormulario() {
+      var inputNome = document.getElementById('nome-evento');
+      var inputDescricao = document.getElementById('descricao-evento');
+      var inputData = document.getElementById('data-evento');
 
-        var nome = inputNome.value;
-        var descricao = inputDescricao.value;
-        var data = inputData.value;
+      var nome = inputNome.value;
+      var descricao = inputDescricao.value;
+      var data = inputData.value;
 
-        if(nome.length > 10 && descricao.length > 15 && data != '' ) {
-          alert('Evento adicionado à agenda');
-        }
+      if (nome.length > 10 && descricao.length > 15 && data != '') {
+        alert('Evento adicionado à agenda');
       }
-    </script>
+    }
+  </script>
+  <!--JavaScript Font Awesome-->
+  <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
 
-    <!--JavaScript Bootstrap-->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  <!--JavaScript Bootstrap-->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
 </body>
+
 </html>
