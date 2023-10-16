@@ -4,63 +4,53 @@ function verificaInputs() {
     var email = document.getElementById('emailContatoDash').value;
     var endereco = document.getElementById('enderecoContatoDash').value;
 
-    if (tel.length < 16 || email.length < 3 || endereco.length < 10) {
-        alert('Preencha todos os campos corretamente');
-        return false;
-    }
-    return true;
-}
+            if (tel.length < 16 || email.length < 3 || endereco.length < 10) {
+                return false;
+            }
+            return true;
+        }
 
 function editar() {
+    // tira margens da página
+    var containerPerfil = document.getElementById('container-colunas').style;
+    containerPerfil.marginLeft = "0px";
+    containerPerfil.marginRight = "0px";
+
     // desabilita o botão de editar
     document.getElementById('botao-editar').disabled = true;
 
-    // muda os elementos de texto da página para inputs
-    var tel = document.getElementById('telContatoDash');
-    tel.innerHTML = `<input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16" required>`;
+            // muda os elementos de texto da página para inputs
+            var tel = document.getElementById('p-telContatoDash');
+            tel.innerHTML = `<input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16" required>`;
 
-    var email = document.getElementById('emailContatoDash');
-    email.innerHTML = `<input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3" required>`;
+            var email = document.getElementById('p-emailContatoDash');
+            email.innerHTML = `<input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3" required>`;
 
-    var endereco = document.getElementById('enderecoContatoDash');
-    endereco.innerHTML = `<input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123" minlength="10" required>
+            var endereco = document.getElementById('p-enderecoContatoDash');
+            endereco.innerHTML = `<input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123" minlength="10" required>
             <br/>
             <div class="botao-canto-direito">
               <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
               <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
             </div>
             <br/>`
-}
+        }
 
-function cancelar() {
+  function cancelar() {
     if (confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
-        window.location.reload();
+      window.location.reload();
     }
-}
+  }
 
-function salvar() {
-    if (confirm('Deseja salvar as alterações?') == true) {
+        function salvar() {
+      if (confirm('Deseja salvar as alterações?') == true) {
         if (!verificaInputs()) {
-            return;
+          alert('Preencha todos os campos corretamente');
+          return;
         }
         window.location.reload();
+      }
     }
-}
-
-function verificaFormulario() {
-    var inputNome = document.getElementById('nome-evento');
-    var inputDescricao = document.getElementById('descricao-evento');
-    var inputData = document.getElementById('data-evento');
-
-    var nome = inputNome.value;
-    var descricao = inputDescricao.value;
-    var data = inputData.value;
-
-    if (nome.length > 10 && descricao.length > 15 && data != '') {
-        alert('Evento adicionado à agenda');
-    }
-}
-
 
 function editarJustificativa() {
     const texto = document.getElementById('texto');
@@ -112,9 +102,9 @@ function chamadaP(){
        
 }
 function chamadaF(){
-    const botaoChamadaP= document.getElementById('btn-chamadaP');
-    const botaoChamadaF= document.getElementById('btn-chamadaF');
+     const botaoChamadaP= document.getElementById('btn-chamadaP');
+        const botaoChamadaF= document.getElementById('btn-chamadaF');
 
     botaoChamadaP.style.display = 'block';
-    botaoChamadaF.style.display = 'none'; 
+    botaoChamadaF.style.display = 'none';
 }
