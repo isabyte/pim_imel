@@ -43,31 +43,26 @@ body {
     background-color: #F58008;
     color: white;
     border: #F58008;
-    display: block;
 }
 
 .btn-laranja:hover {
     background-color: #FFAC49;
     color: white;
-    display: block;
 }
 
 .btn-azul {
     background-color: #64c09b;
     color: white;
     border: #64c09b;
-    display: block;
 }
 
 .btn-azul:hover {
     background-color: #B2E5D6;
     color: white;
-    display: block;
 }
 
 .btn-azul:disabled {
     background-color: #b9bfc4;
-    display: block;
 }
 
 /* dashboard */
