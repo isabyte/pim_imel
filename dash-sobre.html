@@ -2,82 +2,87 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IMEL | Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMEL | Admin</title>
 
-  <!-- Bootstrap css externo -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap css externo -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-  <!-- Meu css -->
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- Meu css -->
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!--Meu js-->
+    <script src="js/script.js"></script>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- header -->
-  <div class="container">
-    <header
-      class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-          <h1 class="title-dash-imel">IMEL | Admin</h1>
-        </a>
-      </div>
+    <!-- header -->
+    <div class="container">
+        <header
+            class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+                    <h1 class="title-dash-imel">IMEL | Admin</h1>
+                </a>
+            </div>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
-        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Cadastros
-          </a>
-          <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAluno">
-                  Cadastrar Aluno
-                </button></li>
-              <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalColaborador">
-                  Cadastrar Colaborador
-                </button></li>
-              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
-              </li>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
+                <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+                <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Cadastros
+                    </a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
+                                    data-bs-target="#modalAluno">
+                                    Cadastrar Aluno
+                                </button></li>
+                            <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
+                                    data-bs-target="#modalColaborador">
+                                    Cadastrar Colaborador
+                                </button></li>
+                            <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Portal
+                    </a>
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
+                            <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+                            <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+                            <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
+                            <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-        <li><a class="nav-link px-2 dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Portal
-          </a>
-          <div class="dropdown">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
-              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-              <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
-              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-laranja">Sair</button>
-      </div>
-    </header>
-  </div>
-  <!-- fim header -->
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-laranja">Sair</button>
+            </div>
+        </header>
+    </div>
+    <!-- fim header -->
 
   <!-- página -->
   <section>
@@ -85,27 +90,27 @@
       <div class="col-md-3"></div>
 
       <div class="col-md-6">
-        <h1 class="h2">Sobre</h1>
+        <h1 class="h2">Sobre
+          <button class="btn btn-azul botao-canto-direito" id="btn-edit-sobre" onclick="editarSobre()">Editar</button>
+        <button class="btn btn-azul edit-mode botao-canto-direito" id="btn-save-sobre" onclick="salvarSobre()">Salvar</button>
+        </h1>
+        <br /><br />
 
-        <button name="botao-editar" id="botao-editar" class="btn btn-azul botao-canto-direito"
-          onclick="editar()">Editar</button>
-        <br />
-        <br />
+        <textarea type="text" id="campoInputSobre" class="edit-mode form-control" cols="40" rows="20"></textarea>
+
 
         <div class="row">
           <div class="sobre-dash" id="sobre-dash">
-            <p>Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal
-              principal. Nesta tela, o colaborador pode escolher editar este texto.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et,
-              iaculis mollis magna. Suspendisse non sagittis mauris. Suspendisse tellus diam, placerat non risus ut,
+            <p id="pSobre">Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal
+              principal. Nesta tela, o colaborador pode escolher editar este texto.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et,
+              iaculis mollis magna. Suspendisse non sagitt is mauris. Suspendisse tellus diam, placerat non risus ut,
               malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas
               fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis
               parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam,
               varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu
-              convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.</p>
-
-            <p>Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan
+              convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.
+              Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan
               velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc
               tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta.
               Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes,
@@ -119,48 +124,253 @@
     </div>
   </section>
 
-  <!-- JavaScript próprio -->
-  <script>
-    function editar() {
-      // desabilita o botão de editar
-      document.getElementById('botao-editar').disabled = true;
+    <!-- cadastrar Alunos -->
 
-      // muda o texto da página para uma textarea
-      var sobre = document.getElementById('sobre-dash');
-      sobre.innerHTML = `<form>
-        <textarea name="sobre-dash" id="sobre-dash" class="form-control textarea-sobre" required></textarea>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="botao-canto-direito">
-              <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
-              <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
+    <div class="modal" id="modalAluno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center align-items-center">
+                <h4 class="modal-title">Cadastrar Aluno</h4>
             </div>
-          </div>
+            <form>
+                <div class="form-group">
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Nome Completo:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho da Silva" required>
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">CPF:</label>
+                            <input type="text" class="form-control" placeholder="000.000.000-00" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Nome Social:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho">
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">Nome do Responsável:</label>
+                            <input type="text" class="form-control" placeholder="Maria da Silva">
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">CPF do responsável:</label>
+                            <input type="text" class="form-control" placeholder="000.000.000-00">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Telefone 1:</label>
+                            <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000"
+                                minlength="16" maxlength="16" required>
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Telefone 2:</label>
+                            <input type="tel" class="form-control" placeholder="(45) 9 9999-0000" minlength="16"
+                                maxlength="16" required>
+                        </div>
+                    </div>
+
+                    <label>Gênero:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+                        <label class="form-check-label" for="feminino">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+                        <label class="form-check-label" for="outro">Outro</label>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="number" class="form-control" id="cep" placeholder="00000-000">
+                        </div>
+                        <div class="col">
+                            <label for="rua" class="form-label">Rua / N°:</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Av das Cataratas 000">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="bairro" class="form-label">Bairro:</label>
+                            <input type="text" class="form-control" placeholder="Vila Yolanda" required>
+                        </div>
+                        <div class="col">
+                            <label for="cpf" class="form-label">Complemento:</label>
+                            <input type="number" class="form-control" placeholder="casa">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" class="form-control" placeholder="Foz do Iguaçu">
+                        </div>
+                        <div class="col">
+                            <label for="estado" class="form-label">Estado:</label>
+                            <input type="text" class="form-control" placeholder="Paraná">
+                        </div>
+                    </div>
+
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com"
+                        minlength="3" required>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">Criar Senha:</label>
+                            <input type="password" class="form-control" placeholder="****" required>
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">Confirme sua Senha:</label>
+                            <input type="password" class="form-control" placeholder="****">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-secondary cancelar" onclick="cancelar()">Cancelar</button>
+                    <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
+                </div>
+
+            </form>
         </div>
-      </form>`
-    }
+    </div>
+    <!-- fim cadastrar Alunos -->
 
-    function cancelar() {
-      if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
-        window.location.reload();
-      }
-    }
 
-    function salvar() {
-      if(confirm('Deseja salvar as alterações?') == true) {
-        window.location.reload(); 
-      } else {
-        editar();
-      }
-    }
-  </script>
+    <!-- cadastrar colaborador -->
 
-  <!--JavaScript Font Awesome-->
-  <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
+    <div class="modal" id="modalColaborador" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center align-items-center">
+                <h4 class="modal-title">Cadastrar Colaborador</h4>
+            </div>
+            <form>
+                <div class="form-group">
 
-  <!--JavaScript Bootstrap-->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Nome Completo:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho da Silva" required>
+                        </div>
+                        <div class="col">
+                            <label for="nome" class="form-label"> Nome Social:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">CPF:</label>
+                            <input type="text" class="form-control" placeholder="000.000.000-00">
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Telefone 1:</label>
+                            <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000"
+                                minlength="16" maxlength="16" required>
+                        </div>
+                        <div class="col">
+                            <label for="sobrenome" class="form-label">Telefone 2:</label>
+                            <input type="tel" class="form-control" placeholder="(45) 9 9999-0000" minlength="16"
+                                maxlength="16" required>
+                        </div>
+                    </div>
+
+                    <label>Gênero:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+                        <label class="form-check-label" for="feminino">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+                        <label class="form-check-label" for="outro">Outro</label>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="number" class="form-control" id="cep" placeholder="00000-000">
+                        </div>
+                        <div class="col">
+                            <label for="rua" class="form-label">Rua / N°:</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Av das Cataratas 000">
+                        </div>
+                    </div>
+
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" class="form-control" placeholder="Foz do Iguaçu">
+                        </div>
+                        <div class="col">
+                            <label for="estado" class="form-label">Estado:</label>
+                            <input type="text" class="form-control" placeholder="Paraná">
+                        </div>
+                    </div>
+
+
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com"
+                        minlength="3" required>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="senha" class="form-label">Criar Senha:</label>
+                            <input type="password" class="form-control" placeholder="****" required>
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">Confirme sua Senha:</label>
+                            <input type="password" class="form-control" placeholder="****">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-secondary cancelar" onclick="cancelar()">Cancelar</button>
+                        <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- fim cadastrar colaborador -->
+
+    <!--JavaScript Font Awesome-->
+    <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
+
+    <!--JavaScript Bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
 </body>
 
