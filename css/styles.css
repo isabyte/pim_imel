@@ -6,7 +6,7 @@ body {
 
 .title-dash-imel {
     font-size: 20px;
-    color:#5e5e5e;
+    color: #5e5e5e;
     margin-top: 25px;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .cabecalho-dash .nav-link {
-    color:#F58008
+    color: #F58008
 }
 
 .cabecalho-dash .nav-link:hover {
@@ -43,31 +43,36 @@ body {
     background-color: #F58008;
     color: white;
     border: #F58008;
+    display: block;
 }
 
 .btn-laranja:hover {
-    background-color:#FFAC49;
+    background-color: #FFAC49;
     color: white;
+    display: block;
 }
 
 .btn-azul {
     background-color: #64c09b;
     color: white;
     border: #64c09b;
+    display: block;
 }
 
 .btn-azul:hover {
     background-color: #B2E5D6;
-    color:white;
+    color: white;
+    display: block;
 }
 
 .btn-azul:disabled {
     background-color: #b9bfc4;
+    display: block;
 }
 
 /* dashboard */
 
-.border-text-info{
+.border-text-info {
     color: white;
     text-shadow: 0.8px 0.8px 0.8px #7b7b7b, 0.8px -0.8px 0.8px #7b7b7b;
 }
@@ -90,24 +95,33 @@ body {
     color: #fefefe;
 }
 
-/*.box-info-single*/ .orange{
+/*.box-info-single*/
+.orange {
     background: linear-gradient(#fcb257ce, #F58008);
 }
 
-/*.box-info-single*/ .green {
+/*.box-info-single*/
+.green {
     background: linear-gradient(#D8E6A8, #a7be77);
 }
 
 
-/*.box-info-single*/ .blue {
+/*.box-info-single*/
+.blue {
     background: linear-gradient(#B2E5D6, #64c09b);
 }
 
 @media screen and (max-width: 768px) {
     .box-info-single {
-        margin: 20px; 
-        padding: 20px; 
+        margin: 20px;
+        padding: 20px;
     }
+
+    .modal-body {
+        margin: 10px;
+        padding: 10px;
+    }
+
 }
 
 /* contato dashboard */
@@ -137,7 +151,7 @@ body {
 
 /* sobre dashboard*/
 
-.sobre-dash p {
+.sobre-dash {
     text-align: justify;
 }
 
@@ -155,50 +169,37 @@ body {
 .botao-salvar-sobre {
     padding-top: 40px;
     margin-left: 70%;
-    }
+}
 
 /* turmas dashboard */
 
-.btn-turma{
-    background-color: #8485843a; 
+.btn-turma {
+    background-color: #8485843a;
     border-color: #84858493;
     transition: transform 0.3s ease;
     padding: 8%;
     display: block;
     margin-left: 20px;
 }
-.btn-turma:hover{
-    background-color: #8485843a; 
-    border-color: #84858493;
-    transform: scale(1.2); 
-}
 
-.msg-conclusao{
-    width: 40%;
-    padding: 50px; 
-    margin-left: 30%;
-    margin-top: 5%; 
-    background-color: rgba(255, 127, 80, 0.272); 
-    color: black;
+.btn-turma:hover {
+    background-color: #8485843a;
+    border-color: #84858493;
+    transform: scale(1.2);
 }
 
 /* modal cadastrar colaborador */
 
-.botao-modal {
-    background-color: #64c09b;
-    border-color: #64c09b;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-/*.botao-modal*/.cadastrar {
+.cadastrar {
     margin-left: 95px;
     margin-right: 20px;
+
 }
 
-/*.botao-modal*/.cancelar {
+.cancelar {
     margin-left: 20px;
     margin-right: 100px;
+
 }
 
 .modal-title {
@@ -208,11 +209,13 @@ body {
     color: #fff;
     padding: 10px;
     border-radius: 5px 5px 0 0;
+
 }
 
 .modal-header {
     background-color: #64c09b;
     color: #fff;
+
 }
 
 .modal-content {
@@ -223,6 +226,7 @@ body {
     border-radius: 10px;
 
 }
+
 
 .form-group label {
     font-weight: bold;
@@ -299,12 +303,12 @@ body {
 
 .coluna-perfil {
     max-width: fit-content;
-    margin:10px;
+    margin: 10px;
     border: 2px solid #5e5e5e83;
     border-radius: 10px;
 }
 
-.img-perfil  {
+.img-perfil {
     width: 200px;
     height: 200px;
 }
@@ -332,4 +336,44 @@ body {
 
 .observacoes .informacoes-aluno {
     text-align: justify;
+}
+
+/*chamada dash*/
+.btn-red {
+    background-color: red;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: 20px;
+}
+
+.btn-red:hover {
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.edit-mode {
+    display: none;
+    /* Inicialmente, esconda o campo de edição */
+}
+
+#btn-chamadaP {
+    background-color: green;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+#btn-chamadaF {
+    background-color: red;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+#btn-chamadaP:hover {
+    background-color: green;
+    transform: scale(1.2);
+}
+
+#btn-chamadaF:hover {
+    background-color: red;
+    transform: scale(1.2);
 }

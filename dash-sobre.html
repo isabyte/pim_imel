@@ -122,6 +122,246 @@
     </div>
   </section>
 
+  <!-- cadastrar Alunos -->
+
+  <div class="modal" id="modalAluno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center align-items-center">
+        <h4 class="modal-title">Cadastrar Aluno</h4>
+      </div>
+      <form>
+        <div class="form-group">
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label"> Nome Completo:</label>
+              <input type="text" class="form-control" placeholder="Joazinho da Silva" required>
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">CPF:</label>
+              <input type="text" class="form-control" placeholder="000.000.000-00" required>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label"> Nome Social:</label>
+              <input type="text" class="form-control" placeholder="Joazinho">
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">Data de nascimento:</label>
+              <input type="date" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="senha" class="form-label">Nome do Responsável:</label>
+              <input type="text" class="form-control" placeholder="Maria da Silva">
+            </div>
+            <div class="col">
+              <label for="senha" class="form-label">CPF do responsável:</label>
+              <input type="text" class="form-control" placeholder="000.000.000-00">
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label"> Telefone 1:</label>
+              <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16"
+                maxlength="16" required>
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">Telefone 2:</label>
+              <input type="tel" class="form-control" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16"
+                required>
+            </div>
+          </div>
+
+          <label>Gênero:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+            <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+            <label class="form-check-label" for="outro">Outro</label>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cep" class="form-label">CEP:</label>
+              <input type="number" class="form-control" id="cep" placeholder="00000-000">
+            </div>
+            <div class="col">
+              <label for="rua" class="form-label">Rua / N°:</label>
+              <input type="text" class="form-control" id="rua" placeholder="Av das Cataratas 000">
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="bairro" class="form-label">Bairro:</label>
+              <input type="text" class="form-control" placeholder="Vila Yolanda" required>
+            </div>
+            <div class="col">
+              <label for="cpf" class="form-label">Complemento:</label>
+              <input type="number" class="form-control" placeholder="casa">
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" placeholder="Foz do Iguaçu">
+            </div>
+            <div class="col">
+              <label for="estado" class="form-label">Estado:</label>
+              <input type="text" class="form-control" placeholder="Paraná">
+            </div>
+          </div>
+
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3"
+            required>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="senha" class="form-label">Criar Senha:</label>
+              <input type="password" class="form-control" placeholder="********" required>
+            </div>
+            <div class="col">
+              <label for="senha" class="form-label">Confirme sua Senha:</label>
+              <input type="password" class="form-control" placeholder="********">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group d-flex justify-content-center align-items-center">
+          <button type="button" class="btn btn-secondary cancelar " onclick="cancelar()">Cancelar</button>
+          <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <!-- fim cadastrar Alunos -->
+
+  <!-- cadastrar colaborador -->
+
+  <div class="modal2" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center align-items-center">
+        <h4 class="modal-title">Cadastrar Colaborador</h4>
+      </div>
+      <form>
+        <div class="form-group">
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label"> Nome Completo:</label>
+              <input type="text" class="form-control" placeholder="Joazinho da Silva" required>
+            </div>
+            <div class="col">
+              <label for="nome" class="form-label"> Nome Social:</label>
+              <input type="text" class="form-control" placeholder="Joazinho">
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="senha" class="form-label">CPF:</label>
+              <input type="text" class="form-control" placeholder="000.000.000-00">
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">Data de nascimento:</label>
+              <input type="date" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome" class="form-label"> Telefone 1:</label>
+              <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16"
+                maxlength="16" required>
+            </div>
+            <div class="col">
+              <label for="sobrenome" class="form-label">Telefone 2:</label>
+              <input type="tel" class="form-control" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16"
+                required>
+            </div>
+          </div>
+
+          <label>Gênero:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="feminino" value="Feminino">
+            <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino">
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="outro" value="Outro">
+            <label class="form-check-label" for="outro">Outro</label>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cep" class="form-label">CEP:</label>
+              <input type="number" class="form-control" id="cep" placeholder="00000-000">
+            </div>
+            <div class="col">
+              <label for="rua" class="form-label">Rua / N°:</label>
+              <input type="text" class="form-control" id="rua" placeholder="Av das Cataratas 000">
+            </div>
+          </div>
+
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" placeholder="Foz do Iguaçu">
+            </div>
+            <div class="col">
+              <label for="estado" class="form-label">Estado:</label>
+              <input type="text" class="form-control" placeholder="Paraná">
+            </div>
+          </div>
+
+
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3"
+            required>
+
+          <div class="row g-3">
+            <div class="col">
+              <label for="senha" class="form-label">Criar Senha:</label>
+              <input type="password" class="form-control" placeholder="********" required>
+            </div>
+            <div class="col">
+              <label for="senha" class="form-label">Confirme sua Senha:</label>
+              <input type="password" class="form-control" placeholder="********">
+            </div>
+          </div>
+
+
+          <div class="form-group d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-secondary cancelar" onclick="cancelar()">Cancelar</button>
+            <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- fim cadastrar colaborador -->
+
   <!--JavaScript Font Awesome-->
   <script src="https://kit.fontawesome.com/f3b32d6694.js" crossorigin="anonymous"></script>
 
