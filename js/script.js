@@ -1,3 +1,19 @@
+function cancelar() {
+    if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
+      window.location.reload();
+    }
+  }
+
+  function salvar() {
+    if(!verificaInputs()) {
+      return;
+    }
+
+    if(confirm('Deseja salvar as alterações?') == true) {
+      window.location.reload(); 
+    }
+  }
+
 function editarJustificativa() {
     const texto = document.getElementById('texto');
     const campoInput = document.getElementById('campoInput');

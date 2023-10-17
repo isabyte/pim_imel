@@ -120,9 +120,9 @@
                     <th scope="col" class="col-md-2">#</th>
                     <th scope="col" class="col-md-3">Nome</th>
                     <th scope="col" class="col-md-1">Presença</th>
-                    <th scope="col" class="col-md-1">Justificativa</th>
+                    <th scope="col" class="col-md-3">Justificativa</th>
                     <th scope="col" class="col-md-1"></th>
-                    <th scope="col" class="col-md-3"></th>
+                    <th scope="col" class="col-md-1"></th>
                 </tr>
             </thead>
             <tbody>
@@ -135,12 +135,13 @@
                     </td>
                     <td>
                         <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
                     </td>
                     <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
                         <button class="btn btn-azul edit-mode" id="btn-save-just"
                             onclick="salvarJustificativa()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles-portal.css">
+
+    <title>IMEL - Portal</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Início Parte de cima // NAVBAR-->
+    <header>
+        <section class="topo">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="portal.html">
+                        <img src="imgs/logo-imel (1).png" class="logo-imel" alt="Logo"> Instituto Meninos do Lago
+                    </a>
+                    <div class="nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-opc">
+                                <a class="nav-text" href="#">Home</a>
+                            </li>
+                            <li class="nav-opc">
+                                <a class="nav-text" href="tela-login.html">Login</a>
+                            </li>
+                            <li class="nav-opc menuModal">
+                                <a data-bs-toggle="modal" data-bs-target="#cadastro">Faça Parte do Projeto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- Fim Parte de cima // NAVBAR-->
+    <section>
+        <div class="row col-md-12 container-fluid">
+            <nav class="navbar-sub navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav sub">
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Agenda</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mensal</a></li>
+                                    <li><a class="dropdown-item" href="portal-agendaAnual.html">Anual</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Linha do Tempo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Projetos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Projeto Meninos do Lago</a></li>
+                                    <li><a class="dropdown-item" href="#">Canoagem Rosa - Flor de Lótus</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Atletas Seniores</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Eventos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Participar</a></li>
+                                    <li><a class="dropdown-item" href="#">Regras</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Saiba Mais</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Sobre</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">História do Instituto</a></li>
+                                    <li><a class="dropdown-item" href="#">Aonde Surgiu</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Saiba Mais</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">IMEL</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Apresentação Institucional</a></li>
+                                    <li><a class="dropdown-item" href="#">Visão - Principais Valores - Missão -
+                                            Olimpismo</a></li>
+                                    <li><a class="dropdown-item" href="#">Prestação de contas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Parceiros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Voluntários</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Caiaque Polo</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">História</a></li>
+                                    <li><a class="dropdown-item" href="#">Regras</a></li>
+                                    <li><a class="dropdown-item" href="#">Manual tecnico e tatico</a></li>
+                                    <li><a class="dropdown-item" href="#">Apostilas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Projeto Caiaque Polo no Brasil</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Normas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Regimento Interno</a></li>
+                                    <li><a class="dropdown-item" href="#">Manual de Uso - Canal Itaipu</a></li>
+                                    <li><a class="dropdown-item" href="#">Termo de Compromisso e Responsabilidade</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Autorização - Boletim</a></li>
+                                    <li><a class="dropdown-item" href="#">PPRA e PCMSO</a></li>
+                                    <li><a class="dropdown-item" href="#">Laudo Técnico das Condições Ambientais do
+                                            Trabalho</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cartilha de Prevenção ao Assédio Sexual e
+                                            Moral no
+                                            Esporte</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Scout Técnico para Mudança de Faixas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Atletas e Programa Técnico</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Senior</a></li>
+                                    <li><a class="dropdown-item" href="#">Faixa Azul</a></li>
+                                    <li><a class="dropdown-item" href="#">Faixa Verde</a></li>
+                                    <li><a class="dropdown-item" href="#">Faixa Amarela</a></li>
+                                    <li><a class="dropdown-item" href="#">Faixa Branca</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Definição de Turmas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Biblioteca</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Apostilas do Projeto</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Diversos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Tomadas de Preço</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Caiaque Polo</a></li>
+                                    <li><a class="dropdown-item" href="#">Dragon Boat</a></li>
+                                    <li><a class="dropdown-item" href="#">Botes de Rafting</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Equipamentos Gerais de Canoagem</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown drops dropdown-portal">
+                                <a class="nav-link-portal dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Notícias</a>
+                                <ul class="dropdown-menu">
+                                    </li>
+                                    <li><a class="dropdown-item" href="portal-todas-noticias.html">Todas as Notícias</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="carouselExampleAutoplaying" class="carousel slide bgCarrossel" data-bs-ride="carousel">
+                <div class="carousel-inner carrossel">
+                    <div class="carousel-item active img1">
+                    </div>
+                    <div class="carousel-item img2">
+                    </div>
+                    <div class="carousel-item img3">
+                    </div>
+                    <div class="carousel-item img4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev fundoSeta" type="button"
+                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon seta" aria-hidden="true"><i
+                            class="bi bi-caret-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next fundoSeta" type="button"
+                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon seta" aria-hidden="true"><i
+                            class="bi bi-caret-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--Início Ultimas Notícias-->
+    <section>
+        <div class="row col-md-12">
+            <div class="fundoCards">
+                <h2 class="título-cards">Últimas Notícias</h2>
+                <hr>
+                <div class="cardNotícia">
+                    <div class="card notícias">
+                        <a href="portal-noticias.html">
+                            <img src="imgs/imel-login.png" class="card-img-top" alt="Notícias">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card notícias">
+                        <a href="portal-noticias.html">
+                            <img src="imgs/imel-login.png" class="card-img-top" alt="Notícias">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card notícias">
+                        <a href="portal-noticias.html">
+                            <img src="imgs/imel-login.png" class="card-img-top" alt="Notícias">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card notícias">
+                        <a href="portal-noticias.html">
+                            <img src="imgs/imel-login.png" class="card-img-top" alt="Notícias">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fim Ultimas Notícias-->
+
+    <!--Início Footer-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="imgs/logo-imel (1).png" class="logo-footer" alt="Logo">Instituto Meninos do Lago
+                <p>O Instituto Meninos do Lago foi criado com o objetivo de promover a inclusão social e o
+                    desenvolvimento de jovens por meio do esporte.</p>
+                <h4>Redes Sociais:</h4>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>  
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Informações de Contato</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Localização</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">fulano@gmail.com</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">(45) 9 1234-5678</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Links Rápidos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Programas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Notícias</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Faça Parte do Projeto</h3>
+                </li>
+                <li>
+                    <a data-bs-toggle="modal" data-bs-target="#cadastro" class="footer-link">Clique aqui e realize o seu Pré-Cadastro</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 Feito por Thiago
+        </div>
+    </footer>
+    <!--Fim Footer-->
+
+    <!--Início Modal Cadastro de Clietes-->
+    <section>
+        <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-tm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Realize o seu Pré-cadastro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row col-md-12">
+                            <div class="col-md-6">
+                                <label class="text-primary">Nome Completo</label>
+                                <input type="text" class="form-control" placeholder="Ex: João Bezerra..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-primary">Data Nascimento</label>
+                                <input type="date" class="form-control" />
+                            </div>
+
+                            <div class="espaco"></div>
+
+                            <div class="col-md-6">
+                                <label class="text-primary">Endereço</label>
+                                <input type="text" class="form-control" placeholder="Ex:Rua Jabuti..." />
+                            </div>
+                            <div class="col-md-2">
+                                <label class="text-primary">N*</label>
+                                <input type="text" class="form-control" placeholder="Ex:666..." />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="text-primary">Bairro</label>
+                                <input type="text" class="form-control" placeholder="Ex:Bairro Taroba..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-primary">Cidade</label>
+                                <input type="text" class="form-control" placeholder="Ex:Foz do Iguaçu..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-primary">Estado</label>
+                                <input type="text" class="form-control" placeholder="Ex:Paraná..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-primary">CEP</label>
+                                <input type="text" class="form-control" placeholder="Ex:00000-000..." />
+                            </div>
+
+                            <div class="espaco"></div>
+
+                            <div class="col-md-6">
+                                <label class="text-primary">Nome do Pai</label>
+                                <input type="text" class="form-control" placeholder="Ex:Alfredo Bitencurt..." />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="text-primary">RG</label>
+                                <input type="text" class="form-control" placeholder="Ex:000000000-0..." />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="text-primary">CPF</label>
+                                <input type="text" class="form-control" placeholder="Ex:000.000.000-00..." />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-primary">Nome da Mãe</label>
+                                <input type="text" class="form-control" placeholder="Ex:Maria Betania..." />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="text-primary">RG</label>
+                                <input type="text" class="form-control" placeholder="Ex:000000000-0..." />
+                            </div>
+                            <div class="col-md-3">
+                                <label class="text-primary">CPF</label>
+                                <input type="text" class="form-control" placeholder="Ex:000.000.000-00..." />
+                            </div>
+
+                            <div class="espaco"></div>
+
+                        </div>
+                        <br>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <a class="btn btn-primary" href="portal.html">Concluir Cadastro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- final do modal de cadastro de clientes-->
+    <script type="text/JavaScript" src="js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

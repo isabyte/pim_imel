@@ -1,0 +1,121 @@
+/*Inicio da Agenda*/
+
+.conteudo-agenda {
+
+    position: relative;
+    margin-left: 10%;
+    max-width: 1200px;
+    height: 950px;
+    background: rgba(82, 184, 136, 0.562);
+    border-radius: 10px;
+
+}
+
+.conteudo-agenda_mensal {
+
+    margin-left: 10%;
+    max-width: 1200px;
+    height: 1200px;
+    background: rgba(82, 184, 136, 0.562);
+    border-radius: 10px;
+
+}
+
+.conteudo .calendario header {
+    position: relative;
+}
+
+.grande {
+
+
+    border: 1px solid #000000;
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    text-align: center;
+
+
+}
+
+.small {
+    border: 1px solid #d3d3d3;
+    min-height: 30px;
+    min-width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.calendario thead {
+    background-color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.calendario tbody {
+    background-color: white;
+    font-weight: 600;
+
+}
+
+.calendarioH1 {
+    font-weight: 600;
+    background: rgb(168, 168, 168);
+    border-radius: 7px;
+    position: relative;
+}
+
+.calendario td {
+    position: relative;
+    border: 1px solid #cbd1d2;
+    max-height: 300px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.textoDentro {
+    color: rgb(0, 0, 0);
+    font-size: xx-small;
+    text-wrap: wrap;
+}
+
+.baixo {
+    padding: 7px;
+
+}
+
+.calendario button:hover {
+    color: rgb(95, 95, 95);
+    background: rgb(128, 128, 128);
+    border-radius: 7px;
+
+}
+
+/*Fim Agenda Anual*/
+
+/*Inicio Projetos*/
+
+.projeto {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 45px;
+    background: rgba(111, 255, 183, 0.459);
+    border-radius: 5px;
+    height: 70px;
+    width: 400px;
+    margin-left: 5%;
+    border: 0.5px solid rgba(201, 201, 201, 0.39);
+    
+}
+
+.projeto button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.projeto li {
+    font-size: x-small;
+}
+
+/*Fim projetos*/

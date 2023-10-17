@@ -1,0 +1,849 @@
+
+.titulo-cadastro {
+    margin-top: 2px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.backgroud-blur {
+    filter: blur(5px);
+}
+
+.botao-modal {
+    background-color: #64c09b;
+    border-color: #64c09b;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.cadastrar {
+    margin-left: 95px;
+    margin-right: 20px;
+}
+
+.cancelar {
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.botao-modal:hover {
+    background-color: #2f726b;
+}
+
+
+/* modal cadastrar colaborador */
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    background-color: #64c09b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-header {
+    background-color: #64c09b;
+    color: #fff;
+}
+
+.modal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.modal-body {
+    background-color: #fff;
+}
+
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+}
+
+ .nav-link {
+     color: #F58008
+ } 
+
+.nav-link:hover {
+    color: #FFAC49;
+}
+
+.nav-link:focus {
+    color: #FFAC49;
+}
+
+.btn-laranja {
+    background-color: #F58008;
+    color: white;
+    border: #F58008;
+}
+
+.btn-laranja:hover {
+    background-color: #FFAC49;
+    color: white;
+}
+
+/* dashboard */
+
+.box-info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-info-single {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #fefefe;
+    width: 100%;
+    padding: 40px;
+}
+
+.blue {
+    background: linear-gradient(#B2E5D6, #64c09b);
+    margin-top: 40px;
+    margin-left: 110px;
+    margin-right: 70px;
+}
+
+.green {
+    background: linear-gradient(#D8E6A8, #a7be77);
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.orange {
+    background: linear-gradient(#fcb257ce, #F58008);
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 110px;
+}
+
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
+
+.alunos {
+    padding: 40px;
+}
+
+.select {
+    border-color: #F58008;
+    background-color: #F58008;
+    color: white;
+}
+
+
+.table {
+    max-width: 70%;
+
+}
+
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.barra-pesquisa {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.check {
+    margin-left: 40%;
+}
+
+/* contato dashboard */
+
+.titulo-dash {
+    margin-top: 20px;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+.form-contato {
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.contato-footer {
+    padding-top: 40px;
+    margin-left: 54%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Início NavBar parte de cima*/
+.logo-imel{
+    width: 8%;
+}
+
+.navbar{
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    margin-bottom: 10px;
+}
+
+.navbar ul{
+    flex-direction: row;    
+    list-style: none;
+    display: flex;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.nav-opc{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.nav-opc:hover{
+    opacity: 0.5;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav-link-portal{
+    color:black ;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fim NavBar parte de cima*/
+/*Início NavBar SubMenu*/
+.sub{
+    margin-left: 18px;
+}
+.dropdown-portal{
+    background-color: rgba(27, 164, 15, 0.201);
+    border: 2px solid rgb(27, 164, 15);
+    border-radius: 15px;
+    margin-left: 8px;
+
+}
+
+.dropdown-portal a{
+    height: 35px;
+    margin: 3px;
+    width: 100%;
+}
+
+.drops{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Fim NavBar SubMenu*/
+
+/*Início Carrossel*/
+
+.carrossel{
+    margin-top: 10px;
+    height: 20em;
+}
+
+.img1{
+    height: 100%;
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2{
+    height: 100%;
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3{
+    height: 100%;
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img4{ 
+    height: 100%;
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bgCarrossel{
+    background: #fffbfb;
+    border-radius: 15px;
+}
+
+.fundoSeta{
+    width: 750px;
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+    background: #000;
+}
+
+.seta i{
+    font-size: 30px;
+}
+/*Fim Carrossel*/
+
+/*Início Ultimas Notícias*/
+.título-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    color: #000;
+}
+
+.fundoCards{
+    margin: 10px;
+    background: #fffbfb;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.cardNotícia{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.cardNotícia a{
+    text-decoration: none;
+    color: #000;
+}
+
+.notícias{
+    margin: 10px;
+    width: 20em;
+    height: 18em;
+}
+/*Fim Ultimas Notícias*/
+
+/*Início Footer*/
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+footer{
+    width: 100%;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.logo-footer{
+    width: 25%;
+}
+
+#footer_content{
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #000;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: #ff6f00;
+    cursor: pointer;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #000;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    border: none;
+}
+
+/*Fim Footer*/
+
+/*Início Cadastro Interessados*/
+.menuModal{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+/*Fim Cadastro Interessados*/
+
+/*Início Tela de Login*/
+
+.tela-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../imgs/imel-login.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em; 
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.lembre-de-mim{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lembre-de-mim label input{
+    margin-right: 3px;
+}
+
+.lembre-de-mim a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.lembre-de-mim a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+.registro-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.registro-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registro-link p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 360px){
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .input-box{
+        width: 290px;
+    }
+}
+/*Fim Tela de Login*/
+
+/*Início Notícia Individual*/
+.colunaCentro{
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoNoticia{
+    background: #fffbfb;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.fundoNoticia h1{
+    text-align: center;
+}
+
+.noticia{
+    font: normal 16px Arial;
+}
+
+.noticia p{
+    text-align: justify;
+}
+
+.fundoSetaNot{
+    width: 200px;
+}
+
+.setaNot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #000;
+    color: #000;
+}
+
+.setaNot i{
+    font-size: 40px;
+}
+/*Fim Notícia Individual*/
+/*Início Todas as Noticias*/
+.painelNot{
+    background: #fffbfb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tituloPainel{
+    width: 100%;
+}
+
+.tituloPainel h1{
+    margin: 10px;
+}
+
+.noticiaImg1{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg2{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg3{
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg4{
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg5{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg6{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg7{
+    background-image: url(../imgs/imel-foto4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg8{
+    background-image: url(../imgs/imel-foto3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg9{
+    background-image: url(../imgs/imel-foto2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.noticiaImg10{
+    background-image: url(../imgs/imel-foto1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px 0 0 4px;
+}   
+
+.linkNot a{
+    text-decoration: none;
+}
+
+/*Fim Todas as Noticias*/
