@@ -100,14 +100,21 @@
   
           <form class="contato-dash">
               <label for="telContatoDash" class="h4">Telefone</label>
-              <p id="telContatoDash">(45) 9 9999-0000</p>
+              <input type="tel" class="form-control elemento-invisivel" id="telContatoDash" value="(45) 9 9999-0000" minlength="16" maxlength="16" required>
+              <p id="p-telContatoDash">(45) 9 9999-0000</p>
               <br/>
               <label for="emailContatoDash" class="h4">E-mail</label>
-              <p id="emailContatoDash">exemplo@exemplo.com</p>
+              <input type="email" class="form-control elemento-invisivel" id="emailContatoDash" value="exemplo@exemplo.com" minlength="3" required>
+              <p id="p-emailContatoDash">exemplo@exemplo.com</p>
               <br/>
               <label for="enderecoContatoDash" class="h4">Endereço</label>
-              <p id="enderecoContatoDash">Rua Tal Tal Tal, 123</p>
+              <input type="text" class="form-control elemento-invisivel" id="enderecoContatoDash" value="Rua Tal Tal Tal, 123" minlength="10" required>
+              <p id="p-enderecoContatoDash">Rua Tal Tal Tal, 123</p>
               <br/>
+              <div class="botao-canto-direito elemento-invisivel" id="div-botoes-salvar">
+                <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+                <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
+              </div>
           </form>
         </div>
   
@@ -374,21 +381,37 @@
         // desabilita o botão de editar
         document.getElementById('botao-editar').disabled = true;
 
-        // muda os elementos de texto da página para inputs
+        // pega o input invisível do telefone
         var tel = document.getElementById('telContatoDash');
-        tel.innerHTML = `<input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000" minlength="16" maxlength="16" required>`;
+
+        // pega o parágrafo do telefone
+        var pTel = document.getElementById('p-telContatoDash');
+
+        // torna o input do telefone visível
+        tel.style.display = "block";
+
+        // torna o parágrafo do telefone invisível
+        pTel.style.display = "none";
+
+        /* o código abaixo segue o mesmo padrão do acima */
 
         var email = document.getElementById('emailContatoDash');
-        email.innerHTML = `<input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com" minlength="3" required>`;
+        var pEmail = document.getElementById('p-emailContatoDash');
+
+        email.style.display = "block";
+        pEmail.style.display = "none";
 
         var endereco = document.getElementById('enderecoContatoDash');
-        endereco.innerHTML = `<input type="text" class="form-control" id="enderecoContatoDash" placeholder="Rua Tal Tal Tal, 123" minlength="10" required>
-        <br/>
-        <div class="botao-canto-direito">
-          <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
-          <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
-        </div>
-        <br/>`
+        var pEndereco = document.getElementById('p-enderecoContatoDash');
+
+        endereco.style.display = "block";
+        pEndereco.style.display = "none";
+
+        // pega a div onde os botões estão escondidos
+        var botoes = document.getElementById('div-botoes-salvar');
+
+        // torna os botões visíveis
+        botoes.style.display = "block";
       }
 
       function cancelar() {
