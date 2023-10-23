@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/telaCadastro.css">
+
+
+    <title>Imel - Pré-Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section class="tela-cadastro">
+        <div class="col-md-12 centro">
+
+            <div class="cadastro-box">
+                <form action="" class="col-md-10">
+                    <h2>Realize o seu Pré-Cadastro</h2>
+
+                    <div id="msgError"></div>
+                    <div id="msgSucesso"></div>
+
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id="nome" required>
+                            <label id="labelNome" for="usuario">Nome</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="date" id="dataNasc" required>
+                            <label id="labelDataNasc" for="usuario"></label>
+                        </div>
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id='nomeSocial' required>
+                            <label id="labelNomeSocial" for="usuario">Nome Social</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id='CPF' required>
+                            <label id="labelCPF" for="usuario">CPF</label>
+                        </div>
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id='nomeResp' required>
+                            <label id="labelNomeResp" for="usuario">Nome do Responsável</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id='CPFResp' required>
+                            <label id="labelCPFResp" for="usuario">CPF do Responsável</label>
+                        </div>
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id='tel1' required>
+                            <label id="labelTel1" for="usuario">Telefone 1</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id='tel2' required>
+                            <label id="labelTel2" for="usuario">Telefone 2</label>
+                        </div>
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id='CEP' required>
+                            <label id="labelCEP" for="usuario">CEP</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id='bairro' required>
+                            <label id="labelBairro" for="usuario">Bairro</label>
+                        </div>
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="text" id='rua' required>
+                            <label id="labelRua" for="usuario">Rua</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id='numero' required>
+                            <label id="labelNumero" for="usuario">Número</label>
+                        </div>
+
+                    </div>
+                    <div class="row alinhaCad">
+                        <div class="input-box">
+                            <input type="password" id='senha' required>
+                            <label id="labelSenha" for="usuario">Digite uma Senha</label>
+                            <i id="verSenha" class="bi bi-eye" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id='confirmSenha' required>
+                            <label id="labelConfirmSenha" for="usuario">Confirma a Senha</label>
+                            <i id="verConfirmSenha" class="bi bi-eye" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <button class="btn-cadastro" onclick="cadastrar()">Confirmar Cadastro</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script type="text/JavaScript" src="js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/JavaScript" src="js/tela-cadastro.js"></script>
+</body>
+
+</html>

@@ -254,6 +254,11 @@ th,td {
     margin-right: 15px;
 }
 
+.nav-opc a{
+    text-decoration: none;
+    color: #000;
+}
+
 .nav-opc:hover{
     opacity: 0.5;
 }
@@ -617,25 +622,12 @@ h2{
     line-height: 57px;
 }
 
-.lembre-de-mim{
-    margin: -15px 0 15px;
-    font-size: .9em;
+.bi-eye{
+    position: absolute;
+    right: 8px;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lembre-de-mim label input{
-    margin-right: 3px;
-}
-
-.lembre-de-mim a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.lembre-de-mim a:hover{
-    text-decoration: underline;
+    font-size: 1.2em;
+    line-height: 57px;
     cursor: pointer;
 }
 

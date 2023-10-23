@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles-portal.css">
-    
+
 
     <title>Imel - Login</title>
 
@@ -26,23 +26,17 @@
                         <span class="icon">
                             <i class="bi bi-envelope-fill"></i>
                         </span>
-                        <input type="text" id="login" required>
-                        <label>Email de Usuário</label>
+                        <input type="text" id="usuario" required>
+                        <label for="usuario">Usuário</label>
                     </div>
                     <div class="input-box">
-                        <span class="icon">
-                            <i class="bi bi-lock-fill"></i>
-                        </span>
-                        <input type="password" id='senha' required>
-                        <label>Senha</label>
+                        <input type="password" id="senha" required>
+                        <label for="usuario">Senha</label>
+                        <i id="verSenha" class="bi bi-eye" aria-hidden="true"></i>
                     </div>
-                    <div class="lembre-de-mim">
-                        <label><input type="checkbox">Lembre de mim</label>
-                        <a href="#">Esqueceu a Senha?</a>
-                    </div>
-                    <a class="btn-login" href="dashboard.html" role="button">Login</a>
+                    <button class="btn-login">Entrar</button>
                     <div class="registro-link">
-                        <p>Não faz parte do Projeto?<a data-bs-toggle="modal" data-bs-target="#cadastro"> Clique aqui
+                        <p>Não faz parte do Projeto?<a href="portal-telaCadastro.html"> Clique aqui
                                 para se cadastrar</a></p>
                     </div>
                 </form>
@@ -140,6 +134,7 @@
 
         <script type="text/JavaScript" src="js/bootstrap.js"></script>
         <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+        <script type="text/JavaScript" src="js/tela-login.js"></script>
 </body>
 
 </html>

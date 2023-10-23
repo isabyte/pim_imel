@@ -1,3 +1,6 @@
+
+
+
 function cancelar() {
     if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
       window.location.reload();
@@ -111,3 +114,4 @@ function editarSobre() {
         campoInputSobre.style.display = 'none'; //faz desaparecer o campo
     }
   }
+

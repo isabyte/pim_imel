@@ -373,3 +373,13 @@ body {
     background-color: red;
     transform: scale(1.2);
 }
+
+.bi-eye{
+    position: absolute;
+    margin-top: 22px;
+    right: 30px;
+    color: #000;
+    font-size: 1.2em;
+    line-height: 57px;
+    cursor: pointer;
+}
