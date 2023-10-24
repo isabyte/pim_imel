@@ -91,7 +91,7 @@
         <div class="col-md-6">
           <h1 class="h2">Informações de contato</h1>
           
-          <button name="botao-editar" id="botao-editar" class="btn btn-azul botao-canto-direito" onclick="editar()">Editar</button>
+          <button name="botao-editar" id="botao-editar" class="btn btn-azul botao-canto-direito" onclick="editarContato()">Editar</button>
           <br/>
           <br/>
   
@@ -109,8 +109,8 @@
               <p id="p-enderecoContatoDash">Rua Tal Tal Tal, 123</p>
               <br/>
               <div class="botao-canto-direito elemento-invisivel" id="div-botoes-salvar">
-                <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
-                <button type="button" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
+                <button type="button" class="btn btn-secondary" onclick="cancelarContato()">Cancelar</button>
+                <button type="button" class="btn btn-azul" onclick="salvarContato()">Salvar alterações</button>
               </div>
           </form>
         </div>
@@ -374,7 +374,7 @@
         return true;
       }
 
-      function editar() {
+      function editarContato() {
         // desabilita o botão de editar
         document.getElementById('botao-editar').disabled = true;
 
@@ -411,7 +411,7 @@
         botoes.style.display = "block";
       }
 
-      function cancelar() {
+      function cancelarContato() {
         // pega o input do telefone
         var tel = document.getElementById('telContatoDash');
 
@@ -450,7 +450,7 @@
         }
       }
 
-      function salvar() {
+      function salvarContato() {
         // pega o input do telefone
         var tel = document.getElementById('telContatoDash');
 
