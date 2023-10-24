@@ -12,9 +12,6 @@
     <!-- Meu css -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!--Meu js-->
-    <script src="js/script.js"></script>
-
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +110,7 @@
               <br/>
               <div class="botao-canto-direito elemento-invisivel" id="div-botoes-salvar">
                 <button type="button" class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
-                <button type="submit" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
+                <button type="button" class="btn btn-azul" onclick="salvar()">Salvar alterações</button>
               </div>
           </form>
         </div>
@@ -415,19 +412,93 @@
       }
 
       function cancelar() {
+        // pega o input do telefone
+        var tel = document.getElementById('telContatoDash');
+
+        // pega o parágrafo do telefone
+        var pTel = document.getElementById('p-telContatoDash');
+
+        /* o código abaixo segue o mesmo padrão do acima */
+
+        var email = document.getElementById('emailContatoDash');
+        var pEmail = document.getElementById('p-emailContatoDash');
+
+        var endereco = document.getElementById('enderecoContatoDash');
+        var pEndereco = document.getElementById('p-enderecoContatoDash');
+
+        var salvar = document.getElementById('div-botoes-salvar');
+
         if(confirm('Tem certeza que deseja cancelar? Todos os dados serão perdidos') == true) {
-          window.location.reload();
+        // restaura a página sem perder os dados antigos, diferentemente de location.reload() que recarrega a página
+
+            // habilita o botão de editar
+            document.getElementById('botao-editar').disabled = false;
+
+            // esconde os botaoes de salvar ou cancelar
+            salvar.style.display = "none";
+
+            // esconde os inputs
+            tel.style.display = "none";
+            email.style.display = "none";
+            endereco.style.display = "none";
+
+            // mostra os parágrafos
+            pTel.style.display = "block";
+            pEmail.style.display = "block";
+            pEndereco.style.display = "block";
+
         }
       }
 
       function salvar() {
+        // pega o input do telefone
+        var tel = document.getElementById('telContatoDash');
+
+        // pega o parágrafo do telefone
+        var pTel = document.getElementById('p-telContatoDash');
+
+        /* o código abaixo segue o mesmo padrão do acima */
+
+        var email = document.getElementById('emailContatoDash');
+        var pEmail = document.getElementById('p-emailContatoDash');
+
+        var endereco = document.getElementById('enderecoContatoDash');
+        var pEndereco = document.getElementById('p-enderecoContatoDash');
+        
         if(!verificaInputs()) {
-          return;
+            return;
         }
 
         if(confirm('Deseja salvar as alterações?') == true) {
-          window.location.reload(); 
+            // coloca o valor digitado no input do telefone no parágrafo
+            pTel.innerText = tel.value;
+
+            // torna o input invisível e o parágrafo visível com o novo valor
+            tel.style.display = "none";
+            pTel.style.display = "block";
+
+            /* o código abaixo segue o mesmo padrão do acima */
+
+            pEmail.innerText = email.value;
+
+            email.style.display = "none";
+            pEmail.style.display = "block";
+
+            pEndereco.innerText = endereco.value;
+
+            endereco.style.display = "none";
+            pEndereco.style.display = "block";
+
+            // habilita o botão de editar
+            document.getElementById('botao-editar').disabled = false;
+
+            // pega a div onde os botões de salvar ou cancelar estão
+            var botoes = document.getElementById('div-botoes-salvar');
+
+            // esconde os botões
+            botoes.style.display = "none";
         }
+        
       }
     </script>
 
