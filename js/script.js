@@ -261,3 +261,32 @@ function salvar() {
   }
 }
 /* FIM MENSAGEM CONFIRMAÇÃO*/
+
+  function addTurma() {
+    if(confirm('Deseja salvar as alterações?') == true) {
+        // Valores das variáveis
+        const tittleTurmaAntes = document.getElementById('titlleTurma');
+        const responsavelAntes = document.getElementById('responsavelCaixa');
+        const addTurma = document.getElementById('campoInputTurma').value;
+        const addPeriodo = document.getElementById('campoInputPeriodo').value;
+        const addResponsavel = document.getElementById('campoInputResponsavel').value;
+    
+        console.log('Valor de tittleTurmaAntes: ', tittleTurmaAntes.textContent);
+        console.log('Valor de responsavelAntes: ', responsavelAntes.textContent);
+    
+        console.log('Valor de addTurma: ', addTurma);
+        console.log('Valor de addPeriodo: ', addPeriodo);
+        console.log('Valor de addResponsavel: ', addResponsavel);
+    
+        responsavelAntes.textContent = addResponsavel;
+        tittleTurmaAntes.textContent = addTurma + ' - ' + addPeriodo;
+    
+        console.log('Valor de responsavelAntes: ', responsavelAntes.textContent);
+        console.log('Valor de tittleTurmaAntes: ', tittleTurmaAntes.textContent);
+    
+    }
+}
+
+function fecharModal(modalAddTurma) {
+  $(`#${modalAddTurma}`).modal('hide');
+}

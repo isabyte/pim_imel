@@ -24,7 +24,7 @@
 <body>
 
     <!-- header -->
-    <div class="container">
+    <div class="container" style="margin-left: 7%;">
         <header
             class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <div class="col-md-3 mb-2 mb-md-0">
@@ -87,24 +87,30 @@
     <!-- fim header -->
 
     <!-- turmas -->
+
+        <button id="btn-AddTurma" class="btn btn-secondary btn-add-turma" style="color: #434343;" data-bs-toggle="modal" data-bs-target="#modalAddTurma">+ Adicionar Turma</button>
+
+   
+
     <section class="row col-md-12">
         <div class="col-md-4">
-
             <div class="box-info">
-                <div class="box-info-single blue" style="padding: 50px; margin-top: 58px;">
-                    <button type="button" class="btn btn-secondary btn-turma" data-bs-toggle="modal"
-                        data-bs-target="#modalAddTurma">
-                        <h2 class="h4">Adicionar Turma +</h1>
-                    </button>
+                <div class="box-info-single blue">
+                    <div>
+                        <h1 class="h4">Turma "A"</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
+                        <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
+                            Acessar Turma</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="box-info">
                 <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5">Turma "A"</h1>
-                        <p class="">Responsável: ------------- </p>
+                    <div>
+                        <h1 class="h4">Turma "A"</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
                         <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
                             Acessar Turma
                         </a>
@@ -116,9 +122,9 @@
         <div class="col-md-4">
             <div class="box-info">
                 <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "B"</h1>
-                        <p class="">Responsável: ------------- </p>
+                    <div>
+                        <h1 class="h4">Turma "B"</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
                         <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
                             Acessar Turma</a>
                     </div>
@@ -131,11 +137,10 @@
         <div class="col-md-4">
             <div class="box-info">
                 <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "C"</h5>
-                            <p class="">Responsável: ------------- </p>
-                            <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                                Acessar Turma</a>
+                    <div>
+                        <h1 id="titlleTurma" class="h4">Turma "C" - Manhã</h5>
+                            <p id="responsavelCaixa" class="text-box-info-turmas">Responsável: ------------- </p>
+                            <a id="acessTurma" href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">Acessar Turma</a>
                     </div>
                 </div>
             </div>
@@ -143,9 +148,9 @@
         <div class="col-md-4">
             <div class="box-info">
                 <div class="box-info-single blue">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "D"</h1>
-                        <p class="">Responsável: ------------- </p>
+                    <div>
+                        <h1 class="h4">Turma "D"</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
                         <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
                             Acessar Turma</a>
                     </div>
@@ -156,9 +161,9 @@
         <div class="col-md-4">
             <div class="box-info">
                 <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "E"</h1>
-                        <p class="">Responsável: ------------- </p>
+                    <div>
+                        <h1 class="h4">Turma "E"</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
                         <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
                             Acessar Turma</a>
                     </div>
@@ -175,26 +180,22 @@
             <div class="modal-header justify-content-center align-items-center">
                 <h4 class="modal-title">Adicionar Turma</h4>
             </div>
-            <form>
+            <form >
                 <div class="form-group">
-                    <label for="nome" class="form-label">Nome da turma</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Turma A" required>
+                    <label class="form-label" for="campoInputTurma">Nome da turma</label>
+                    <input name="campoInputTurma" type="text" class="form-control" id="campoInputTurma"  placeholder="Turma A" required>
 
-                    <label for="sobrenome" class="form-label">Responsável</label>
-                    <input type="text" class="form-control" id="sobrenome" placeholder="Fulano de Tal" required>
+                    <label class="form-label" for="campoInputPeriodo">Período</label>
+                    <input name="campoInputPeriodo" type="text" class="form-control" id="campoInputPeriodo" placeholder="Manhã/Tarde" required>
 
-                    <label for="nome" class="form-label">Período</label>
-                    <select class="form-select" style="margin-bottom: 10px;">
-                        <option selected>Selecionar Período</option>
-                        <option class="options">Manhã</option>
-                        <option class="options">Tarde</option>
-                    </select>
+                    <label class="form-label" for="campoInputResponsavel">Responsável</label>
+                    <input name="campoInputResponsavel" type="text" class="form-control" id="campoInputResponsavel" placeholder="Fulano de Tal" required>
 
                 </div>
 
                 <div class="form-group d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-secondary cancelar" onclick="cancelar()">Cancelar</button>
-                    <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
+                    <button type="button" class="btn btn-secondary cancelar" onclick="fecharModal('modalAddTurma')">Cancelar</button>
+                    <button type="submit" class="btn btn-azul cadastrar" onclick="addTurma()">Cadastrar</button>
                 </div>
 
             </form>
@@ -210,7 +211,7 @@
             <div class="modal-header justify-content-center align-items-center">
                 <h4 class="modal-title">Cadastrar Aluno</h4>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault(); cadastrarAluno();">
                 <div class="form-group">
                     <div class="row g-3">
                         <div class="col">
@@ -341,7 +342,7 @@
             <div class="modal-header justify-content-center align-items-center">
                 <h4 class="modal-title">Cadastrar Colaborador</h4>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault(); cadastrarColaborador();">
                 <div class="form-group">
 
                     <div class="row g-3">
