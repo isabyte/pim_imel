@@ -314,3 +314,30 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   });
 
+  document.addEventListener('DOMContentLoaded', function filtro() {
+    const inputTabela = document.getElementById('input-tabela');
+    const tabelaNomes2 = document.getElementById('tabela-nomes2');
+    
+    inputTabela.addEventListener('keyup', () => {
+    let userInput = inputTabela.value.toLowerCase();
+    
+    let linhasTabela = tabelaNomes2.getElementsByTagName('tr');
+    
+    console.log(linhasTabela);
+    for (let posicao in linhasTabela) {
+      if ( true === isNaN(posicao)) {
+        continue;
+      }
+    
+      let conteudoDaLinha = linhasTabela[posicao].innerHTML.toLowerCase();
+      if(true === conteudoDaLinha.includes(userInput)) {
+        linhasTabela[posicao].style.display = '';
+      } else {
+        linhasTabela[posicao].style.display = 'none';
+      }
+    }
+    
+    });
+    });
+
+  

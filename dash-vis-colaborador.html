@@ -90,14 +90,10 @@
   <section class="barra-pesquisa">
     <div class="row col-md-12">
       <div class="col-md-4"></div>
-      <div class="col-md-3">
-        <input class="form-control" type="search" placeholder="Digite o nome do colaborador">
-      </div>
       <div class="col-md-4">
-        <a href="#" class="btn btn-secondary btn-azul" role="button">Pesquisar</a>
+        <input id="input-tabela" class="form-control" type="search" placeholder="Digite o nome do colaborador ou turma">
       </div>
-      <div class="col-md-2">
-      </div>
+      <div class="col-md-4"></div>
     </div>
   </section>
   <!-- fim da barra de pesquisa -->
@@ -114,7 +110,7 @@
           <th scope="col" style="width: 20%;">Contato</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tabela-nomes">
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
