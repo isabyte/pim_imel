@@ -61,6 +61,7 @@ body {
     background-color: #b9bfc4;
 }
 
+
 /* dashboard */
 
 .border-text-info {
@@ -167,6 +168,21 @@ body {
 }
 
 /* turmas dashboard */
+.link-acess-turma {
+    text-decoration: none
+} 
+
+.box-info-single-turma {
+    justify-content: space-between;
+    display: flex;
+    width: 82%;
+    margin: 40px;
+    padding: 45px;
+    border-radius: 10px;
+    border: double;
+    color: #fefefe;
+    
+}
 
 .btn-turma {
     background-color: #8485843a;
@@ -190,7 +206,10 @@ body {
     display: block;
     padding: 1%;
     width: 53%;
+    margin-top: 4%;
+    margin-bottom: 2%;
     margin-left: 22%;
+    color: black;
 }
 
 .btn-add-turma:hover {
