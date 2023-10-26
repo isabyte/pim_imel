@@ -252,11 +252,11 @@ function cancelar() {
 }
 
 function salvar() {
-  if(!verificaInputs()) {
-    return;
-  }
 
   if(confirm('Deseja salvar as alterações?') == true) {
+    if(!verificaInputs()) {
+      return;
+    }
     window.location.reload(); 
   }
 }
@@ -287,6 +287,30 @@ function salvar() {
     }
 }
 
-function fecharModal(modalAddTurma) {
-  $(`#${modalAddTurma}`).modal('hide');
-}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const inputTabela = document.getElementById('input-tabela');
+  const tabelaNomes = document.getElementById('tabela-nomes');
+  
+  inputTabela.addEventListener('keyup', () => {
+  let userInput = inputTabela.value.toLowerCase();
+  
+  let linhasTabela = tabelaNomes.getElementsByTagName('tr');
+  
+  console.log(linhasTabela);
+  for (let posicao in linhasTabela) {
+    if ( true === isNaN(posicao)) {
+      continue;
+    }
+  
+    let conteudoDaLinha = linhasTabela[posicao].innerHTML.toLowerCase();
+    if(true === conteudoDaLinha.includes(userInput)) {
+      linhasTabela[posicao].style.display = '';
+    } else {
+      linhasTabela[posicao].style.display = 'none';
+    }
+  }
+  
+  });
+  });
+

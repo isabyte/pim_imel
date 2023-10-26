@@ -215,6 +215,7 @@ body {
 .btn-add-turma:hover {
     background-color: #4748473a;
     border-color: #60616093;
+    color: black;
 }
 
 /* modal cadastrar colaborador */
