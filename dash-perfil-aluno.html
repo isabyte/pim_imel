@@ -115,8 +115,8 @@
               <br/>
   
               <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
-              <span id="span-sobrenome-aluno">De Tal</span>
-              <input type="text" class="form-control elemento-invisivel" id="sobrenome-aluno" value="De Tal" minlength="2" required>
+              <span id="span-sobrenome-aluno">de Tal</span>
+              <input type="text" class="form-control elemento-invisivel" id="sobrenome-aluno" value="de Tal" minlength="2" required>
               <br/>
   
               <label for="sexo-aluno" class="h5">Sexo:</label>
@@ -163,7 +163,7 @@
                 <div class="container-tel-aluno">
                   <label for="tel-aluno" class="h5">Telefone:</label>
                   <span id="span-tel-aluno">(xx) xxxxx-xxxx</span>
-                  <input type="text" class="form-control elemento-invisivel" id="tel-aluno" value="(xx) xxxxx-xxxx" minlength="16" maxlength="16" required>
+                  <input type="text" class="form-control elemento-invisivel" id="tel-aluno" value="(xx) xxxxx-xxxx" minlength="15" maxlength="15" required>
                 </div>
   
                 <div class="container-responsavel-aluno">
@@ -190,7 +190,7 @@
             <!-- botões de salvar-cancelar invisíveis -->
             <div class="botao-canto-direito" id="botoes-salvar-cancelar" style="display: none;">
               <button type="button" class="btn btn-secondary" id="botao-cancelar" onclick="cancelar()">Cancelar</button>
-              <button type="submit" class="btn btn-azul" id="botao-salvar" onclick="salvar()">Salvar</button>
+              <button type="button" class="btn btn-azul" id="botao-salvar" onclick="salvarPerfilAluno()">Salvar</button>
             </div>
             <br/>
   
@@ -386,27 +386,168 @@
     function verificaInputs() {
       var tamNome = document.getElementById('nome-aluno').value.length;
       var tamSobrenome = document.getElementById('sobrenome-aluno').value.length;
-      var tamNasc = document.getElementById('data-nasc-aluno').value.length;
+      var valorNasc = document.getElementById('data-nasc-aluno').value;
       var tamEmail = document.getElementById('email-aluno').value.length;
       var tamTel = document.getElementById('tel-aluno').value.length;
       var tamResponsavel = document.getElementById('responsavel-aluno').value.length;
       var tamEndereco = document.getElementById('endereco-aluno').value.length;
       var tamBairro = document.getElementById('bairro-aluno').value.length;
-      
 
-      if (tamNome < 3 || tamSobrenome < 2 || tamNasc == 0 || tamEmail == 0 || tamTel < 16 || tamResponsavel < 3 || tamEndereco < 5 || tamBairro < 2) {
+      if (tamNome < 3 || tamSobrenome < 2 || valorNasc == 0 || tamEmail == 0 || tamTel < 15 || tamResponsavel < 3 || tamEndereco < 5 || tamBairro < 2) {
         return false;
         }
         return true;
       }
 
-    function salvar() {
+    function salvarPerfilAluno() {
+      // coloca as margens da página
+      var containerPerfil = document.getElementById('container-colunas').style;
+      containerPerfil.marginLeft = "5%";
+      containerPerfil.marginRight = "5%";
+
+      // pega o span do nome
+      var spanNome = document.getElementById('span-nome-aluno');
+
+      // pega o input invisível do nome
+      var inputNome = document.getElementById('nome-aluno');
+
+      /* o código abaixo segue o mesmo padrão do acima */
+      
+      var spanSobrenome = document.getElementById('span-sobrenome-aluno');
+      var inputSobrenome = document.getElementById('sobrenome-aluno');
+
+      var spanSexo = document.getElementById('span-sexo-aluno');
+      var inputSexo = document.getElementById('sexo-aluno');
+
+      var spanNascimento = document.getElementById('span-data-nasc-aluno');
+      var inputNascimento = document.getElementById('data-nasc-aluno');
+
+      var spanTurma = document.getElementById('span-turma-aluno');
+      var inputTurma = document.getElementById('turma-aluno');
+
+      var spanCadastro = document.getElementById('span-cadastro-aluno');
+      var inputCadastro = document.getElementById('cadastro-aluno');
+      
+      var spanEmail = document.getElementById('span-email-aluno');
+      var inputEmail = document.getElementById('email-aluno');
+
+      var spanTelefone = document.getElementById('span-tel-aluno');
+      var inputTelefone = document.getElementById('tel-aluno');
+
+      var spanResponsavel = document.getElementById('span-responsavel-aluno');
+      var inputResponsavel = document.getElementById('responsavel-aluno');
+
+      var spanEndereco = document.getElementById('span-endereco-aluno');
+      var inputEndereco = document.getElementById('endereco-aluno');
+
+      var spanBairro = document.getElementById('span-bairro-aluno');
+      var inputBairro = document.getElementById('bairro-aluno');
+
+      // nome do aluno no título
+      var tituloNome = document.getElementById('titulo-nome-aluno');
+      
+      if(!verificaInputs()) {
+        alert('Preencha todos os campos corretamente');
+        return;
+      }
+
       if (confirm('Deseja salvar as alterações?') == true) {
-        if(!verificaInputs()) {
-          alert('Preencha todos os campos corretamente');
-          return;
-        }
-        window.location.reload();
+        // muda o nome do aluno no título para o nome digitado no input
+        tituloNome.innerText = (inputNome.value + ' ' + inputSobrenome.value);
+
+        // torna invisível input da imagem
+        document.getElementById('escolher-imagem').style.display = "none";
+
+        // habilita o botão de editar
+        document.getElementById('botao-editar').disabled = false;
+
+        /**/
+
+        // coloca o valor digitado no input no span
+        spanNome.innerText = inputNome.value;
+
+        // torna o input invisível e o span visível com o novo valor
+        inputNome.style.display = "none";
+        spanNome.style.display = "inline";
+
+        /* o código abaixo segue o mesmo padrão do acima */
+
+        // sobrenome
+
+        spanSobrenome.innerText = inputSobrenome.value;
+
+        inputSobrenome.style.display = "none";
+        spanSobrenome.style.display = "inline";
+
+        // sexo
+
+        spanSexo.innerText = inputSexo.value;
+
+        inputSexo.style.display = "none";
+        spanSexo.style.display = "inline";
+
+        // data de nascimento
+
+        spanNascimento.innerText = inputNascimento.value;
+
+        inputNascimento.style.display = "none";
+        spanNascimento.style.display = "inline";
+
+        // turma
+
+        spanTurma.innerText = inputTurma.value;
+
+        inputTurma.style.display = "none";
+        spanTurma.style.display = "inline";
+
+        // cadastro
+
+        spanCadastro.innerText = inputCadastro.value;
+
+        inputCadastro.style.display = "none";
+        spanCadastro.style.display = "inline";
+
+        // email
+
+        spanEmail.innerText = inputEmail.value;
+
+        inputEmail.style.display = "none";
+        spanEmail.style.display = "inline";
+
+        // telefone
+
+        spanTelefone.innerText = inputTelefone.value;
+
+        inputTelefone.style.display = "none";
+        spanTelefone.style.display = "inline";
+
+        // responsável
+
+        spanResponsavel.innerText = inputResponsavel.value;
+
+        inputResponsavel.style.display = "none";
+        spanResponsavel.style.display = "inline";
+
+        // endereço
+
+        spanEndereco.innerText = inputEndereco.value;
+
+        inputEndereco.style.display = "none";
+        spanEndereco.style.display = "inline";
+
+        // bairro
+
+        spanBairro.innerText = inputBairro.value;
+
+        inputBairro.style.display = "none";
+        spanBairro.style.display = "inline";
+
+        // deixa visível o botão de documentos
+        document.getElementById('botao-documentos').style.display = "block";
+
+        // torna invisíveis botões de salvar e cancelar
+        document.getElementById('botoes-salvar-cancelar').style.display = "none";
+
       }
     }
 
