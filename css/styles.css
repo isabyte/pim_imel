@@ -375,24 +375,24 @@ body {
     /* Inicialmente, esconda o campo de edição */
 }
 
-#btn-chamadaP {
+.btn-chamadaP {
     background-color: green;
     transition: transform 0.3s ease;
     margin-left: 20px;
 }
 
-#btn-chamadaF {
+.btn-chamadaF {
     background-color: red;
     transition: transform 0.3s ease;
     margin-left: 20px;
 }
 
-#btn-chamadaP:hover {
+.btn-chamadaP:hover {
     background-color: green;
     transform: scale(1.2);
 }
 
-#btn-chamadaF:hover {
+.btn-chamadaF:hover {
     background-color: red;
     transform: scale(1.2);
 }
