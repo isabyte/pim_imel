@@ -13,13 +13,12 @@ function editarJustificativa() {
 }
 
 function salvarJustificativa() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto');
-        const campoInput = document.getElementById('campoInput');
-        const btnSaveJust = document.getElementById('btn-save-just');
-        const btnEditJust = document.getElementById('btn-edit-just');
+    const texto = document.getElementById('texto');
+    const campoInput = document.getElementById('campoInput');
+    const btnSaveJust = document.getElementById('btn-save-just');
+    const btnEditJust = document.getElementById('btn-edit-just');
 
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -27,12 +26,6 @@ function salvarJustificativa() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto');
-        const campoInput = document.getElementById('campoInput');
-        const btnSaveJust = document.getElementById('btn-save-just');
-        const btnEditJust = document.getElementById('btn-edit-just');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -74,13 +67,12 @@ function editarJustificativa2() {
 }
 
 function salvarJustificativa2() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto2');
-        const campoInput = document.getElementById('campoInput2');
-        const btnSaveJust = document.getElementById('btn-save-just2');
-        const btnEditJust = document.getElementById('btn-edit-just2');
+    const texto = document.getElementById('texto2');
+    const campoInput = document.getElementById('campoInput2');
+    const btnSaveJust = document.getElementById('btn-save-just2');
+    const btnEditJust = document.getElementById('btn-edit-just2');
 
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -88,12 +80,6 @@ function salvarJustificativa2() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto2');
-        const campoInput = document.getElementById('campoInput2');
-        const btnSaveJust = document.getElementById('btn-save-just2');
-        const btnEditJust = document.getElementById('btn-edit-just2');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -136,13 +122,12 @@ function editarJustificativa3() {
 }
 
 function salvarJustificativa3() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto3');
+    const texto = document.getElementById('texto3');
         const campoInput = document.getElementById('campoInput3');
         const btnSaveJust = document.getElementById('btn-save-just3');
         const btnEditJust = document.getElementById('btn-edit-just3');
 
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -150,12 +135,6 @@ function salvarJustificativa3() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto3');
-        const campoInput = document.getElementById('campoInput3');
-        const btnSaveJust = document.getElementById('btn-save-just3');
-        const btnEditJust = document.getElementById('btn-edit-just3');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -196,13 +175,11 @@ function editarJustificativa4() {
 }
 
 function salvarJustificativa4() {
+    const texto = document.getElementById('texto4');
+    const campoInput = document.getElementById('campoInput4');
+    const btnSaveJust = document.getElementById('btn-save-just4');
+    const btnEditJust = document.getElementById('btn-edit-just4');
     if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto4');
-        const campoInput = document.getElementById('campoInput4');
-        const btnSaveJust = document.getElementById('btn-save-just4');
-        const btnEditJust = document.getElementById('btn-edit-just4');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -210,12 +187,6 @@ function salvarJustificativa4() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto4');
-        const campoInput = document.getElementById('campoInput4');
-        const btnSaveJust = document.getElementById('btn-save-just4');
-        const btnEditJust = document.getElementById('btn-edit-just4');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -257,13 +228,11 @@ function editarJustificativa5() {
 }
 
 function salvarJustificativ5() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto5');
+    const texto = document.getElementById('texto5');
         const campoInput = document.getElementById('campoInput5');
         const btnSaveJust = document.getElementById('btn-save-just5');
         const btnEditJust = document.getElementById('btn-edit-just5');
-
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -271,12 +240,6 @@ function salvarJustificativ5() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto5');
-        const campoInput = document.getElementById('campoInput5');
-        const btnSaveJust = document.getElementById('btn-save-just5');
-        const btnEditJust = document.getElementById('btn-edit-just5');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -318,13 +281,12 @@ function editarJustificativa6() {
 }
 
 function salvarJustificativa6() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto6');
-        const campoInput = document.getElementById('campoInput6');
-        const btnSaveJust = document.getElementById('btn-save-just6');
-        const btnEditJust = document.getElementById('btn-edit-just6');
+    const texto = document.getElementById('texto6');
+    const campoInput = document.getElementById('campoInput6');
+    const btnSaveJust = document.getElementById('btn-save-just6');
+    const btnEditJust = document.getElementById('btn-edit-just6');
 
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -332,12 +294,6 @@ function salvarJustificativa6() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto6');
-        const campoInput = document.getElementById('campoInput6');
-        const btnSaveJust = document.getElementById('btn-save-just6');
-        const btnEditJust = document.getElementById('btn-edit-just6');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -379,13 +335,11 @@ function editarJustificativa7() {
 }
 
 function salvarJustificativa7() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
         const texto = document.getElementById('texto7');
         const campoInput = document.getElementById('campoInput7');
         const btnSaveJust = document.getElementById('btn-save-just7');
         const btnEditJust = document.getElementById('btn-edit-just7');
-
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -393,12 +347,6 @@ function salvarJustificativa7() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto7');
-        const campoInput = document.getElementById('campoInput7');
-        const btnSaveJust = document.getElementById('btn-save-just7');
-        const btnEditJust = document.getElementById('btn-edit-just7');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -441,13 +389,11 @@ function editarJustificativa8() {
 }
 
 function salvarJustificativa8() {
+    const texto = document.getElementById('texto8');
+    const campoInput = document.getElementById('campoInput8');
+    const btnSaveJust = document.getElementById('btn-save-just8');
+    const btnEditJust = document.getElementById('btn-edit-just8');
     if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto8');
-        const campoInput = document.getElementById('campoInput8');
-        const btnSaveJust = document.getElementById('btn-save-just8');
-        const btnEditJust = document.getElementById('btn-edit-just8');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -455,12 +401,6 @@ function salvarJustificativa8() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto8');
-        const campoInput = document.getElementById('campoInput8');
-        const btnSaveJust = document.getElementById('btn-save-just8');
-        const btnEditJust = document.getElementById('btn-edit-just8');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -502,13 +442,12 @@ function editarJustificativa9() {
 }
 
 function salvarJustificativa9() {
-    if (confirm('Deseja salvar as alterações?') == true) {
-        //se sim, atualiza o paragrafo com o valor do input, oculta o input e mostra o parágrafo dnv (com oq vc escreveu)
-        const texto = document.getElementById('texto9');
-        const campoInput = document.getElementById('campoInput9');
-        const btnSaveJust = document.getElementById('btn-save-just9');
-        const btnEditJust = document.getElementById('btn-edit-just9');
+    const texto = document.getElementById('texto9');
+    const campoInput = document.getElementById('campoInput9');
+    const btnSaveJust = document.getElementById('btn-save-just9');
+    const btnEditJust = document.getElementById('btn-edit-just9');
 
+    if (confirm('Deseja salvar as alterações?') == true) {
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
@@ -516,12 +455,6 @@ function salvarJustificativa9() {
         texto.innerText = campoInput.value; //seguinte situação: vc muda o que ta escrito no campo("o innertext" do caso), logo, aqui ele devolve o novo valor para o campo de edição, atualizando o valor dele e fazendo com que apareça a nova frase digitada(o "novo innertext". Lembrando q innertext é só uma função do js, como a innerHTML).
 
     } else {
-        //se não, faz o texto antigo aparecer dnv e oculta o input, basicamente restaurando a pagina sem perder os dados antigos. Diferente da função window.location.reload(), que faz a pagina restaurar por inteiro
-        const texto = document.getElementById('texto9');
-        const campoInput = document.getElementById('campoInput9');
-        const btnSaveJust = document.getElementById('btn-save-just9');
-        const btnEditJust = document.getElementById('btn-edit-just9');
-
         btnEditJust.style.display = 'block'; //habilita botao editar
         btnSaveJust.style.display = 'none'; //desabilita botao salvar
         texto.style.display = 'block'; //faz aparecer o texto
