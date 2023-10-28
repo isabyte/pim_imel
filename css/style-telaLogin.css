@@ -1,29 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /*Início Tela de Login*/
 
-.tela-cadastro {
+.tela-login{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-image: url(/imgs/exemplo2.jpeg);
+    background-image: url(../imgs/imel-login.png);
     background-size: cover;
     background-position: center;
 }
 
-.cadastro-box {
+.login-box{
     position: relative;
-    width: 70%;
-    height: 30%;
-    margin: 10px;
-    background: #00000060;
+    width: 400px;
+    height: 450px;
+    background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     display: flex;
@@ -32,26 +24,20 @@
     backdrop-filter: blur(15px);
 }
 
-h2 {
-    margin-top: 10px;
+h2{
     font-size: 2em;
     color: #fff;
     text-align: center;
 }
 
-.input-box {
+.input-box{
     position: relative;
     width: 310px;
     margin: 30px 0;
     border-bottom: 2px solid #fff;
 }
 
-.alinhaCad {
-    display: flex;
-    justify-content: space-around;
-}
-
-.input-box label {
+.input-box label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -63,22 +49,22 @@ h2 {
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label {
+.input-box input:valid~label{
     top: -5px;
 }
 
-.input-box input {
+.input-box input{
     width: 100%;
     height: 50px;
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1em; 
     color: #fff;
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon {
+.input-box .icon{
     position: absolute;
     right: 8px;
     color: #fff;
@@ -86,7 +72,7 @@ h2 {
     line-height: 57px;
 }
 
-.bi-eye {
+.bi-eye{
     position: absolute;
     right: 8px;
     color: #fff;
@@ -95,13 +81,16 @@ h2 {
     cursor: pointer;
 }
 
-.centro {
+.centro{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-cadastro {
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 100%;
     height: 40px;
@@ -113,38 +102,44 @@ h2 {
     font-size: 1em;
     color: #000;
     font-weight: 500;
-    margin: 10px;
 }
 
+.registro-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
 
-@media (max-width: 360px) {
-    .cadastro-box {
+.registro-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registro-link p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 360px){
+    .login-box{
         width: 100%;
         height: 100vh;
         border: none;
         border-radius: 0;
     }
 
-    .input-box {
+    .input-box{
         width: 290px;
     }
 }
-
 /*Fim Tela de Login*/
 
-.msgError {
+.msgError{
     text-align: center;
     color: #ff0000;
     background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-}
-
-.msgSucesso {
-    text-align: center;
-    color: #00bb00;
-    background-color: #bbffbe;
     padding: 10px;
     border-radius: 4px;
     display: none;

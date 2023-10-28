@@ -246,7 +246,7 @@ function cadastrar() {
         msgError.innerHTML = ''
 
         setTimeout(()=>{
-            window.location.href = 'tela-login.html'
+            location.href = 'portal.html' 
         }, 3000)
 
     } else {
