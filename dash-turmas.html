@@ -35,8 +35,8 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
-                <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+                <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+                <li><a href="dash-turmas.html" class="nav-link px-2 link-secondary">Turmas</a></li>
                 <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
                 <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -87,83 +87,74 @@
     <!-- fim header -->
 
     <!-- turmas -->
+
+    <button id="btn-AddTurma" class="btn btn-secondary btn-add-turma" data-bs-toggle="modal"
+        data-bs-target="#modalAddTurma">+ Adicionar Turma</button>
+
+
+
     <section class="row col-md-12">
         <div class="col-md-4">
-
-            <div class="box-info">
-                <div class="box-info-single blue" style="padding: 50px; margin-top: 58px;">
-                    <button type="button" class="btn btn-secondary btn-turma" data-bs-toggle="modal"
-                        data-bs-target="#modalAddTurma">
-                        <h2 class="h4">Adicionar Turma +</h1>
-                    </button>
+            <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma blue"> 
+                <div>
+                    <h1 class="h5">Turma "A" - Manhã</h1>
+                    <p class="text-box-info-turmas">Responsável: ------------- </p>
                 </div>
-            </div>
+              
+            </a>
         </div>
+        
+
+
         <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5">Turma "A"</h1>
-                        <p class="">Responsável: ------------- </p>
-                        <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                            Acessar Turma
-                        </a>
+                <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma green"> 
+                    <div>
+                        <h1 class="h5">Turma "B" - Manhã</h1>
+                        <p class="text-box-info-turmas">Responsável: ------------- </p>
                     </div>
-                </div>
-            </div>
+                  
+                </a>
         </div>
 
         <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "B"</h1>
-                        <p class="">Responsável: ------------- </p>
-                        <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                            Acessar Turma</a>
-                    </div>
+            <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma orange"> 
+                <div>
+                    <h1 class="h5">Turma "C" - Tarde</h1>
+                    <p class="text-box-info-turmas">Responsável: ------------- </p>
                 </div>
-            </div>
+              
+            </a>
         </div>
     </section>
 
     <section class="row col-md-12">
         <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "C"</h5>
-                            <p class="">Responsável: ------------- </p>
-                            <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                                Acessar Turma</a>
-                    </div>
+            <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma orange"> 
+                <div>
+                    <h1 class="h5">Turma "C" - Manhã</h1>
+                    <p class="text-box-info-turmas">Responsável: ------------- </p>
                 </div>
-            </div>
+              
+            </a>
         </div>
         <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single blue">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "D"</h1>
-                        <p class="">Responsável: ------------- </p>
-                        <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                            Acessar Turma</a>
-                    </div>
+            <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma blue"> 
+                <div>
+                    <h1 class="h5">Turma "D" - Tarde</h1>
+                    <p class="text-box-info-turmas">Responsável: ------------- </p>
                 </div>
-            </div>
+              
+            </a>
         </div>
 
         <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5 ">Turma "E"</h1>
-                        <p class="">Responsável: ------------- </p>
-                        <a href="dash-acess-turmas.html" class="btn btn-secondary btn-turma" role="button">
-                            Acessar Turma</a>
-                    </div>
+            <a href="dash-acess-turmas.html" class="link-acess-turma box-info box-info-single-turma green"> 
+                <div>
+                    <h1 class="h5">Turma "E" - Tarde</h1>
+                    <p class="text-box-info-turmas">Responsável: ------------- </p>
                 </div>
-            </div>
+              
+            </a>
         </div>
 
     </section>
@@ -177,18 +168,17 @@
             </div>
             <form>
                 <div class="form-group">
-                    <label for="nome" class="form-label">Nome da turma</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Turma A" required>
+                    <label class="form-label" for="campoInputTurma">Nome da turma</label>
+                    <input name="campoInputTurma" type="text" class="form-control" id="campoInputTurma"
+                        placeholder="Turma A" required>
 
-                    <label for="sobrenome" class="form-label">Responsável</label>
-                    <input type="text" class="form-control" id="sobrenome" placeholder="Fulano de Tal" required>
+                    <label class="form-label" for="campoInputPeriodo">Período</label>
+                    <input name="campoInputPeriodo" type="text" class="form-control" id="campoInputPeriodo"
+                        placeholder="Manhã/Tarde" required>
 
-                    <label for="nome" class="form-label">Período</label>
-                    <select class="form-select" style="margin-bottom: 10px;">
-                        <option selected>Selecionar Período</option>
-                        <option class="options">Manhã</option>
-                        <option class="options">Tarde</option>
-                    </select>
+                    <label class="form-label" for="campoInputResponsavel">Responsável</label>
+                    <input name="campoInputResponsavel" type="text" class="form-control" id="campoInputResponsavel"
+                        placeholder="Fulano de Tal" required>
 
                 </div>
 
@@ -210,7 +200,7 @@
             <div class="modal-header justify-content-center align-items-center">
                 <h4 class="modal-title">Cadastrar Aluno</h4>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault(); cadastrarAluno();">
                 <div class="form-group">
                     <div class="row g-3">
                         <div class="col">
@@ -341,7 +331,7 @@
             <div class="modal-header justify-content-center align-items-center">
                 <h4 class="modal-title">Cadastrar Colaborador</h4>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault(); cadastrarColaborador();">
                 <div class="form-group">
 
                     <div class="row g-3">

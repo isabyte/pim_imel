@@ -14,6 +14,7 @@
 
     <!--Meu js-->
     <script src="js/script.js"></script>
+    <script src="js/dash-chamada.js"></script>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,22 +94,18 @@
         <div class="row col-md-12">
             <div class="col-md-3"></div>
             <div class="col-md-1">
-                <h1 class="h5" style="margin-top: 5px;">Selec. data:</h1>
+                <h5>Data:</h5>
             </div>
-            <div class="col-md-3">
-                <form>
-                    <div class="form-group">
-                        <input type="date" class="form-control" required>
-                    </div>
-                </form>
+            <div class="col-md-3 form-group">
+                <input name="date" type="date" class="form-control" required>
             </div>
             <div class="col-md-2">
-                <a href="dash-relatorio-chamada.html" class="btn btn-azul" style="margin-left: 10px;">
-                    Relatório de chamadas
+                <a href="dash-relatorio-chamada.html" class="btn btn-azul">
+                Relatório de chamadas
                 </a>
             </div>
-            <div class="col-md-3">
-            </div>
+            <div class="col-md-3"></div>
+
     </section>
 
     <!-- fim da barra de pesquisa -->
@@ -124,7 +121,7 @@
                     <th scope="col" class="col-md-1">Presença</th>
                     <th scope="col" class="col-md-3">Justificativa</th>
                     <th scope="col" class="col-md-1"></th>
-                    <th scope="col" class="col-md-1"></th>
+
                 </tr>
             </thead>
             <tbody>
@@ -132,8 +129,8 @@
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP" onclick=" chamadaP()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF" onclick=" chamadaF()">F</button>
                     </td>
                     <td>
                         <p id="texto">Sem justificativa</p>
@@ -143,40 +140,40 @@
                         <button class="btn btn-azul edit-mode" id="btn-save-just"
                             onclick="salvarJustificativa()">Salvar</button>
                     </td>
-                    <td></td>
+
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
+                    <td>Mark</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
+                       <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP2" onclick="chamadaP2()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF2" onclick="chamadaF2()">F</button>
                     </td>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto2">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput2">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just2" onclick="editarJustificativa2()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just2"
+                            onclick="salvarJustificativa2()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
-
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Larry</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
+                       <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP3" onclick=" chamadaP3()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF3" onclick=" chamadaF3()">F</button>
                     </td>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto3">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput3">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just3" onclick="editarJustificativa3()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just3"
+                            onclick="salvarJustificativa3()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
 
                 </tr>
@@ -184,51 +181,52 @@
                     <th scope="row">4</th>
                     <td>Mark</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
+                       <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP4" onclick=" chamadaP4()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF4" onclick=" chamadaF4()">F</button>
                     </td>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto4">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput4">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just4" onclick="editarJustificativa4()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just4"
+                            onclick="salvarJustificativa4()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
                 </tr>
                 <tr>
                     <th scope="row">5</th>
                     <td>Jacob</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
-                    </td>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP5" onclick=" chamadaP5()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF5" onclick=" chamadaF5()">F</button>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto5">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput5">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just5" onclick="editarJustificativa5()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just5"
+                            onclick="salvarJustificativa5()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
                 </tr>
                 <tr>
                     <th scope="row">6</th>
                     <td>Larry</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
-                    </td>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP6" onclick=" chamadaP6()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF6" onclick=" chamadaF6()">F</button>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto6">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput6">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just6" onclick="editarJustificativa6()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just6"
+                            onclick="salvarJustificativa6()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
 
                 </tr>
@@ -236,51 +234,51 @@
                     <th scope="row">7</th>
                     <td>Mark</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
-                    </td>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP7" onclick=" chamadaP7()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF7" onclick=" chamadaF7()">F</button>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto7">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput7">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just7" onclick="editarJustificativa7()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just7"
+                            onclick="salvarJustificativa7()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
                 </tr>
                 <tr>
                     <th scope="row">8</th>
                     <td>Jacob</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
-                    </td>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP8" onclick=" chamadaP8()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF8" onclick=" chamadaF8()">F</button>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto8">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput8">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just8" onclick="editarJustificativa8()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just8"
+                            onclick="salvarJustificativa8()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
                 </tr>
                 <tr>
                     <th scope="row">9</th>
                     <td>>Larry</td>
                     <td>
-                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
-                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
-                    </td>
+                        <button class="btn btn-secondary btn-chamadaP" id="btn-chamadaP9" onclick=" chamadaP9()">P</button>
+                        <button class="btn btn-secondary edit-mode btn-chamadaF" id="btn-chamadaF9" onclick=" chamadaF9()">F</button>
                     <td>
-                        <p id="texto">Sem justificativa</p>
+                        <p id="texto9">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput9">
                     </td>
-                    <td><button class="btn btn-azul" id="btn-edit-just" onclick="editarJustificativa()">Editar</button>
-                        <button class="btn btn-azul edit-mode" id="btn-save-just"
-                            onclick="salvarJustificativa()">Salvar</button>
+                    <td><button class="btn btn-azul" id="btn-edit-just9" onclick="editarJustificativa9()">Editar</button>
+                        <button class="btn btn-azul edit-mode" id="btn-save-just9"
+                            onclick="salvarJustificativa9()">Salvar</button>
                     </td>
-                    <td><input type="text" class="edit-mode form-control" id="campoInput"></td>
+                    
 
                 </tr>
             </tbody>
@@ -288,6 +286,11 @@
     </section>
 
     <!-- fim tabela alunos -->
+
+
+                <button class="btn btn-laranja" style="margin-top: 30px; margin-bottom: 30px; margin-left: 0 auto;" onclick="salvar()">Salvar Chamada</button>
+
+
 
     <!-- cadastrar Alunos -->
 

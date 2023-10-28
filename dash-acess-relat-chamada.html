@@ -35,8 +35,8 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
-                <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+                <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
+                <li><a href="dash-turmas.html" class="nav-link px-2 link-secondary">Turmas</a></li>
                 <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
                 <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -86,89 +86,146 @@
     </div>
     <!-- fim header -->
 
-    <br>
-    <h1>Relatório de Chamadas</h1>
-    <br>
 
-    <!-- tabela relatório chamadas -->
+    <!--barra de pesquisa-->
+
+    <h2>
+        Relatório Chamada - Turma A / Manhã
+         <a class="btn btn-secondary btn-azul botao-canto-direito" href="dash-relatorio-chamada.html">Voltar</a>
+    </h2><br>
+
+    <!-- fim da barra de pesquisa -->
+
+    <!-- tabela alunos -->
     <section class="d-flex justify-content-center align-items-start mt-4;">
-        <table class="table caption-top">
-        </Table>
-    </section>
-
-    <section class="d-flex justify-content-center align-items-start mt-4;">
-        <table class="table caption-top">
-            <caption>Outubro de 2023</caption>
-            <tbody>
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-                        <a  class="btn btn-azul" href="dash-acess-relat-chamada.html">Acessar</a>
-                    </td>
-
-                </tr>
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-                        <a  class="btn btn-azul" href="dash-acess-relat-chamada.html">Acessar</a>
-                    </td>
-
-                </tr>
-
-            </tbody>
-        </table>
-    </section>
-
-    <section class="d-flex justify-content-center align-items-start mt-4;">
-        <table class="table caption-top">
-            <caption>Setembro de 2023</caption>
+        <table class="table table-bordered">
+            <caption>Relatório dia 00/00/0000</caption>
             <thead>
+                <tr class="col-md-12">
+                    <th scope="col" class="col-md-2">#</th>
+                    <th scope="col" class="col-md-3">Nome</th>
+                    <th scope="col" class="col-md-2">Presença</th>
+                    <th scope="col" class="col-md-4">Justificativa</th>
+                </tr>
             </thead>
+            
             <tbody>
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-                        <a  class="btn btn-azul" href="dash-acess-relat-chamada.html">Acessar</a>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
                     </td>
-
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
                 </tr>
 
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
                     </td>
-
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
                 </tr>
 
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-                        <a  class="btn btn-azul" href="dash-acess-relat-chamada.html">Acessar</a>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                   <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
+                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
                     </td>
-
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                    </td>
                 </tr>
 
-                <tr class="col-md-12">
-                    <td class="col-md-3">Turma A</td>
-                    <td class="col-md-3">00/00/0000</td>
-                    <td class="col-md-3">
-                        <a  class="btn btn-azul" href="dash-acess-relat-chamada.html">Acessar</a>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Mark</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
                     </td>
-
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
                 </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Jacob</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
+                    </td>
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Larry</td>
+                   <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP" onclick=" chamadaP()">P</button>
+                        <button class="btn btn-secondary edit-mode" id="btn-chamadaF" onclick=" chamadaF()">F</button>
+                    </td>
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Mark</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
+                    </td>
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Jacob</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
+                    </td>
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">9</th>
+                    <td>>Larry</td>
+                    <td>
+                        <button class="btn btn-secondary" id="btn-chamadaP">P</button>
+                    </td>
+                    <td>
+                        <p id="texto">Sem justificativa</p>
+                        <input type="text" class="edit-mode form-control" id="campoInput">
+                    </td>
+                </tr>
+
             </tbody>
         </table>
     </section>
 
-    <!-- fim tabela relatório chamadas-->
+    <!-- fim tabela alunos -->
 
     <!-- cadastrar Alunos -->
+
     <div class="modal" id="modalAluno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-content">

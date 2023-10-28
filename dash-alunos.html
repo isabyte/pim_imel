@@ -12,8 +12,10 @@
   <!-- Meu css -->
   <link rel="stylesheet" href="css/styles.css">
 
+
   <!--Meu js-->
   <script src="js/script.js"></script>
+  <script src="js/inputs-busca.js"></script>
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,21 +87,21 @@
   <!-- fim header -->
   <!--barra de pesquisa-->
 
-  <section class="barra-pesquisa">
+
     <div class="row col-md-12">
       <div class="col-md-2"></div>
       <div class="col-md-3" style="margin-left: 40px;">
-        <input class="form-control" type="search" placeholder="Digite o nome do aluno">
+        <input id="input-tabela" class="form-control" type="text" placeholder="Digite o nome do aluno">
       </div>
       <div class="col-md-2">
-        <select class="form-select select" style="margin-left: 2px;">
-          <option selected>Turmas</option>
-          <option class="options">Turma "A"</option>
-          <option class="options">Turma "B"</option>
-          <option class="options">Turma "C"</option>
-          <option class="options">Turma "D"</option>
-          <option class="options">Turma "E"</option>
-          <option class="options">Sem Turma</option>
+        <select id="selectTabela"  class="form-select select" style="margin-left: 2px;">
+          <option value="opc" selected>Turmas</option>
+          <option value="opc1">Turma "A"</option>
+          <option value="opc2">Turma "B"</option>
+          <option value="opc3">Turma "C"</option>
+          <option value="opc4">Turma "D"</option>
+          <option value="opc5">Turma "E"</option>
+          <option value="opc6">Sem Turma</option>
         </select>
       </div>
       <div class="col-md-4">
@@ -109,7 +111,7 @@
       </div>
 
     </div>
-  </section>
+
   <!-- fim da barra de pesquisa -->
 
   <!-- tabela alunos -->
@@ -125,7 +127,7 @@
           <th scope="col" style="width: 40px;">Selecionar</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tabela-nomes">
         <tr>
           <th scope="row">1</th>
           <td><a href="dash-perfil-aluno.html" class="link-dark">Mark</a></td>
