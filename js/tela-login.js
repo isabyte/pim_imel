@@ -65,7 +65,7 @@ function logar(){
 
     let msgError = document.querySelector('#msgError')
 
-    if(login == "admin" && senha == "admin"){
+    if(login == "Descomplica" && senha == "uniamerica123"){
         location.href = "dashboard.html"
     } else{
         userLabel.setAttribute('style', 'color: red')

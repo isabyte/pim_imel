@@ -246,7 +246,7 @@ function cadastrar() {
         msgError.innerHTML = ''
 
         setTimeout(()=>{
-            location.href = 'portal.html' 
+            location.href = "portal.html"
         }, 3000)
 
     } else {
