@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Início NavBar parte de cima*/
+.logo-imel{
+    width: 8%;
+}
+
+.navbar{
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    margin-bottom: 10px;
+}
+
+.navbar ul{
+    flex-direction: row;    
+    list-style: none;
+    display: flex;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.nav-opc{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.nav-opc a{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-opc:hover{
+    opacity: 0.5;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav-link-portal{
+    color:black ;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fim NavBar parte de cima*/
+
+/*Início CSS Card de Apresentação*/
+.fundoApresen{
+    padding: 15px;
+    background-color: #fffbfb;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.fundoApresen h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao{
+    font: normal 16px Arial;
+}
+
+.apresentacao p{
+    text-align: justify;
+    padding: 8px;
+}
+
+.apresentacao a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.apresentacao h5{
+    color: #000;
+    font-size: 22px;
+}
+
+.apresentacao a:hover{
+    text-decoration: underline;
+}
+
+.colunaCentro{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fim CSS Card de Apresentação*/
+
+/*Início Footer*/
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+footer{
+    width: 100%;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.logo-footer{
+    width: 25%;
+}
+
+#footer_content{
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #000;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: #ff6f00;
+    cursor: pointer;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #000;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    border: none;
+}
+
+/*Fim Footer*/
+
+/*Início Links diversos*/
+.teste li{
+    color: #000;   
+    padding: 3px; 
+}
+
+.teste a{
+    color: #000;  
+    padding: 3px;  
+}
+/*Fim Links diversos*/
