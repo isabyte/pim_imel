@@ -85,7 +85,7 @@
 
     <section>
       <h1 class="h2 titulo-dash">Perfil do aluno</h1>
-      <div class="row col-md-12 container-perfil-aluno" id="container-colunas">
+      <div class="row col-md-12 justify-content-center" id="container-colunas">
 
         <!-- informações pessoais-->
         <div class="coluna-perfil informacoes-pessoais col-md-4">
@@ -289,11 +289,6 @@
   <!--JavaScript próprio-->
   <script>
     function editarInfoAluno() {
-      // tira margens da página
-      var containerPerfil = document.getElementById('container-colunas').style;
-      containerPerfil.marginLeft = "0px";
-      containerPerfil.marginRight = "0px";
-
       // desabilita o botão de editar
       document.getElementById('botao-editar').disabled = true;
 

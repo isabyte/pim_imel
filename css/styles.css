@@ -326,11 +326,6 @@ body {
 
 /* perfil do aluno */
 
-.container-perfil-aluno {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .coluna-perfil {
     max-width: fit-content;
     margin: 10px;
