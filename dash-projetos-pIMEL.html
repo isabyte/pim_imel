@@ -19,7 +19,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -36,7 +35,7 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
+                <li><a href="dashboard.html" class="nav-link px-2">Dashboard</a></li>
                 <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
                 <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
                 <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -46,7 +45,7 @@
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                   data-bs-target="#modalAluno">
+                                    data-bs-target="#modalAluno">
                                     Cadastrar Aluno
                                 </button></li>
                             <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
@@ -62,28 +61,16 @@
                         </ul>
                     </div>
                 </li>
-                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <li><a class="nav-link px-2 dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Portal
                     </a>
                     <div class="dropdown">
                         <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-eventos.html">Calendarios & Eventos</a></li>
-                            <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-projetos-pIMEL.html">Projeto Meninos do Lago</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Canoagem">Canoagem Rosa - Flor de Lótus</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Voluntarios">Voluntários</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Cursos">Cursos</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Caiaque">Caiaque Polo</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Biblioteca</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-apostilas">Apostilas do Projeto</a></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-Diversos">Diversos</a></li>
-                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="dash-agenda.html">Agenda</a></li>
                             <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+                            <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+                            <li><a class="dropdown-item" href="dash-sobre.html">Sobre</a></li>
                             <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
                         </ul>
                     </div>
@@ -99,42 +86,45 @@
     </div>
     <!-- fim header -->
 
-    <!-- informações -->
-    <section class="row col-md-12">
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single blue">
-                    <div class="info-text">
-                        <h1 class="h5">Alunos ativos</h1>
-                        <p>143</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- página -->
+  <section>
+    <div class="row col-md-12">
+      <div class="col-md-3"></div>
 
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single green">
-                    <div class="info-text">
-                        <h1 class="h5">Alunos inativos</h1>
-                        <p>3</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="col-md-6">
+        <h1 class="h2">O Projeto Meninos do Lago
+          <button class="btn btn-azul botao-canto-direito" id="btn-edit-sobre" onclick="editarSobre()">Editar</button>
+        <button class="btn btn-azul edit-mode botao-canto-direito" id="btn-save-sobre" onclick="salvarSobre()">Salvar</button>
+        </h1>
+        <br /><br />
 
-        <div class="col-md-4">
-            <div class="box-info">
-                <div class="box-info-single orange">
-                    <div class="info-text">
-                        <h1 class="h5">Cadastros pendentes</h1>
-                        <p>8</p>
-                    </div>
-                </div>
-            </div>
+        <textarea type="text" id="campoInputSobre" class="edit-mode form-control" cols="40" rows="20"></textarea>
+
+
+        <div class="row">
+          <div class="sobre-dash" id="sobre-dash">
+            <p id="pSobre">Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal
+              principal. Nesta tela, o colaborador pode escolher editar este texto.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et,
+              iaculis mollis magna. Suspendisse non sagitt is mauris. Suspendisse tellus diam, placerat non risus ut,
+              malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas
+              fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam,
+              varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu
+              convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.
+              Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan
+              velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc
+              tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta.
+              Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Mauris pellentesque sagittis nisl eu facilisis. Mauris sed tempus magna. Maecenas
+              ut ipsum sed neque ullamcorper ornare. Nunc pulvinar erat ipsum.</p>
+          </div>
         </div>
-    </section>
-    <!-- fim informações -->
+      </div>
+
+      <div class="col-md-3"></div>
+    </div>
+  </section>
 
     <!-- cadastrar Alunos -->
 
@@ -148,46 +138,46 @@
                 <div class="form-group">
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelNome" for="nome" class="form-label"> Nome Completo:</label>
-                            <input type="text" id="nome" class="form-control" placeholder="Joazinho da Silva" required>
+                            <label for="nome" class="form-label"> Nome Completo:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho da Silva" required>
                         </div>
                         <div class="col">
-                            <label id="labelCPF" for="CPF" class="form-label">CPF:</label>
-                            <input type="text" id="CPF" class="form-control" placeholder="000.000.000-00" required>
-                        </div>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col">
-                            <label id="labelNomeSocial" for="nomeSocial" class="form-label"> Nome Social:</label>
-                            <input type="text" id="nomeSocial" class="form-control" placeholder="Joazinho">
-                        </div>
-                        <div class="col">
-                            <label id="labelDataNasc" for="dataNasc" class="form-label">Data de nascimento:</label>
-                            <input type="date" id="dataNasc" class="form-control" required>
+                            <label for="sobrenome" class="form-label">CPF:</label>
+                            <input type="text" class="form-control" placeholder="000.000.000-00" required>
                         </div>
                     </div>
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelNomeResp" for="nomeResp" class="form-label">Nome do Responsável:</label>
-                            <input type="text" id="nomeResp" class="form-control" placeholder="Maria da Silva">
+                            <label for="nome" class="form-label"> Nome Social:</label>
+                            <input type="text" class="form-control" placeholder="Joazinho">
                         </div>
                         <div class="col">
-                            <label id="labelCPFResp" for="CPFResp" class="form-label">CPF do responsável:</label>
-                            <input type="text" id="CPFResp" class="form-control" placeholder="000.000.000-00">
+                            <label for="sobrenome" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelTel1" for="tel1" class="form-label"> Telefone 1:</label>
-                            <input type="tel" id="tel1" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000"
+                            <label for="senha" class="form-label">Nome do Responsável:</label>
+                            <input type="text" class="form-control" placeholder="Maria da Silva">
+                        </div>
+                        <div class="col">
+                            <label for="senha" class="form-label">CPF do responsável:</label>
+                            <input type="text" class="form-control" placeholder="000.000.000-00">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nome" class="form-label"> Telefone 1:</label>
+                            <input type="tel" class="form-control" id="telContatoDash" placeholder="(45) 9 9999-0000"
                                 minlength="16" maxlength="16" required>
                         </div>
                         <div class="col">
-                            <label id="labelTel2" for="tel2" class="form-label">Telefone 2:</label>
-                            <input type="tel" id="tel2" class="form-control" placeholder="(45) 9 9999-0000" minlength="16"
+                            <label for="sobrenome" class="form-label">Telefone 2:</label>
+                            <input type="tel" class="form-control" placeholder="(45) 9 9999-0000" minlength="16"
                                 maxlength="16" required>
                         </div>
                     </div>
@@ -208,49 +198,49 @@
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelCEP" for="CEP" class="form-label">CEP:</label>
-                            <input type="number" id="CEP" class="form-control" id="cep" placeholder="00000-000">
+                            <label for="cep" class="form-label">CEP:</label>
+                            <input type="number" class="form-control" id="cep" placeholder="00000-000">
                         </div>
                         <div class="col">
-                            <label id="labelRua" for="rua" class="form-label">Rua / N°:</label>
-                            <input type="text" id="rua" class="form-control" id="rua" placeholder="Av das Cataratas 000">
+                            <label for="rua" class="form-label">Rua / N°:</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Av das Cataratas 000">
                         </div>
                     </div>
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelBairro" for="bairro" class="form-label">Bairro:</label>
-                            <input type="text" id="bairro" class="form-control" placeholder="Vila Yolanda" required>
+                            <label for="bairro" class="form-label">Bairro:</label>
+                            <input type="text" class="form-control" placeholder="Vila Yolanda" required>
                         </div>
                         <div class="col">
-                            <label id="labelComple" for="complemento" class="form-label">Complemento:</label>
-                            <input type="number" id="comple" class="form-control" placeholder="casa">
+                            <label for="cpf" class="form-label">Complemento:</label>
+                            <input type="number" class="form-control" placeholder="casa">
                         </div>
                     </div>
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelCidade" for="cidade" class="form-label">Cidade:</label>
-                            <input type="text" id="cidade" class="form-control" placeholder="Foz do Iguaçu">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" class="form-control" placeholder="Foz do Iguaçu">
                         </div>
                         <div class="col">
-                            <label id="labelEstado" for="estado" class="form-label">Estado:</label>
-                            <input type="text" id="estado" class="form-control" placeholder="Paraná">
+                            <label for="estado" class="form-label">Estado:</label>
+                            <input type="text" class="form-control" placeholder="Paraná">
                         </div>
                     </div>
 
-                    <label id="labelEmail" for="email" class="form-label">E-mail:</label>
-                    <input type="email" id="email" class="form-control" placeholder="exemplo@exemplo.com"
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="emailContatoDash" placeholder="exemplo@exemplo.com"
                         minlength="3" required>
 
                     <div class="row g-3">
                         <div class="col">
-                            <label id="labelSenha" for="Csenha" class="form-label" >Criar Senha:</label>
-                            <input type="password" id="Csenha" class="form-control" placeholder="********" id="senha">
+                            <label for="senha" class="form-label">Criar Senha:</label>
+                            <input type="password" class="form-control" placeholder="****" required>
                         </div>
                         <div class="col">
-                            <label id="labelConfirmSenha" for="ConfirmSenha" class="form-label" >Confirme sua Senha:</label>
-                            <input type="password" id="ConfirmSenha" class="form-control" placeholder="********">
+                            <label for="senha" class="form-label">Confirme sua Senha:</label>
+                            <input type="password" class="form-control" placeholder="****">
                         </div>
                     </div>
 
@@ -258,7 +248,7 @@
 
                 <div class="form-group d-flex justify-content-center align-items-center">
                     <button type="button" class="btn btn-secondary cancelar" onclick="cancelar()">Cancelar</button>
-                    <button type="submit" class="btn btn-azul cadastrar" onclick="cadastrar()">Cadastrar</button>
+                    <button type="submit" class="btn btn-azul cadastrar" onclick="salvar()">Cadastrar</button>
                 </div>
 
             </form>
@@ -358,11 +348,11 @@
                     <div class="row g-3">
                         <div class="col">
                             <label for="senha" class="form-label">Criar Senha:</label>
-                            <input type="password" class="form-control" placeholder="********" required>
+                            <input type="password" class="form-control" placeholder="****" required>
                         </div>
                         <div class="col">
                             <label for="senha" class="form-label">Confirme sua Senha:</label>
-                            <input type="password" class="form-control" placeholder="********">
+                            <input type="password" class="form-control" placeholder="****">
                         </div>
                     </div>
 
