@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,17 +6,17 @@
 }
 
 /*Início NavBar parte de cima*/
-.logo-imel{
+.logo-imel {
     width: 8%;
 }
 
-.navbar{
-    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+.navbar {
+    background: linear-gradient(72deg, rgba(154, 231, 200, 1) 34%, rgba(255, 172, 73, 1) 100%);
     margin-bottom: 10px;
 }
 
-.navbar ul{
-    flex-direction: row;    
+.navbar ul {
+    flex-direction: row;
     list-style: none;
     display: flex;
     font-size: 21px;
@@ -26,7 +26,7 @@
     margin-top: 15px;
 }
 
-.nav-opc{
+.nav-opc {
     text-decoration: none;
     list-style: none;
     cursor: pointer;
@@ -34,16 +34,16 @@
     margin-right: 15px;
 }
 
-.nav-opc a{
+.nav-opc a {
     text-decoration: none;
     color: #000;
 }
 
-.nav-opc:hover{
+.nav-opc:hover {
     opacity: 0.5;
 }
 
-.nav-text{
+.nav-text {
     text-decoration: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -51,18 +51,19 @@
     border-radius: 15px;
 }
 
-.nav-link-portal{
-    color:black ;
+.nav-link-portal {
+    color: black;
     text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*Fim NavBar parte de cima*/
 
 /*Início CSS Card de Apresentação*/
-.fundoApresen{
+.fundoApresen {
     padding: 15px;
     background-color: #fffbfb;
     margin-top: 10px;
@@ -70,83 +71,84 @@
     margin-bottom: 10px;
 }
 
-.fundoApresen h1{
+.fundoApresen h1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.apresentacao{
+.apresentacao {
     font: normal 16px Arial;
 }
 
-.apresentacao p{
+.apresentacao p {
     text-align: justify;
     padding: 8px;
 }
 
-.apresentacao a{
+.apresentacao a {
     display: flex;
     text-decoration: none;
     color: #000;
 }
 
-.apresentacao h5{
+.apresentacao h5 {
     color: #000;
     font-size: 22px;
 }
 
-.apresentacao a:hover{
+.apresentacao a:hover {
     text-decoration: underline;
 }
 
-.colunaCentro{
+.colunaCentro {
     width: 80%;
     margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*Fim CSS Card de Apresentação*/
 
 /*Início Footer*/
-:root{
+:root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
 }
 
-footer{
+footer {
     width: 100%;
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
 }
 
-.logo-footer{
+.logo-footer {
     width: 25%;
 }
 
-#footer_content{
-    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+#footer_content {
+    background: linear-gradient(72deg, rgba(154, 231, 200, 1) 34%, rgba(255, 172, 73, 1) 100%);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer_contacts h1{
+#footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer_social_media{
+#footer_social_media {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-#footer_social_media .footer-link{
+#footer_social_media .footer-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,67 +159,67 @@ footer{
     transition: all 0.4s;
 }
 
-#footer_social_media .footer-link i{
+#footer_social_media .footer-link i {
     font-size: 1.25rem;
 }
 
-#footer_social_media .footer-link:hover{
+#footer_social_media .footer-link:hover {
     opacity: 0.8;
 }
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#facebook{
+#facebook {
     background-color: #4267b3;
 }
 
-#whatsapp{
+#whatsapp {
     background-color: #25d366;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     color: #000;
     transition: all 0.4s;
 }
 
-.footer-list .footer-link:hover{
+.footer-list .footer-link:hover {
     color: #ff6f00;
     cursor: pointer;
 }
 
-#footer_subscribe{
+#footer_subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer_subscribe p{
+#footer_subscribe p {
     color: #000;
 }
 
-#input_group{
+#input_group {
     display: flex;
     align-items: center;
     background-color: var(--color-neutral-0);
     border-radius: 4px;
 }
 
-#input_group input{
+#input_group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 }
 
-#input_group button{
+#input_group button {
     background-color: #7f37c9;
     border: none;
     color: var(--color-neutral-40);
@@ -229,14 +231,14 @@ footer{
     transition: all 0.4s;
 }
 
-#input_group button:hover{
+#input_group button:hover {
     opacity: 0.8;
 }
 
-#footer_copyright{
+#footer_copyright {
     display: flex;
     justify-content: center;
-    background: linear-gradient(72deg, rgba(154,231,200,1) 34%, rgba(255,172,73,1) 100%);
+    background: linear-gradient(72deg, rgba(154, 231, 200, 1) 34%, rgba(255, 172, 73, 1) 100%);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
@@ -245,14 +247,65 @@ footer{
 
 /*Fim Footer*/
 
-/*Início Links diversos*/
-.codes li{
-    color: #000;   
-    padding: 3px; 
+/*Início Atalhos*/
+.fundoAtalho {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
 }
 
-.codes a{
-    color: #000;  
-    padding: 3px;  
+.linksAtalho {
+    width: 80%;
+    height: auto;
+    background-color: #fffbfb;
+    border-radius: 4px;
+    color: #000;
 }
-/*Fim Links diversos*/
+
+.linksAtalho li {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.linksAtalho h5 {
+    color: #000;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.linksAtalho a {
+    text-decoration: none;
+    color: #000;
+}
+
+.linksAtalho a:hover {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+/*Fim Atalhos*/
+
+/*Início Proponente*/
+.tabelaProp {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    width: 30%;
+    height: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.linksProp li a{
+    margin-top: 8px;
+}
+
+.linksProp li a:hover{
+    font-size: 17px;
+}
+
+/*Fim Proponente*/

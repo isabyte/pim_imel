@@ -245,14 +245,13 @@ footer{
 
 /*Fim Footer*/
 
-/*Início Links diversos*/
-.codes li{
-    color: #000;   
-    padding: 3px; 
+/*Início Styles Canoagem Rosa*/
+.links{
+    font-weight: lighter;
+    font-size: 15px;
 }
 
-.codes a{
-    color: #000;  
-    padding: 3px;  
+.links li{
+    margin-top: 6px;
 }
-/*Fim Links diversos*/
+/*Fim Styles Canoagem Rosa*/
