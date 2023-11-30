@@ -27,107 +27,97 @@
 
 <body>
 
- <!-- header -->
-    <div class="container">
-        <header
-            class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-                    <h1 class="title-dash-imel">IMEL | Admin</h1>
-                </a>
-            </div>
+  <!-- header -->
+  <div class="container">
+    <header
+      class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+          <h1 class="title-dash-imel">IMEL | Admin</h1>
+        </a>
+      </div>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
-                <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-                <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Cadastros
-                    </a>
-                    <div class="dropdown">
-                        <ul class="dropdown-menu">
-                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                   data-bs-target="#modalAluno">
-                                    Cadastrar Aluno
-                                </button></li>
-                            <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                    data-bs-target="#modalColaborador">
-                                    Cadastrar Colaborador
-                                </button></li>
-                            <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Portal
-                    </a>
-                    <div class="dropdown">
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-eventos.html">Calendarios & Eventos</a></li>
-                            <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-projetos-pIMEL.html">Projeto Meninos do Lago</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Canoagem">Canoagem Rosa - Flor de Lótus</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Voluntarios">Voluntários</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Cursos">Cursos</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Caiaque">Caiaque Polo</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Biblioteca</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-apostilas">Apostilas do Projeto</a></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-Diversos">Diversos</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-                            <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-                        </ul>
-                    </div>
-                </li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
+        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Cadastros
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAluno">
+                  Cadastrar Aluno
+                </button></li>
+              <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalColaborador">
+                  Cadastrar Colaborador
+                </button></li>
+              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
+              </li>
             </ul>
+          </div>
+        </li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Portal
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
+              <li><a class="dropdown-item" href="dash-add-evento.html">Calendarios & Eventos</a></li>
+              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+              <hr class="dropdown-divider">
+              <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
+              <li><a class="dropdown-item" href="dash-projetos-Voluntarios.html">Voluntários</a></li>
+              <li><a class="dropdown-item" href="dash-projetos-Cursos.html">Cursos</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
 
-            <div class="col-md-3 text-end">
-                <a href="portal.html">
-                    <button type="button" class="btn btn-laranja">Sair</button>
-                </a>
-            </div>
-        </header>
-    </div>
-    <!-- fim header -->
+      <div class="col-md-3 text-end">
+        <a href="portal.html">
+          <button type="button" class="btn btn-laranja">Sair</button>
+        </a>
+      </div>
+    </header>
+  </div>
+  <!-- fim header -->
 
   <!--barra de pesquisa-->
 
-
-    <div class="row col-md-12">
-      <div class="col-md-2"></div>
-      <div class="col-md-3" style="margin-left: 40px;">
-        <input id="input-tabela" class="form-control" type="text" placeholder="Digite o nome do aluno">
-      </div>
-      <div class="col-md-2">
-        <select id="selectTabela"  class="form-select select" style="margin-left: 2px;">
-          <option value="opc" selected>Turmas</option>
-          <option value="opc1">Turma "A"</option>
-          <option value="opc2">Turma "B"</option>
-          <option value="opc3">Turma "C"</option>
-          <option value="opc4">Turma "D"</option>
-          <option value="opc5">Turma "E"</option>
-          <option value="opc6">Sem Turma</option>
-        </select>
-      </div>
-      <div class="col-md-4">
-        <button type="button" class="btn btn-azul" data-bs-toggle="modal" data-bs-target="#addAlunosTurma">
-          Adicionar alunos à Turma...
-        </button>
-      </div>
-
+  <div class="row col-md-12">
+    <div class="col-md-2"></div>
+    <div class="col-md-3" style="margin-left: 40px;">
+      <input id="input-tabela" class="form-control" type="text" placeholder="Digite o nome do aluno">
     </div>
+    <div class="col-md-2">
+      <select id="selectTabela" class="form-select select" style="margin-left: 2px;">
+        <option value="opc" selected>Turmas</option>
+        <option value="opc1">Turma "A"</option>
+        <option value="opc2">Turma "B"</option>
+        <option value="opc3">Turma "C"</option>
+        <option value="opc4">Turma "D"</option>
+        <option value="opc5">Turma "E"</option>
+        <option value="opc6">Sem Turma</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-azul" data-bs-toggle="modal" data-bs-target="#addAlunosTurma">
+        Adicionar alunos à Turma...
+      </button>
+    </div>
+
+  </div>
 
   <!-- fim da barra de pesquisa -->
 

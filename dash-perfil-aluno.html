@@ -1,307 +1,313 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IMEL | Admin</title>
-    
-    <link rel="website icon" type="png" href="imgs/imel-logo.png">
-  
-    <!-- Bootstrap css externo -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-  
-    <!-- Meu css -->
-    <link rel="stylesheet" href="css/styles.css">
-  
-    <!--Meu js-->
-    <script src="js/script.js"></script>
-  
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  </head>
-  
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMEL | Admin</title>
+
+  <link rel="website icon" type="png" href="imgs/imel-logo.png">
+
+  <!-- Bootstrap css externo -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Meu css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Meu js-->
+  <script src="js/script.js"></script>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
 <body>
-  
-    <!-- header -->
-    <div class="container">
-        <header
-            class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
-                    <h1 class="title-dash-imel">IMEL | Admin</h1>
-                </a>
-            </div>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
-                <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
-                <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
-                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Cadastros
-                    </a>
-                    <div class="dropdown">
-                        <ul class="dropdown-menu">
-                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                   data-bs-target="#modalAluno">
-                                    Cadastrar Aluno
-                                </button></li>
-                            <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                    data-bs-target="#modalColaborador">
-                                    Cadastrar Colaborador
-                                </button></li>
-                            <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Portal
-                    </a>
-                    <div class="dropdown">
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-eventos.html">Calendarios & Eventos</a></li>
-                            <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-projetos-pIMEL.html">Projeto Meninos do Lago</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Canoagem">Canoagem Rosa - Flor de Lótus</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Voluntarios">Voluntários</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Cursos">Cursos</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Caiaque">Caiaque Polo</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Biblioteca</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-apostilas">Apostilas do Projeto</a></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-Diversos">Diversos</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
-                            <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
-                        </ul>
-                    </div>
-                </li>
+  <!-- header -->
+  <div class="container">
+    <header
+      class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="dashboard.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="imgs/imel-logo.png" class="img-logo" alt="Logo do Instituto Meninos do Lago">
+          <h1 class="title-dash-imel">IMEL | Admin</h1>
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="dashboard.html" class="nav-link px-2  link-secondary">Dashboard</a></li>
+        <li><a href="dash-turmas.html" class="nav-link px-2">Turmas</a></li>
+        <li><a href="dash-alunos.html" class="nav-link px-2">Alunos</a></li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Cadastros
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAluno">
+                  Cadastrar Aluno
+                </button></li>
+              <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalColaborador">
+                  Cadastrar Colaborador
+                </button></li>
+              <li><a class="dropdown-item" href="dash-vis-colaborador.html">Visualizar Colaboradores</a>
+              </li>
             </ul>
+          </div>
+        </li>
+        <li><a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Portal
+          </a>
+          <div class="dropdown">
+            <ul class="dropdown-menu">
+              <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
+              <li><a class="dropdown-item" href="dash-add-evento.html">Calendarios & Eventos</a></li>
+              <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
+              <hr class="dropdown-divider">
+              <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
+              <li><a class="dropdown-item" href="dash-projetos-Voluntarios.html">Voluntários</a></li>
+              <li><a class="dropdown-item" href="dash-projetos-Cursos.html">Cursos</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
+              <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
 
-            <div class="col-md-3 text-end">
-                <a href="portal.html">
-                    <button type="button" class="btn btn-laranja">Sair</button>
-                </a>
+      <div class="col-md-3 text-end">
+        <a href="portal.html">
+          <button type="button" class="btn btn-laranja">Sair</button>
+        </a>
+      </div>
+    </header>
+  </div>
+  <!-- fim header -->
+
+  <section>
+    <h1 class="h2 titulo-dash">Perfil do aluno</h1>
+    <div class="row col-md-12 justify-content-center" id="container-colunas">
+
+      <!-- informações pessoais-->
+      <div class="coluna-perfil informacoes-pessoais col-md-4">
+        <h2 class="h3">Informações pessoais</h2>
+        <br />
+
+        <form>
+          <div class="img-nome-aluno">
+            <div class="container-img-perfil">
+              <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
+
+              <!-- input file invisível -->
+              <input type="file" class="form-control" id="escolher-imagem" style="display: none;">
             </div>
-        </header>
-    </div>
-    <!-- fim header -->
-
-
-    <section>
-      <h1 class="h2 titulo-dash">Perfil do aluno</h1>
-      <div class="row col-md-12 justify-content-center" id="container-colunas">
-
-        <!-- informações pessoais-->
-        <div class="coluna-perfil informacoes-pessoais col-md-4">
-          <h2 class="h3">Informações pessoais</h2>
-          <br/>
-
-          <form>
-            <div class="img-nome-aluno">
-              <div class="container-img-perfil">
-                <img src="/imgs/aluna.png" class="img-perfil img-thumbnail" alt="Foto de perfil do aluno">
-
-                <!-- input file invisível -->
-                <input type="file" class="form-control" id="escolher-imagem" style="display: none;">
-              </div>
-              <div class="container-nome-perfil">
-                <h3 id="titulo-nome-aluno">Fulana de Tal</h3>
-              </div>
+            <div class="container-nome-perfil">
+              <h3 id="titulo-nome-aluno">Fulana de Tal</h3>
             </div>
-  
-            <button class="btn btn-azul botao-canto-direito" id="botao-editar" onclick="editarInfoAluno()">Editar</button>
-            <br/>
-  
-            <div class="informacoes-aluno">
-              <label for="nome-aluno" class="h5">Nome:</label>
-              <span id="span-nome-aluno">Fulana</span>
-              <input type="text" class="form-control elemento-invisivel" id="nome-aluno" value="Fulana" minlength="3" required>
-              <br/>
-  
-              <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
-              <span id="span-sobrenome-aluno">de Tal</span>
-              <input type="text" class="form-control elemento-invisivel" id="sobrenome-aluno" value="de Tal" minlength="2" required>
-              <br/>
-  
-              <label for="sexo-aluno" class="h5">Sexo:</label>
-              <span id="span-sexo-aluno">Feminino</span>
-              <select type="text" class="form-control elemento-invisivel" id="sexo-aluno" required>
-                <option selected>Feminino</option>
-                <option>Masculino</option>
-                <option>Outro</option>
-              </select>
-              <br/>
-  
-              <label for="data-nasc-aluno" class="h5">Data de nascimento:</label>
-              <span id="span-data-nasc-aluno">25/03/2018</span>
-              <input type="date" class="form-control elemento-invisivel" id="data-nasc-aluno" value="2018-03-25" required>
-              <br/>
-  
-              <label for="turma-aluno" class="h5">Turma:</label>
-              <span id="span-turma-aluno">A - Manhã</span>
-              <select type="text" class="form-control elemento-invisivel" id="turma-aluno" required>
-                <option>Sem turma</option>
-                <option selected>A - Manhã</option>
-                <option>B - Manhã</option>
-                <option>C - Tarde</option>
-                <option>C - Manhã</option>
-                <option>D - Tarde</option>
-                <option>E - Tarde</option>
-              </select>
-              <br/> 
-  
-              <label for="cadastro-aluno" class="h5">Cadastro:</label>
-              <span id="span-cadastro-aluno">Ativo</span>
-              <select type="text" class="form-control elemento-invisivel" id="cadastro-aluno" required>
-                <option selected>Ativo</option>
-                <option>Inativo</option>
-              </select>
-              <br/>
-  
-              <label for="email-aluno" class="h5">E-mail:</label>
-              <span id="span-email-aluno">fulaninha@gmail.com</span>
-              <input type="email" class="form-control elemento-invisivel" id="email-aluno" value="fulaninha@gmail.com" required>
-              <br/>
-  
-              <div class="contato-aluno">
-                <div class="container-tel-aluno">
-                  <label for="tel-aluno" class="h5">Telefone:</label>
-                  <span id="span-tel-aluno">(xx) xxxxx-xxxx</span>
-                  <input type="text" class="form-control elemento-invisivel" id="tel-aluno" value="(xx) xxxxx-xxxx" minlength="15" maxlength="15" required>
-                </div>
-  
-                <div class="container-responsavel-aluno">
-                  <label for="responsavel-aluno" class="h5">Tratar com:</label>
-                  <span id="span-responsavel-aluno">Sicrana</span>
-                  <input type="text" class="form-control elemento-invisivel" id="responsavel-aluno" value="Sicrana" minlength="3" required><br/>
-                </div>
-              <br/>
-              </div>
-  
-              <label for="endereco-aluno" class="h5">Endereço:</label>
-              <span id="span-endereco-aluno">Rua dos Bobos, 00</span>
-              <input type="text" class="form-control elemento-invisivel" id="endereco-aluno" value="Rua dos Bobos, 00" minlength="5" required>
-              <br/>
-  
-              <label for="bairro-aluno" class="h5">Bairro:</label>
-              <span id="span-bairro-aluno">Vila Sésamo</span>
-              <input type="text" class="form-control elemento-invisivel" id="bairro-aluno" value="Vila Sésamo" minlength="2" required>
-              <br/>
-            </div>
-  
-            <button type="button" class="btn btn-azul botao-documentos" id="botao-documentos">Documentos</button>
-  
-            <!-- botões de salvar-cancelar invisíveis -->
-            <div class="botao-canto-direito" id="botoes-salvar-cancelar" style="display: none;">
-              <button type="button" class="btn btn-secondary" id="botao-cancelar" onclick="cancelar()">Cancelar</button>
-              <button type="button" class="btn btn-azul" id="botao-salvar" onclick="salvarPerfilAluno()">Salvar</button>
-            </div>
-            <br/>
-  
-            <div class="visibilidade-informacoes">
-              <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
-            </div>
-          </form>
-        </div>
-        <!-- fim informações pessoais -->
+          </div>
 
-        <!-- ficha médica -->
-        <div class="coluna-perfil ficha-medica col-md-4">
-          <h2 class="h3">Ficha médica</h2>
-          <br/>
+          <button class="btn btn-azul botao-canto-direito" id="botao-editar" onclick="editarInfoAluno()">Editar</button>
+          <br />
 
           <div class="informacoes-aluno">
-            <label for="alergias-aluno" class="h5">Alergias:</label>
-            <br/>
-            <span>Nenhuma</span>
-            <br/>
-            <br/>
-  
-            <label for="sangue-aluno" class="h5">Tipo Sanguíneo:</label>
-            <br/>
-            <span>A+</span>
-            <br/>
-            <br/>
-  
-            <label for="doenca-aluno" class="h5">Possui doença congênita? Qual?</label>
-            <br/>
-            <span>Não</span>
-            <br/>
-            <br/>
-  
-            <label for="necessidade-aluno" class="h5">Possui alguma necessidade especial? Qual?</label>
-            <br/>
-            <span>Não</span>
-            <br/>
-            <br/>
-  
-            <label for="cadastro-aluno" class="h5">Em caso de emergência contactar</label>
-            <br/>
-            <span>Sicrana</span>
-            <br/>
-            <br/>
+            <label for="nome-aluno" class="h5">Nome:</label>
+            <span id="span-nome-aluno">Fulana</span>
+            <input type="text" class="form-control elemento-invisivel" id="nome-aluno" value="Fulana" minlength="3"
+              required>
+            <br />
+
+            <label for="sobrenome-aluno" class="h5">Sobrenome:</label>
+            <span id="span-sobrenome-aluno">de Tal</span>
+            <input type="text" class="form-control elemento-invisivel" id="sobrenome-aluno" value="de Tal" minlength="2"
+              required>
+            <br />
+
+            <label for="sexo-aluno" class="h5">Sexo:</label>
+            <span id="span-sexo-aluno">Feminino</span>
+            <select type="text" class="form-control elemento-invisivel" id="sexo-aluno" required>
+              <option selected>Feminino</option>
+              <option>Masculino</option>
+              <option>Outro</option>
+            </select>
+            <br />
+
+            <label for="data-nasc-aluno" class="h5">Data de nascimento:</label>
+            <span id="span-data-nasc-aluno">25/03/2018</span>
+            <input type="date" class="form-control elemento-invisivel" id="data-nasc-aluno" value="2018-03-25" required>
+            <br />
+
+            <label for="turma-aluno" class="h5">Turma:</label>
+            <span id="span-turma-aluno">A - Manhã</span>
+            <select type="text" class="form-control elemento-invisivel" id="turma-aluno" required>
+              <option>Sem turma</option>
+              <option selected>A - Manhã</option>
+              <option>B - Manhã</option>
+              <option>C - Tarde</option>
+              <option>C - Manhã</option>
+              <option>D - Tarde</option>
+              <option>E - Tarde</option>
+            </select>
+            <br />
+
+            <label for="cadastro-aluno" class="h5">Cadastro:</label>
+            <span id="span-cadastro-aluno">Ativo</span>
+            <select type="text" class="form-control elemento-invisivel" id="cadastro-aluno" required>
+              <option selected>Ativo</option>
+              <option>Inativo</option>
+            </select>
+            <br />
+
+            <label for="email-aluno" class="h5">E-mail:</label>
+            <span id="span-email-aluno">fulaninha@gmail.com</span>
+            <input type="email" class="form-control elemento-invisivel" id="email-aluno" value="fulaninha@gmail.com"
+              required>
+            <br />
+
+            <div class="contato-aluno">
+              <div class="container-tel-aluno">
+                <label for="tel-aluno" class="h5">Telefone:</label>
+                <span id="span-tel-aluno">(xx) xxxxx-xxxx</span>
+                <input type="text" class="form-control elemento-invisivel" id="tel-aluno" value="(xx) xxxxx-xxxx"
+                  minlength="15" maxlength="15" required>
+              </div>
+
+              <div class="container-responsavel-aluno">
+                <label for="responsavel-aluno" class="h5">Tratar com:</label>
+                <span id="span-responsavel-aluno">Sicrana</span>
+                <input type="text" class="form-control elemento-invisivel" id="responsavel-aluno" value="Sicrana"
+                  minlength="3" required><br />
+              </div>
+              <br />
+            </div>
+
+            <label for="endereco-aluno" class="h5">Endereço:</label>
+            <span id="span-endereco-aluno">Rua dos Bobos, 00</span>
+            <input type="text" class="form-control elemento-invisivel" id="endereco-aluno" value="Rua dos Bobos, 00"
+              minlength="5" required>
+            <br />
+
+            <label for="bairro-aluno" class="h5">Bairro:</label>
+            <span id="span-bairro-aluno">Vila Sésamo</span>
+            <input type="text" class="form-control elemento-invisivel" id="bairro-aluno" value="Vila Sésamo"
+              minlength="2" required>
+            <br />
           </div>
 
-          <button class="btn btn-azul">Laudos e atestados</button>
+          <button type="button" class="btn btn-azul botao-documentos" id="botao-documentos">Documentos</button>
+
+          <!-- botões de salvar-cancelar invisíveis -->
+          <div class="botao-canto-direito" id="botoes-salvar-cancelar" style="display: none;">
+            <button type="button" class="btn btn-secondary" id="botao-cancelar" onclick="cancelar()">Cancelar</button>
+            <button type="button" class="btn btn-azul" id="botao-salvar" onclick="salvarPerfilAluno()">Salvar</button>
+          </div>
+          <br />
 
           <div class="visibilidade-informacoes">
-            <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
+            <p style="color: #6c757d;">* Essas informações são visíveis ao participante</p>
           </div>
+        </form>
+      </div>
+      <!-- fim informações pessoais -->
+
+      <!-- ficha médica -->
+      <div class="coluna-perfil ficha-medica col-md-4">
+        <h2 class="h3">Ficha médica</h2>
+        <br />
+
+        <div class="informacoes-aluno">
+          <label for="alergias-aluno" class="h5">Alergias:</label>
+          <br />
+          <span>Nenhuma</span>
+          <br />
+          <br />
+
+          <label for="sangue-aluno" class="h5">Tipo Sanguíneo:</label>
+          <br />
+          <span>A+</span>
+          <br />
+          <br />
+
+          <label for="doenca-aluno" class="h5">Possui doença congênita? Qual?</label>
+          <br />
+          <span>Não</span>
+          <br />
+          <br />
+
+          <label for="necessidade-aluno" class="h5">Possui alguma necessidade especial? Qual?</label>
+          <br />
+          <span>Não</span>
+          <br />
+          <br />
+
+          <label for="cadastro-aluno" class="h5">Em caso de emergência contactar</label>
+          <br />
+          <span>Sicrana</span>
+          <br />
+          <br />
         </div>
-        <!-- fim ficha médica -->
 
-        <!-- observações -->
-        <div class="coluna-perfil observacoes col-md-4">
-  
-            <h2 class="h3">Observações</h2>
-            <br/>
-  
-            <div class="informacoes-aluno">
-              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos sequi nulla cumque, nisi similique rem modi pariatur eligendi et illum ducimus ratione explicabo obcaecati? Alias, amet? Dolor, repellat corrupt</p>
-              <br/>
-              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum temporibus exercitationem doloremque dolorum quo rerum expedita dolore fugit esse laudantium dignissimos quidem nostrum, est ad praesentium magni mollitia iure!</p>
-              <br/>
-              <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam repellat maxime quas, aliquid ea quidem explicabo! Nobis quod aspernatur totam nostrum ipsam, labore voluptatum aliquam, optio consequatur, recusandae illum?</p>
-            </div>
-            
-            <div class="nova-observacao">
-              <form>
-                <span id="span-nova-observacao"></span>
+        <button class="btn btn-azul">Laudos e atestados</button>
 
-                <!-- botões de adicionar-cancelar invisíveis -->
-                <div class="botao-canto-direito" id="botoes-adicionar-cancelar" style="display: none;">
-                  <button type="button" class="btn btn-secondary" id="botao-cancelar-obs" onclick="cancelar()">Cancelar</button>
-                  <button type="submit" class="btn btn-azul" id="botao-adicionar-obs" onclick="adicionar()">Adicionar</button>
-                </div>
-                <br/>
-
-              </form>
-            </div>
-
-            <button class="btn btn-azul" id="btn-nova-observacao" onclick="novaObs()">Adicionar nova observação</button>
-
-            <div class="visibilidade-informacoes">
-              <p style="color: #6c757d;">* Essas informações não são visíveis ao participantee</p>
-            </div>
-  
+        <div class="visibilidade-informacoes">
+          <p style="color: #6c757d;">* Essas informações não são visíveis ao participante</p>
         </div>
-        <!-- fim observações -->
+      </div>
+      <!-- fim ficha médica -->
+
+      <!-- observações -->
+      <div class="coluna-perfil observacoes col-md-4">
+
+        <h2 class="h3">Observações</h2>
+        <br />
+
+        <div class="informacoes-aluno">
+          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos sequi nulla cumque, nisi similique
+            rem modi pariatur eligendi et illum ducimus ratione explicabo obcaecati? Alias, amet? Dolor, repellat
+            corrupt</p>
+          <br />
+          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum temporibus exercitationem doloremque
+            dolorum quo rerum expedita dolore fugit esse laudantium dignissimos quidem nostrum, est ad praesentium magni
+            mollitia iure!</p>
+          <br />
+          <p>• Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam repellat maxime quas, aliquid
+            ea quidem explicabo! Nobis quod aspernatur totam nostrum ipsam, labore voluptatum aliquam, optio
+            consequatur, recusandae illum?</p>
+        </div>
+
+        <div class="nova-observacao">
+          <form>
+            <span id="span-nova-observacao"></span>
+
+            <!-- botões de adicionar-cancelar invisíveis -->
+            <div class="botao-canto-direito" id="botoes-adicionar-cancelar" style="display: none;">
+              <button type="button" class="btn btn-secondary" id="botao-cancelar-obs"
+                onclick="cancelar()">Cancelar</button>
+              <button type="submit" class="btn btn-azul" id="botao-adicionar-obs"
+                onclick="adicionar()">Adicionar</button>
+            </div>
+            <br />
+
+          </form>
+        </div>
+
+        <button class="btn btn-azul" id="btn-nova-observacao" onclick="novaObs()">Adicionar nova observação</button>
+
+        <div class="visibilidade-informacoes">
+          <p style="color: #6c757d;">* Essas informações não são visíveis ao participantee</p>
+        </div>
 
       </div>
-    </section>
+      <!-- fim observações -->
+
+    </div>
+  </section>
 
   <!--JavaScript próprio-->
   <script>
@@ -325,7 +331,7 @@
       inputNome.style.display = "block";
 
       /* o código abaixo segue o mesmo padrão do acima */
-      
+
       var spanSobrenome = document.getElementById('span-sobrenome-aluno');
       var inputSobrenome = document.getElementById('sobrenome-aluno');
 
@@ -346,7 +352,7 @@
 
       var spanTurma = document.getElementById('span-turma-aluno');
       var inputTurma = document.getElementById('turma-aluno');
-      
+
       spanTurma.style.display = "none";
       inputTurma.style.display = "block";
 
@@ -355,7 +361,7 @@
 
       spanCadastro.style.display = "none";
       inputCadastro.style.display = "block";
-      
+
       var spanEmail = document.getElementById('span-email-aluno');
       var inputEmail = document.getElementById('email-aluno');
 
@@ -407,9 +413,9 @@
 
       if (tamNome < 3 || tamSobrenome < 2 || valorNasc == 0 || tamEmail == 0 || tamTel < 15 || tamResponsavel < 3 || tamEndereco < 5 || tamBairro < 2) {
         return false;
-        }
-        return true;
       }
+      return true;
+    }
 
     function salvarPerfilAluno() {
       // coloca as margens da página
@@ -424,7 +430,7 @@
       var inputNome = document.getElementById('nome-aluno');
 
       /* o código abaixo segue o mesmo padrão do acima */
-      
+
       var spanSobrenome = document.getElementById('span-sobrenome-aluno');
       var inputSobrenome = document.getElementById('sobrenome-aluno');
 
@@ -439,7 +445,7 @@
 
       var spanCadastro = document.getElementById('span-cadastro-aluno');
       var inputCadastro = document.getElementById('cadastro-aluno');
-      
+
       var spanEmail = document.getElementById('span-email-aluno');
       var inputEmail = document.getElementById('email-aluno');
 
@@ -457,8 +463,8 @@
 
       // nome do aluno no título
       var tituloNome = document.getElementById('titulo-nome-aluno');
-      
-      if(!verificaInputs()) {
+
+      if (!verificaInputs()) {
         alert('Preencha todos os campos corretamente');
         return;
       }
@@ -583,12 +589,12 @@
     function adicionar() {
       var tamObs = document.getElementById('nova-observacao').value.length;
 
-      if(tamObs < 15) {
+      if (tamObs < 15) {
         alert('Observação inválida ou muito curta');
         return;
       }
 
-      if(confirm('Deseja salvar as alterações?') == true) {
+      if (confirm('Deseja salvar as alterações?') == true) {
         window.location.reload();
       }
     }
@@ -599,4 +605,5 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

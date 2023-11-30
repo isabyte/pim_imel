@@ -25,7 +25,7 @@
 
 <body>
 
-     <!-- header -->
+    <!-- header -->
     <div class="container">
         <header
             class="cabecalho-dash d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -47,7 +47,7 @@
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><button type="button" class="dropdown-item" data-bs-toggle="modal"
-                                   data-bs-target="#modalAluno">
+                                    data-bs-target="#modalAluno">
                                     Cadastrar Aluno
                                 </button></li>
                             <li><a class="dropdown-item" href="dash-cad-pendentes.html">Cadastros pendentes</a></li>
@@ -70,19 +70,12 @@
                     <div class="dropdown">
                         <ul class="dropdown-menu">
                             <li><span class="dropdown-item-text"><strong>Agenda</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-eventos.html">Calendarios & Eventos</a></li>
+                            <li><a class="dropdown-item" href="dash-add-evento.html">Calendarios & Eventos</a></li>
                             <li><a class="dropdown-item" href="dash-imagens.html">Galeria</a></li>
                             <hr class="dropdown-divider">
                             <li><span class="dropdown-item-text"><strong>Projetos</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-projetos-pIMEL.html">Projeto Meninos do Lago</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Canoagem">Canoagem Rosa - Flor de Lótus</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Voluntarios">Voluntários</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Cursos">Cursos</a></li>
-                            <li><a class="dropdown-item" href="dash-projetos-Caiaque">Caiaque Polo</a></li>
-                            <hr class="dropdown-divider">
-                            <li><span class="dropdown-item-text"><strong>Biblioteca</strong></span></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-apostilas">Apostilas do Projeto</a></li>
-                            <li><a class="dropdown-item" href="dash-biblioteca-Diversos">Diversos</a></li>
+                            <li><a class="dropdown-item" href="dash-projetos-Voluntarios.html">Voluntários</a></li>
+                            <li><a class="dropdown-item" href="dash-projetos-Cursos.html">Cursos</a></li>
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="dash-noticias.html">Notícias</a></li>
                             <li><a class="dropdown-item" href="dash-contato.html">Contato</a></li>
@@ -100,46 +93,53 @@
     </div>
     <!-- fim header -->
 
+    <!-- página -->
+    <section>
+        <div class="row col-md-12">
+            <div class="col-md-3"></div>
 
-  <!-- página -->
-  <section>
-    <div class="row col-md-12">
-      <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="h2">Voluntários
+                    <button class="btn btn-azul botao-canto-direito" id="btn-edit-sobre"
+                        onclick="editarSobre()">Editar</button>
+                    <button class="btn btn-azul edit-mode botao-canto-direito" id="btn-save-sobre"
+                        onclick="salvarSobre()">Salvar</button>
+                </h1>
+                <br /><br />
 
-      <div class="col-md-6">
-        <h1 class="h2">Sobre
-          <button class="btn btn-azul botao-canto-direito" id="btn-edit-sobre" onclick="editarSobre()">Editar</button>
-        <button class="btn btn-azul edit-mode botao-canto-direito" id="btn-save-sobre" onclick="salvarSobre()">Salvar</button>
-        </h1>
-        <br /><br />
-
-        <textarea type="text" id="campoInputSobre" class="edit-mode form-control" cols="40" rows="20"></textarea>
+                <textarea type="text" id="campoInputSobre" class="edit-mode form-control" cols="40"
+                    rows="20"></textarea>
 
 
-        <div class="row">
-          <div class="sobre-dash" id="sobre-dash">
-            <p id="pSobre">Aqui ficam a história e demais informações sobre o instituto, visíveis na página "Sobre" no portal
-              principal. Nesta tela, o colaborador pode escolher editar este texto.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nunc neque, ultricies nec aliquam et,
-              iaculis mollis magna. Suspendisse non sagitt is mauris. Suspendisse tellus diam, placerat non risus ut,
-              malesuada eleifend odio. Curabitur efficitur turpis id justo tempor, nec bibendum enim eleifend. Maecenas
-              fringilla ante in felis tincidunt ullamcorper nec nec sem. Orci varius natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. In in aliquam leo. Nulla et vulputate velit. Donec enim quam,
-              varius venenatis felis vel, vestibulum varius augue. Quisque scelerisque lacus eu eros egestas, eu
-              convallis enim tincidunt. Curabitur facilisis laoreet massa, nec fermentum diam lacinia sit amet.
-              Nulla ut sapien in nibh fringilla dictum. Donec nibh ante, placerat vel sapien non, congue accumsan
-              velit. Proin at mollis felis. Donec venenatis nisi non sapien egestas feugiat. Nunc in nunc quis nunc
-              tempus congue in vitae enim. Pellentesque iaculis purus et ante iaculis, sit amet vulputate arcu porta.
-              Aenean mattis nibh ut tristique elementum. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Mauris pellentesque sagittis nisl eu facilisis. Mauris sed tempus magna. Maecenas
-              ut ipsum sed neque ullamcorper ornare. Nunc pulvinar erat ipsum.</p>
-          </div>
+                <div class="row">
+                    <div class="sobre-dash" id="sobre-dash">
+                        <p id="pSobre">
+                            A própria legislação brasileira enquadra a canoagem brasileira como esporte não
+                            profissional. A despeito de enorme potencial de desenvolvimento dessa modalidade olímpica em
+                            todo o País, esse esporte sofre com a falta de praticantes e estruturas apropriadas. Mesmo
+                            em Foz do Iguaçu que possui condições dignas das maiores potências internacionais, nos
+                            momentos de eventos não é fácil encontrar aproximadamente 50 pessoas para auxiliar na
+                            arbitragem e organização. <br> <br> Nos eventos internacionais, principalmente nos países do
+                            continente europeu, é muito comum
+                            encontrar mais de uma centena de voluntários trabalhando e enfrentando as intempéries com
+                            sorriso no rosto. Infelizmente essa prática não é comum nos países do continente latino
+                            americano e a participação de voluntários em eventos de canoagem talvez seja uma das maiores
+                            dificuldades na organização de grandes eventos. <br> <br> Em assim sendo, o Instituto
+                            Meninos do Lago gostaria de convidar você a entrar na relação de
+                            voluntários para os eventos nacionais e internacionais. Para isso basta ligar no 45 3027
+                            2051. Sua participação será muito importante para Foz do Iguaçu e para o próprio Brasil.
+                            <br> <br> Para acadêmicos de Educação Física que queiram entender a modalidade olímpica de
+                            canoagem é
+                            possível a realização de cursos específicos, inclusive de arbitragem, desde que seja
+                            organizado e com a participação das próprias instituições de ensino. <br> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
         </div>
-      </div>
-
-      <div class="col-md-3"></div>
-    </div>
-  </section>
+    </section>
 
     <!-- cadastrar Alunos -->
 
